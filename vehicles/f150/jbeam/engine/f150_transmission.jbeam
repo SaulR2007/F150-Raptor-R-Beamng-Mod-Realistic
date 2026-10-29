@@ -1,0 +1,770 @@
+{
+"sdd_trx2_transmission_8A": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"8-Speed Automatic Transmission",
+        "value":2800,
+    },
+    "slotType": "sdd_trx2_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["pickup_converter","pickup_converter","Torque Converter", {"coreSlot":true}],
+        ["sdd_trx2_transfer_case","sdd_trx2_transfer_case_4WD","Transfer Case", {"coreSlot":true}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["torqueConverter", "torqueConverter", "mainEngine", 1],
+        ["automaticGearbox", "gearbox", "torqueConverter", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-3.30, 0, 4.71, 3.14, 2.11, 1.67, 1.285, 1.00, 0.84, 0.67],
+        "parkLockTorque":2000,
+        "oneWayViscousCoef":40,
+        "gearChangeTime": 0.2,
+        "shiftEfficiency":0.8,
+        "friction":1.83,
+        "dynamicFriction":0.00183,
+        "torqueLossCoef": 0.017,
+        "gearboxNode:":["tra1"],
+    },
+    "vehicleController": {
+        "automaticModes":"PRNDSM",
+        "shiftDownRPMOffsetCoef":1.15,
+        "calculateOptimalLoadShiftPoints": true,
+        "transmissionGearChangeDelay":0.5,
+        "aggressionHoldOffThrottleDelay":2.5,
+        "aggressionSmoothingUp":2,
+        "aggressionSmoothingDown":0.2,
+        "gearboxDecisionSmoothingUp":2,
+        "gearboxDecisionSmoothingDown":2,
+        "lowShiftDownRPM":1300,
+        "lowShiftUpRPM":2100,
+        "maxGearChangeTime": 0.6,
+        "minGearChangeTime": 0.4,
+        "sportGearChangeTime": 0.3,
+        "throttleCoefWhileShifting": 0.5,
+        "torqueConverterHasPartialLockup": true,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_transmission", ["pickup_engine","pickup_transmission"],[]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--8 Speed Auto--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"pickup_transmission"},
+         {"nodeWeight":48},
+         ["tra1", 0.00000, -0.44000, 0.74904],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e1l"],
+          ["tra1","e3r"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transmission_8A_logicmod": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"8-Speed Q-Shift Transmission",
+        "value":2600,
+    },
+    "slotType" : "sdd_trx2_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["pickup_converter_logicmod","pickup_converter_heavy_logicmod","Torque Converter", {"coreSlot":true}],
+        ["pickup_transfer_case","pickup_transfer_case_4WD","Transfer Case", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["dctGearbox", "gearbox", "mainEngine", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-3.30, 0, 4.71, 3.14, 2.11, 1.67, 1.285, 1.00, 0.84, 0.67],
+        "parkLockTorque":2500,
+        "oneWayViscousCoef":60,
+        "friction": 1.68,
+        "dynamicFriction": 0.0017,
+        "torqueLossCoef": 0.017,
+        "gearboxNode:":"tra1",
+    },
+    "vehicleController": {
+	    //"shiftLogicName":"automaticGearboxLogicmod"
+        "automaticModes":"PRNDM",
+        "calculateOptimalLoadShiftPoints": true,
+        "transmissionGearChangeDelay":1.2,
+        "gearboxDecisionSmoothingUp":2,
+        "gearboxDecisionSmoothingDown":2,
+        "aggressionSmoothingUp":1,
+        "aggressionSmoothingDown":0.5,
+        "aggressionHoldOffThrottleDelay":1.75,		
+        "lowShiftDownRPM":1100,
+        "lowShiftUpRPM":2000,
+        "clutchLaunchStartRPM": 2500,
+        "clutchLaunchTargetRPM": 2300,
+        "dctClutchTime":0.025,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["gavril_v8_pickup_transmission", ["pickup_engine","pickup_transmission"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":37.6},
+         {"group":"pickup_transmission"},
+         ["tra1", 0.0, -0.41, 0.46],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--TRANSMISSION CONE--
+          {"beamSpring":18800940,"beamDamp":470},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e3r"],
+          ["tra1","e1l"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transmission_10A_f150": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"F150 10-speed SelectShift® Automatic Transmission",
+        "value":2600,
+    },
+    "slotType" : "sdd_trx2_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["sdd_trx2_transfer_case","sdd_trx2_transfer_case_4WD_f150","Transfer Case", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["dctGearbox", "gearbox", "mainEngine", 1],
+    ],
+    "controller": [
+        ["fileName"],
+        ["vehicleController", {}],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-4.86, 0, 4.69, 2.98, 2.14, 1.76, 1.52, 1.27, 1, 0.85, 0.69, 0.63],
+        "friction": 1.64,
+        "dynamicFriction": 0.0016,
+        "torqueLossCoef": 0.0195,
+        "parkLockTorque":2000,
+        "additionalEngineInertia":0.04,
+        "gearboxNode:":"tra1",
+    },
+    "vehicleController": {
+		"topSpeedLimit":50.96,
+        "shiftLogicName":"dctGearboxF150",
+        "automaticModes":"PRNDM",
+        "calculateOptimalLoadShiftPoints": true,
+        "transmissionGearChangeDelay":0.1,
+        "gearboxDecisionSmoothingUp":2,
+        "gearboxDecisionSmoothingDown":2,
+        "aggressionSmoothingUp":1,
+        "aggressionSmoothingDown":0.5,
+        "aggressionHoldOffThrottleDelay":1.75,		
+        "lowShiftDownRPM":[0,0,0,1500,1600,1600,1600,1600,1100,1100,1100,1100],
+        "lowShiftUpRPM":[0,0,2200,2400,2500,2500,2500,2500,2000,2000,2000,2000],
+        "clutchLaunchStartRPM": 2500,
+        "clutchLaunchTargetRPM": 2300,
+        "autoDownShiftInM": false,
+        "dctClutchTime":0.025,
+		"clutchCreep":0.075,
+		"clutchCreepBrakeThreshold":0.05,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["gavril_v8_pickup_transmission", ["pickup_engine","pickup_transmission"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":37.6},
+         {"group":"pickup_transmission"},
+         ["tra1", 0.0, -0.41, 0.46],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--TRANSMISSION CONE--
+          {"beamSpring":18800940,"beamDamp":470},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e3r"],
+          ["tra1","e1l"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transmission_U10A_f150": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"F150 Unlocked 10-speed SelectShift® Automatic Transmission",
+        "value":2600,
+    },
+    "slotType" : "sdd_trx2_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["sdd_trx2_transfer_case","sdd_trx2_transfer_case_4WD_f150","Transfer Case", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["dctGearbox", "gearbox", "mainEngine", 1],
+    ],
+    "controller": [
+        ["fileName"],
+        ["vehicleController", {}],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-4.86, 0, 4.69, 2.98, 2.14, 1.76, 1.52, 1.27, 1, 0.85, 0.69, 0.63],
+        "friction": 1.64,
+        "dynamicFriction": 0.0016,
+        "torqueLossCoef": 0.0195,
+        "parkLockTorque":2000,
+        "additionalEngineInertia":0.04,
+        "gearboxNode:":"tra1",
+    },
+    "vehicleController": {
+        "shiftLogicName":"dctGearboxF150",
+        "automaticModes":"PRNDM",
+        "calculateOptimalLoadShiftPoints": true,
+        "transmissionGearChangeDelay":0.1,
+        "gearboxDecisionSmoothingUp":2,
+        "gearboxDecisionSmoothingDown":2,
+        "aggressionSmoothingUp":1,
+        "aggressionSmoothingDown":0.5,
+        "aggressionHoldOffThrottleDelay":1.75,		
+        "lowShiftDownRPM":[0,0,0,1500,1600,1600,1600,1600,1100,1100,1100,1100],
+        "lowShiftUpRPM":[0,0,2200,2400,2500,2500,2500,2500,2000,2000,2000,2000],
+        "clutchLaunchStartRPM": 2500,
+        "clutchLaunchTargetRPM": 2300,
+        "autoDownShiftInM": false,
+        "dctClutchTime":0.025,
+		"clutchCreep":0.075,
+		"clutchCreepBrakeThreshold":0.05,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["gavril_v8_pickup_transmission", ["pickup_engine","pickup_transmission"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":37.6},
+         {"group":"pickup_transmission"},
+         ["tra1", 0.0, -0.41, 0.46],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--TRANSMISSION CONE--
+          {"beamSpring":18800940,"beamDamp":470},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e3r"],
+          ["tra1","e1l"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+
+"sdd_trx2_transfer_case_4WD": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"4WD Transfer Case",
+        "value":1650,
+    },
+    "slotType" : "sdd_trx2_transfer_case",
+    "controller": [
+        ["fileName"],
+        ["driveModes", {"name":"transfercaseControl"}]
+        ["4wd", {"driveModesTransfercaseNames":["transfercaseControl"], "driveModesRangeNames":["transfercaseControl"]}]
+    ],
+
+    "transfercaseControl":{
+        "uiName": "Transfercase"
+        "quickAccessTitle":"Transfercase"
+        "quickAccessIcon":"radial_highrangebox"
+        "quickAccessLevel":"/powertrain/"
+        "enabledModes":["2hi", "4hi", "4lo"]
+        "defaultMode": ""
+        "modes": {
+            "2hi": {
+                "name": "2WD High Gear",
+                "order": 10,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"high"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"disconnected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"disconnected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"disconnected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":1}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_high-2", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_high-2"}]
+                ],
+            },
+            "4hi": {
+                "name": "4WD High Gear",
+                "order": 20,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"high"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"connected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":0.33}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_high-4", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_high-4"}]
+                ],
+            },
+            "4lo": {
+                "name": "4WD Low Gear",
+                "order": 30,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"low"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"connected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":-1}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_low-4", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_low-4"}]
+                ],
+            },
+        }
+    }
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["rangeBox", "rangebox", "gearbox", 1, {"uiSimpleModeControl":false, "gearRatios":[1,2.2], "uiName":"Rangebox"}],
+        //locked center diff
+        ["differential", "transfercase", "rangebox", 1, {"diffType":"locked", "lockTorque":8000, "friction":0.44, "dynamicFriction":0.00048, "torqueLossCoef":0.012, "uiName":"Transfer Case", "defaultVirtualInertia":0.1}],
+        //disconnecting front shaft
+        ["shaft", "transfercase_F", "transfercase", 2, {"uiSimpleModeControl":false, "canDisconnect":true, "friction":0.44, "dynamicFriction":0.00048, "uiName":"Front Output Shaft"}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_transfer_case", ["sdd_trx2_transmission","sdd_trx2_engine"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":18},
+         {"group":"sdd_trx2_transmission"},
+         ["tra2", -0.12000, -0.63845, 0.74494],
+         ["tra3", 0.18000, -0.63845, 0.74494],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":12600840,"beamDamp":390},
+          {"beamDeform":99750,"beamStrength":"FLT_MAX"},
+          ["tra2","tra1"],
+
+          ["tra2","e1r"],
+          ["tra2","e1l"],
+          ["tra2","e3r"],
+          ["tra2","e3l"],
+
+          ["tra3","e1r"],
+          ["tra3","e1l"],
+          ["tra3","e3r"],
+          ["tra3","e3l"],
+
+          ["tra3","tra2"],
+          ["tra3","tra1"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transfer_case_4WD_f150": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"F150 Transfer Case",
+        "value":1650,
+    },
+    "slotType" : "sdd_trx2_transfer_case",
+    "controller": [
+        ["fileName"],
+        ["driveModes", {"name":"transfercaseControl"}]
+        ["4wd", {"driveModesTransfercaseNames":["transfercaseControl"], "driveModesRangeNames":["transfercaseControl"]}]
+    ],
+
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["rangeBox", "rangebox", "gearbox", 1, {"uiSimpleModeControl":true, "gearRatios":[1,2.64], "uiName":"Rangebox"}],
+        //locked center diff
+        ["differential", "transfercase", "rangebox", 1, {"diffType":["lsd","locked"], "lsdPreload":150, "lsdLockCoef":0.15, "lsdRevLockCoef":0.075, "lockTorque":8000, "friction":0.44, "dynamicFriction":0.00048, "torqueLossCoef":0.012, "uiName":"Transfercase Differential", "defaultVirtualInertia":0.1}],
+        //disconnecting front shaft
+        ["shaft", "transfercase_F", "transfercase", 2, {"uiSimpleModeControl":true, "canDisconnect":true, "friction":0.44, "dynamicFriction":0.00048, "uiName":"AWD"}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_transfer_case", ["sdd_trx2_transmission","sdd_trx2_engine"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":18},
+         {"group":"sdd_trx2_transmission"},
+         ["tra2", -0.12000, -0.63845, 0.74494],
+         ["tra3", 0.18000, -0.63845, 0.74494],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":12600840,"beamDamp":390},
+          {"beamDeform":99750,"beamStrength":"FLT_MAX"},
+          ["tra2","tra1"],
+
+          ["tra2","e1r"],
+          ["tra2","e1l"],
+          ["tra2","e3r"],
+          ["tra2","e3l"],
+
+          ["tra3","e1r"],
+          ["tra3","e1l"],
+          ["tra3","e3r"],
+          ["tra3","e3l"],
+
+          ["tra3","tra2"],
+          ["tra3","tra1"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transfer_case_4WD_race": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"4WD Race Transfer Case",
+        "value":1850,
+    },
+    "slotType" : "sdd_trx2_transfer_case",
+    "controller": [
+        ["fileName"],
+        ["driveModes", {"name":"transfercaseControl"}]
+        ["4wd", {"driveModesTransfercaseNames":["transfercaseControl"], "driveModesRangeNames":["transfercaseControl"]}]
+    ],
+
+    "transfercaseControl":{
+        "uiName": "Transfercase"
+        "quickAccessTitle":"Transfercase"
+        "quickAccessIcon":"radial_highrangebox"
+        "quickAccessLevel":"/powertrain/"
+        "enabledModes":["2hi", "4hi", "4lo"]
+        "defaultMode": "4hi"
+        "modes": {
+            "2hi": {
+                "name": "2WD High Gear",
+                "order": 10,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"high"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"disconnected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"disconnected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"disconnected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":1}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_high-2", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_high-2"}]
+                ],
+            },
+            "4hi": {
+                "name": "4WD High Gear",
+                "order": 20,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"high"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"connected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":0.33}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_high-4", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_high-4"}]
+                ],
+            },
+            "4lo": {
+                "name": "4WD Low Gear",
+                "order": 30,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"low"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"connected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":-1}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_low-4", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_low-4"}]
+                ],
+            },
+        }
+    }
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["rangeBox", "rangebox", "gearbox", 1, {"uiSimpleModeControl":false, "gearRatios":[1,2.2], "uiName":"Rangebox"}],
+        //locked center diff
+        ["differential", "transfercase", "rangebox", 1, {"diffType":"locked", "lockTorque":8000, "friction":0.44, "dynamicFriction":0.00048, "torqueLossCoef":0.012, "uiName":"Transfer Case", "defaultVirtualInertia":0.1}],
+        //disconnecting front shaft
+        ["shaft", "transfercase_F", "transfercase", 2, {"uiSimpleModeControl":false, "canDisconnect":true, "friction":0.44, "dynamicFriction":0.00048, "uiName":"Front Output Shaft"}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_transfer_case", ["sdd_trx2_transmission","sdd_trx2_engine"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":18},
+         {"group":"sdd_trx2_transmission"},
+         ["tra2", -0.12, -0.78, 0.425],
+         ["tra3", 0.18, -0.78, 0.425],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":12600840,"beamDamp":390},
+          {"beamDeform":99750,"beamStrength":"FLT_MAX"},
+          ["tra2","tra1"],
+
+          ["tra2","e1r"],
+          ["tra2","e1l"],
+          ["tra2","e3r"],
+          ["tra2","e3l"],
+
+          ["tra3","e1r"],
+          ["tra3","e1l"],
+          ["tra3","e3r"],
+          ["tra3","e3l"],
+
+          ["tra3","tra2"],
+          ["tra3","tra1"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transfer_case_4WD_offroad": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"4WD Crawler Transfer Case",
+        "value":2950,
+    },
+    "slotType" : "sdd_trx2_transfer_case",
+    "controller": [
+        ["fileName"],
+        ["driveModes", {"name":"transfercaseControl"}]
+        ["4wd", {"driveModesTransfercaseNames":["transfercaseControl"], "driveModesRangeNames":["transfercaseControl"]}]
+    ],
+
+    "transfercaseControl":{
+        "uiName": "Transfercase"
+        "quickAccessTitle":"Transfercase"
+        "quickAccessIcon":"radial_highrangebox"
+        "quickAccessLevel":"/powertrain/"
+        "enabledModes":["2hi", "4hi", "4lo"]
+        "defaultMode": "4hi"
+        "modes": {
+            "2hi": {
+                "name": "2WD High Gear",
+                "order": 10,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"high"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"disconnected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"disconnected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"disconnected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":1}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_high-2", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_high-2"}]
+                ],
+            },
+            "4hi": {
+                "name": "4WD High Gear",
+                "order": 20,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"high"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"connected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":0.33}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_high-4", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_high-4"}]
+                ],
+            },
+            "4lo": {
+                "name": "4WD Low Gear",
+                "order": 30,
+                "settings": [
+                    ["type"]
+                    ["powertrainDeviceMode", {"deviceName":"rangebox", "mode":"low"}]
+                    ["powertrainDeviceMode", {"deviceName":"transfercase_F", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFR", "mode":"connected"}]
+                    ["powertrainDeviceMode", {"deviceName":"wheelaxleFL", "mode":"connected"}]
+                    ["electricsValue", {"electricsName":"transfercase_state", "value":-1}]
+                    ["simpleControlButton", {"buttonId":"transfercase", "icon":"powertrain_transfercase_low-4", "uiName":"Transfercase"}]
+                    ["quickAccess", {"icon":"powertrain_transfercase_low-4"}]
+                ],
+            },
+        }
+    }
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["rangeBox", "rangebox", "gearbox", 1, {"uiSimpleModeControl":false, "gearRatios":[1,4], "uiName":"Rangebox"}],
+        //locked center diff
+        ["differential", "transfercase", "rangebox", 1, {"diffType":"locked", "lockTorque":8000, "friction":0.55, "dynamicFriction":0.00059, "torqueLossCoef":0.012, "uiName":"Transfer Case", "defaultVirtualInertia":0.1}],
+        //disconnecting front shaft
+        ["shaft", "transfercase_F", "transfercase", 2, {"uiSimpleModeControl":false, "canDisconnect":true, "friction":0.55, "dynamicFriction":0.00059, "uiName":"Front Output Shaft"}],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        //added stabilization for one way clutch with ultra low range
+        "oneWayViscousCoef":20,
+        "oneWayViscousSmoothing":100,
+    },
+    "torqueConverter": {
+        "uiName":"Torque Converter",
+        //added stabilization for torque converter with ultra low range
+        "kFactorSmoothing":250,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_transfer_case", ["sdd_trx2_transmission","sdd_trx2_engine"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":18},
+         {"group":"sdd_trx2_transmission"},
+         ["tra2", -0.12, -0.78, 0.425],
+         ["tra3", 0.18, -0.78, 0.425],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":12600840,"beamDamp":390},
+          {"beamDeform":99750,"beamStrength":"FLT_MAX"},
+          ["tra2","tra1"],
+
+          ["tra2","e1r"],
+          ["tra2","e1l"],
+          ["tra2","e3r"],
+          ["tra2","e3l"],
+
+          ["tra3","e1r"],
+          ["tra3","e1l"],
+          ["tra3","e3r"],
+          ["tra3","e3l"],
+
+          ["tra3","tra2"],
+          ["tra3","tra1"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transfer_case_AWD": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"AWD Transfer Case",
+        "value":2650,
+    },
+    "slotType" : "sdd_trx2_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //lsd center diff
+        ["differential", "transfercase", "gearbox", 1, {"diffType":"lsd", "lsdPreload":50, "lsdLockCoef":0.15, "lsdRevLockCoef":0.15, "diffTorqueSplit":0.6, "friction":0.44, "dynamicFriction":0.00048, "torqueLossCoef":0.012, "uiName":"Center Differential", "defaultVirtualInertia":0.1, "speedLimitCoef":0.1}],
+        //non disconnecting front shaft
+        ["shaft", "transfercase_F", "transfercase", 2, {"friction":0.44, "dynamicFriction":0.00048, "uiName":"Front Output Shaft"}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_transfer_case", ["sdd_trx2_transmission","sdd_trx2_engine"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":18},
+         {"group":"sdd_trx2_transmission"},
+         ["tra2", -0.12, -0.78, 0.425],
+         ["tra3", 0.18, -0.78, 0.425],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":12600840,"beamDamp":390},
+          {"beamDeform":99750,"beamStrength":"FLT_MAX"},
+          ["tra2","tra1"],
+
+          ["tra2","e1r"],
+          ["tra2","e1l"],
+          ["tra2","e3r"],
+          ["tra2","e3l"],
+
+          ["tra3","e1r"],
+          ["tra3","e1l"],
+          ["tra3","e3r"],
+          ["tra3","e3l"],
+
+          ["tra3","tra2"],
+          ["tra3","tra1"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_transfer_case_RWD": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"RWD Transfer Case",
+        "value":200,
+    },
+    "slotType" : "sdd_trx2_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //straight through shaft
+        ["shaft", "transfercase", "gearbox", 1, {"friction":0.32, "dynamicFriction":0.000354, "uiName":"Rear Output Shaft"}],
+    ],
+},
+}

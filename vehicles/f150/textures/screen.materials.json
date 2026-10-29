@@ -1,0 +1,45 @@
+{
+  "sdd_trx2_screen": {
+    "name": "sdd_trx2_screen",
+    "mapTo": "sdd_trx2_screen",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "@sdd_trx2_screen",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveMap": "@sdd_trx2_screen",
+        "roughnessFactor": 0.493999988
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  }
+}

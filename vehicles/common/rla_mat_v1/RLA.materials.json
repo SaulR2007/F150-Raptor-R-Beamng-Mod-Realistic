@@ -1,0 +1,998 @@
+{
+  "RLA_Mat_Aluminium_Polished_v1.0": {
+    "name": "RLA_Mat_Aluminium_Polished_v1.0",
+    "mapTo": "RLA_Mat_Aluminium_Polished_v1.0",
+    "class": "Material",
+    "persistentId": "4bb6a218-b7f5-4f07-8fe7-a4880765e32a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.851918995,
+          0.851911008,
+          0.851911008,
+          1
+        ],
+        "metallicFactor": 0.898999989,
+        "roughnessFactor": 0.158000007
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Aluminium_v1.0": {
+    "name": "RLA_Mat_Aluminium_v1.0",
+    "mapTo": "RLA_Mat_Aluminium_v1.0",
+    "class": "Material",
+    "persistentId": "394f3e94-8be9-4616-b434-baaa2fac5502",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.817367017,
+          0.817358971,
+          0.817358971,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.388000011
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Black_Interior_v1.0": {
+    "name": "RLA_Mat_Black_Interior_v1.0",
+    "mapTo": "RLA_Mat_Black_Interior_v1.0",
+    "class": "Material",
+    "persistentId": "87d0469f-d292-4ab0-b65d-0d463d26901c",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.215170994,
+          0.215168998,
+          0.215168998,
+          1
+        ],
+        "roughnessFactor": 0.848999977
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Brass_v1.0": {
+    "name": "RLA_Mat_Brass_v1.0",
+    "mapTo": "RLA_Mat_Brass_v1.0",
+    "class": "Material",
+    "persistentId": "6597637e-6439-48f8-9af6-177a4a1728d2",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.710788012,
+          0,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.481999993
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Carbon_Fiber_v1.0": {
+    "name": "RLA_Mat_Carbon_Fiber_v1.0",
+    "mapTo": "RLA_Mat_Carbon_Fiber_v1.0",
+    "class": "Material",
+    "persistentId": "20a5300f-9486-4016-9ee8-00893fe61a3a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.619925976,
+          0.619920015,
+          0.619920015,
+          1
+        ],
+        "baseColorMap": "/vehicles/common/RLA_Mat_v1/CarbonFiber_BaseColor.png",
+        "metallicFactor": 1,
+        "roughnessFactor": 0.43900001
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Chrome_Rough_v1.0": {
+    "name": "RLA_Mat_Chrome_Rough_v1.0",
+    "mapTo": "RLA_Mat_Chrome_Rough_v1.0",
+    "class": "Material",
+    "persistentId": "e18fd8e4-9920-4489-8dfe-a7e4c2db8906",
+    "Stages": [
+      {
+        "metallicFactor": 1,
+        "roughnessFactor": 0.245000005
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Chrome_v1.0": {
+    "name": "RLA_Mat_Chrome_v1.0",
+    "mapTo": "RLA_Mat_Chrome_v1.0",
+    "class": "Material",
+    "persistentId": "973a8f1a-4ee3-40b4-ae93-9f1b26864c3f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Dark_Steel_v1.0": {
+    "name": "RLA_Mat_Dark_Steel_v1.0",
+    "mapTo": "RLA_Mat_Dark_Steel_v1.0",
+    "class": "Material",
+    "persistentId": "9c8a77ac-579f-48a4-a307-40c1385e859a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.358316004,
+          0.358312994,
+          0.358312994,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.504000008
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Gloss_Black_v1.0": {
+    "name": "RLA_Mat_Gloss_Black_v1.0",
+    "mapTo": "RLA_Mat_Gloss_Black_v1.0",
+    "class": "Material",
+    "persistentId": "d0ed5630-33ef-4ded-b610-3103f7d63afc",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-07,
+          9.99999997e-07,
+          9.99999997e-07,
+          1
+        ],
+        "roughnessFactor": 0.187000006
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Gloss_Red_v1.0": {
+    "name": "RLA_Mat_Gloss_Red_v1.0",
+    "mapTo": "RLA_Mat_Gloss_Red_v1.0",
+    "class": "Material",
+    "persistentId": "e84bc2a6-27a7-400a-98c3-3b5e74408fff",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.763071001,
+          0,
+          0,
+          1
+        ],
+        "roughnessFactor": 0.0860000029
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "RLA_Mat_Gloss_White_v1.0": {
+    "name": "RLA_Mat_Gloss_White_v1.0",
+    "mapTo": "RLA_Mat_Gloss_White_v1.0",
+    "class": "Material",
+    "persistentId": "c7b73dbb-bf62-4f27-8aa3-f2534e1258ff",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "roughnessFactor": 0.115000002
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "RLA_Mat_Gold_Rough_v1.0": {
+    "name": "RLA_Mat_Gold_Rough_v1.0",
+    "mapTo": "RLA_Mat_Gold_Rough_v1.0",
+    "class": "Material",
+    "persistentId": "88765d92-6f8e-4723-8219-ade4e004313d",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.886470973,
+          0.735112011,
+          0,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.388000011
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Gold_v1.0": {
+    "name": "RLA_Mat_Gold_v1.0",
+    "mapTo": "RLA_Mat_Gold_v1.0",
+    "class": "Material",
+    "persistentId": "f2f62e51-b42b-4f8e-9c0a-c501324bae4c",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.829253018,
+          0,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.165000007
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Black_v1.0": {
+    "name": "RLA_Mat_Plastic_Black_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Black_v1.0",
+    "class": "Material",
+    "persistentId": "d786c0db-412a-4631-8fed-48f3b32b8d82",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "roughnessFactor": 0.783999979
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Blue_v1.0": {
+    "name": "RLA_Mat_Plastic_Blue_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Blue_v1.0",
+    "class": "Material",
+    "persistentId": "5220646d-934d-452b-a773-99b1ecf5061a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0.289734989,
+          0.649541974,
+          1
+        ],
+        "roughnessFactor": 0.734000027
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Cyan_v1.0": {
+    "name": "RLA_Mat_Plastic_Cyan_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Cyan_v1.0",
+    "class": "Material",
+    "persistentId": "7111fefe-7d71-4251-80d4-5f3a550703dc",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0.802559018,
+          0.795530021,
+          1
+        ],
+        "roughnessFactor": 0.633000016
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Green_v1.0": {
+    "name": "RLA_Mat_Plastic_Green_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Green_v1.0",
+    "class": "Material",
+    "persistentId": "d95a4ef8-6649-4e6a-bb5f-dcc2c8ede09a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.154430002,
+          0.763071001,
+          0,
+          1
+        ],
+        "roughnessFactor": 0.704999983
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Orange_v1.0": {
+    "name": "RLA_Mat_Plastic_Orange_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Orange_v1.0",
+    "class": "Material",
+    "persistentId": "7f0a5e24-adc5-4d4c-8a84-96515c32fc63",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.950640023,
+          0.337853998,
+          0,
+          1
+        ],
+        "roughnessFactor": 0.690999985
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Pink_v1.0": {
+    "name": "RLA_Mat_Plastic_Pink_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Pink_v1.0",
+    "class": "Material",
+    "persistentId": "354229c5-9511-4e37-af7d-37c0cb17f414",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0,
+          0.965250015,
+          1
+        ],
+        "roughnessFactor": 0.748000026
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Purple_v1.0": {
+    "name": "RLA_Mat_Plastic_Purple_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Purple_v1.0",
+    "class": "Material",
+    "persistentId": "ac496fd7-cf3c-4c1a-a175-3861f75bc50f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.435007989,
+          0,
+          0.723582029,
+          1
+        ],
+        "roughnessFactor": 0.754999995
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Red_v1.0": {
+    "name": "RLA_Mat_Plastic_Red_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Red_v1.0",
+    "class": "Material",
+    "persistentId": "d81b8e50-0636-4b40-ba19-95d5be32774d",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.703837991,
+          0,
+          0,
+          1
+        ],
+        "roughnessFactor": 0.625999987
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_White_v1.0": {
+    "name": "RLA_Mat_Plastic_White_v1.0",
+    "mapTo": "RLA_Mat_Plastic_White_v1.0",
+    "class": "Material",
+    "persistentId": "c9071bfc-06de-460c-ae0c-d6e01070e30c",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "roughnessFactor": 0.734000027
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "RLA_Mat_Plastic_Yellow_v1.0": {
+    "name": "RLA_Mat_Plastic_Yellow_v1.0",
+    "mapTo": "RLA_Mat_Plastic_Yellow_v1.0",
+    "class": "Material",
+    "persistentId": "33048c33-6547-4702-8c4e-a22c16dc54b0",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.861791015,
+          0.816734016,
+          0,
+          1
+        ],
+        "roughnessFactor": 0.834999979
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Primary_v1.0": {
+    "name": "RLA_Mat_Primary_v1.0",
+    "mapTo": "RLA_Mat_Primary_v1.0",
+    "class": "Material",
+    "persistentId": "90bb3051-c932-40ef-b6d7-2bb7e713f401",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_aodata.dds",
+        "baseColorMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_bcolor.dds",
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_mdata.dds",
+        "normalMap": "vehicles/common/RLA_Mat/RLA_Mat_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_rdata.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_skin_metallic_uv1color.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "opacityMap": "/vehicles/common/RLA_Mat_v1/RLA_Mat_PBR_skin_odata.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Rubber_v1.0": {
+    "name": "RLA_Mat_Rubber_v1.0",
+    "mapTo": "RLA_Mat_Rubber_v1.0",
+    "class": "Material",
+    "persistentId": "8448c78e-9baa-4f5a-b8b4-35a72d490fef",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "roughnessFactor": 0.878000021
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Secondary_v1.0": {
+    "name": "RLA_Mat_Secondary_v1.0",
+    "mapTo": "RLA_Mat_Secondary_v1.0",
+    "class": "Material",
+    "persistentId": "2adbbfc6-37ce-4fca-a889-3ecbf4a7ecf0",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/null.dds",
+        "baseColorMap": "/vehicles/common/null.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/null.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormaskG.dds",
+        "detailMap": "/vehicles/common/null.dds",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/null.dds",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/common/null.dds",
+        "roughnessMap": "/vehicles/common/null.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Steel_v1.0": {
+    "name": "RLA_Mat_Steel_v1.0",
+    "mapTo": "RLA_Mat_Steel_v1.0",
+    "class": "Material",
+    "persistentId": "d0eafad6-4465-448f-bcc2-807f1c45deb1",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.590309978,
+          0.590304017,
+          0.590304017,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.504000008
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Tertiary_v1.0": {
+    "name": "RLA_Mat_Tertiary_v1.0",
+    "mapTo": "RLA_Mat_Tertiary_v1.0",
+    "class": "Material",
+    "persistentId": "82a2cfd1-ecf9-44c3-947e-ba252806f614",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/null.dds",
+        "baseColorMap": "/vehicles/common/null.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/null.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormask.dds",
+        "detailMap": "/vehicles/common/null.dds",
+        "detailNormalMap": "/vehicles/common/null_n.dds",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/null.dds",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/common/null.dds",
+        "roughnessMap": "/vehicles/common/null.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "version": 1.5
+  },
+  "RLA_Mat_White_Interior_v1.0": {
+    "name": "RLA_Mat_White_Interior_v1.0",
+    "mapTo": "RLA_Mat_White_Interior_v1.0",
+    "class": "Material",
+    "persistentId": "1b599520-14d3-430a-9521-819405730f53",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.77294302,
+          0.772934973,
+          0.772934973,
+          1
+        ],
+        "roughnessFactor": 0.848999977
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "RLA_Mat_Zero_Black_v1.0": {
+    "name": "RLA_Mat_Zero_Black_v1.0",
+    "mapTo": "RLA_Mat_Zero_Black_v1.0",
+    "class": "Material",
+    "persistentId": "d7dbbf9b-4df0-41bc-bd32-82b488c0ce8e",
+    "Stages": [
+      {
+        "diffuseColor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "doubleSided": true
+  }
+}

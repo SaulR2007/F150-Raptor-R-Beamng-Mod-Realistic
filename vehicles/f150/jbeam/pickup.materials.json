@@ -1,0 +1,42 @@
+{
+  "pickup_dark": {
+    "name": "pickup_dark",
+    "mapTo": "dark",
+    "class": "material",
+    "persistentId": "86fb8620-2eaa-46e5-8f48-641a9ccdb7f7",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.137254894,
+          0.137254894,
+          0.137254894,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "pickup_orange": {
+    "name": "pickup_orange",
+    "mapTo": "orange",
+    "class": "material",
+    "persistentId": "bc6d4f8e-26ba-47e2-8f77-8296bbc58019",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.623529375,
+          0.368627489,
+          0,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

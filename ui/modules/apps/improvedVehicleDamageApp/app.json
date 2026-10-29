@@ -1,0 +1,21 @@
+{
+  "domElement": "<improved-vehicle-damage-app></improved-vehicle-damage-app>",
+  "name": "Improved Vehicle Damage App",
+  "types": [
+    "ui.apps.categories.vehicle_info"
+  ],
+  "description": "Displays simple vehicle damage, visually.",
+  "css": {
+    "left": "0px",
+    "height": "300px",
+    "width": "158px",
+    "top": "0px"
+  },
+  "preserveAspectRatio": true,
+  "author": "The_Gamer6000",
+  "version": "4.0",
+  "directive": "improvedVehicleDamageApp",
+  "category": "Dashboard",
+  "isAuxiliary": false,
+  "interactive": "yes"
+}

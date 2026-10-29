@@ -1,0 +1,307 @@
+.bng-app.ford-control {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow: hidden;
+  color: #f4f4f4;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: #050505;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+
+.bng-app.ford-control.is-hidden {
+  display: none !important;
+}
+
+.bng-app.ford-control *,
+.bng-app.ford-control *::before,
+.bng-app.ford-control *::after {
+  box-sizing: border-box;
+}
+
+.bng-app.ford-control .shell {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 2px;
+}
+
+.bng-app.ford-control .side-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 64px;
+  flex: 0 0 64px;
+}
+
+.bng-app.ford-control .dial-stage {
+  position: relative;
+  width: 230px;
+  height: 180px;
+  flex: 0 0 230px;
+}
+
+.bng-app.ford-control .pad-wrap {
+  position: absolute;
+  left: 31px;
+  top: 6px;
+  width: 168px;
+  height: 168px;
+}
+
+.bng-app.ford-control button.side-arrow {
+  position: absolute !important;
+  top: 50% !important;
+  width: 28px !important;
+  height: 44px !important;
+  margin: -22px 0 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  line-height: 44px !important;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.bng-app.ford-control button.side-arrow.left { left: 0 !important; right: auto !important; }
+.bng-app.ford-control button.side-arrow.right { right: 0 !important; left: auto !important; }
+
+.ford-control button.side-arrow:hover {
+  color: #7ecbff !important;
+}
+
+.bezel {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 28%, #4a4a4a 0%, #1c1c1c 42%, #0a0a0a 100%);
+  box-shadow:
+    0 0 0 2px #c8c8c8,
+    0 0 0 3px #7a7a7a,
+    0 6px 14px rgba(0, 0, 0, 0.55);
+}
+
+.ford-control .arc-label {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  right: 28px;
+  z-index: 4;
+  pointer-events: none;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #f5f5f5;
+}
+
+.ford-control .cross {
+  inset: 20px;
+}
+
+.cross {
+  position: absolute;
+  inset: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #121212;
+  box-shadow: inset 0 0 0 1px #050505;
+}
+
+.pad-btn {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: #ececec;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background: linear-gradient(180deg, #333 0%, #1a1a1a 100%);
+}
+
+.pad-btn.north {
+  left: 25%;
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);
+  padding-bottom: 16px;
+}
+
+.pad-btn.south {
+  left: 25%;
+  bottom: 0;
+  clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%);
+  padding-top: 16px;
+}
+
+.pad-btn.west {
+  left: 0;
+  top: 25%;
+  clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  padding-right: 16px;
+}
+
+.pad-btn.east {
+  right: 0;
+  top: 25%;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 70%);
+  padding-left: 16px;
+}
+
+.pad-btn.active {
+  color: #7ecbff;
+  background: linear-gradient(180deg, #3d4c58 0%, #1b2730 100%);
+  text-shadow: 0 0 8px rgba(126, 203, 255, 0.7);
+}
+
+.hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 46px;
+  height: 46px;
+  margin: -23px 0 0 -23px;
+  border-radius: 50%;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #f2f2f2;
+  background: radial-gradient(circle at 50% 30%, #3d3d3d, #101010 72%);
+  box-shadow:
+    0 0 0 3px #161616,
+    0 0 0 4px #050505;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.bng-app.ford-control button.icon-btn {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #4a4a4a !important;
+  border-radius: 4px;
+  background-color: #1b1b1b !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 28px 22px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+  cursor: pointer;
+  font-size: 0 !important;
+}
+
+.bng-app.ford-control button.icon-btn.front,
+.bng-app.ford-control button.icon-btn.rear {
+  background-size: 26px 26px !important;
+}
+
+.bng-app.ford-control button.icon-btn.front {
+  background-image: url("/ui/modules/apps/fordControl/icon_front.png") !important;
+}
+
+.bng-app.ford-control button.icon-btn.rear {
+  background-image: url("/ui/modules/apps/fordControl/icon_rear.png") !important;
+}
+
+.bng-app.ford-control button.icon-btn.front.active {
+  background-image: url("/ui/modules/apps/fordControl/icon_front_on.png") !important;
+  border-color: #ffb347 !important;
+  box-shadow: 0 0 8px rgba(255, 179, 71, 0.35) !important;
+}
+
+.bng-app.ford-control button.icon-btn.rear.active {
+  background-image: url("/ui/modules/apps/fordControl/icon_rear_on.png") !important;
+  border-color: #ffb347 !important;
+  box-shadow: 0 0 8px rgba(255, 179, 71, 0.35) !important;
+}
+
+.bng-app.ford-control button.icon-btn.trail {
+  background-image: url("/ui/modules/apps/fordControl/icon_trail.png") !important;
+  background-size: 28px 22px !important;
+  color: #ffffff !important;
+  position: relative;
+}
+
+.bng-app.ford-control button.icon-btn.trail.active,
+.bng-app.ford-control .trail-stack.active button.icon-btn.trail {
+  background-image: none !important;
+  background-color: #1b1b1b !important;
+  border-color: #7ecbff !important;
+  box-shadow: none !important;
+}
+
+.bng-app.ford-control button.icon-btn.trail .trail-spd {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  line-height: 42px !important;
+  color: #ffffff !important;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.bng-app.ford-control button.icon-btn.cam {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 24'><path d='M3 20l7-7 4 3 6-7 9 11' stroke='white' stroke-width='1.6' fill='none'/><rect x='8' y='4' width='16' height='11' rx='2' stroke='white' stroke-width='1.6' fill='none'/><circle cx='16' cy='9.5' r='2.3' stroke='white' stroke-width='1.4' fill='none'/><path d='M20 4l2-2h4l-2 2' stroke='white' stroke-width='1.4' fill='none'/></svg>") !important;
+}
+
+.bng-app.ford-control .trail-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 56px;
+}
+
+.bng-app.ford-control .step-row {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  width: 100%;
+}
+
+.bng-app.ford-control button.nudge {
+  flex: 1 1 0;
+  width: auto !important;
+  height: 22px !important;
+  min-height: 0 !important;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #4a4a4a !important;
+  border-radius: 3px;
+  background: #1b1b1b !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 700;
+  line-height: 20px !important;
+  cursor: pointer;
+}

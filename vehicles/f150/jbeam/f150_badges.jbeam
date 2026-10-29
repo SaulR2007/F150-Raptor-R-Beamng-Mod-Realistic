@@ -1,0 +1,16 @@
+{
+"sdd_trx2_badges": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"TRX Badges",
+        "value":500,
+    },
+    "slotType" : "sdd_trx2_badges",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_trx2_badge_tailgate", ["sdd_trx2_tailgate"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}}],
+		 ["sdd_trx2_badge_door_FR", ["sdd_trx2_door_FR"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}}],
+		 ["sdd_trx2_badge_door_FL", ["sdd_trx2_door_FL"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}}],
+    ],
+},
+}

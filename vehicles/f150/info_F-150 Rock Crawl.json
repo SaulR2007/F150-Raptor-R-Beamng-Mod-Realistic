@@ -1,0 +1,13 @@
+{
+    "Config Type":  "Off-Road",
+    "Configuration":  "F-150 Rock Crawl",
+    "Description":  "Crawler-leaning setup using the off-road drive-mode pack (defaults Off-Road; Rock Crawl available). Shorter finals and a bit more ride height for technical trails. No hitch clutter.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "SC",
+    "Performance Class":  "4",
+    "Population":  90,
+    "Value":  96000,
+    "defaultPaintName1":  "Matte Dune"
+}

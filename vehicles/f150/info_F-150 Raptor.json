@@ -1,0 +1,13 @@
+{
+    "Config Type":  "Factory",
+    "Configuration":  "F-150 Raptor",
+    "Description":  "Factory Raptor baseline. Full AdvanceTrac mode list (Slippery through Rock Crawl), Trail Control UI, speed-limited 10-speed SelectShift.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "SC",
+    "Performance Class":  "4",
+    "Population":  500,
+    "Value":  89900,
+    "defaultPaintName1":  "Sea Blue"
+}

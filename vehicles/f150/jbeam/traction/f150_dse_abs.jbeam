@@ -1,0 +1,63 @@
+{
+    "sdd_trx2_ABS_f150": {
+        "information":{
+            "authors":"The_Gamer6000",
+            "name":"F150 Anti-Lock Braking System",
+            "value":250,
+        },
+        "slotType" : "sdd_trx2_ABS",
+
+        "brakeControl": {
+            "useForABS": true,
+            "useForTractionControl": true,
+            "absControl": {
+                "wheelSettings":[
+                    ["wheelName",   "slipThreshold",    "absFrequency", "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef",  "minSteeringCoef",  "steeringCoefYawRate"   ],
+                    ["FL",          0.04,               100,            5.00,   0.50,   0.10,   200,                80,                 1,                  0.2                     ],
+                    ["FR",          0.04,               100,            5.00,   0.50,   0.10,   200,                80,                 1,                  0.2                     ],
+                    ["RL",          0.04,               100,            5.00,   0.50,   0.10,   200,                80,                 0.1,                0.2                     ],
+                    ["RR",          0.04,               100,            5.00,   0.50,   0.10,   200,                80,                 0.1,                0.2                     ],
+                ]
+            }
+        },
+
+        "controller": [
+            ["fileName"],
+            ["trailerAbsSync", {
+                "enableTrailerAbsSync": true,
+                "absFrequency": 100,
+                "slipRatioTarget": 0.12,
+                "absBehavior": "realistic"
+            }],
+        ],
+
+        "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            {"enableABS":true},
+        ],
+    },
+    "sdd_trx2_ABS": {
+        "information":{
+            "authors":"The_Gamer6000",
+            "name":"Anti-Lock Braking System",
+            "value":250,
+        },
+        "slotType" : "sdd_trx2_ABS",
+
+        "controller": [
+            ["fileName"],
+            ["trailerAbsSync", {
+                "enableTrailerAbsSync": true,
+                "absFrequency": 100,
+                "slipRatioTarget": 0.12,
+                "absBehavior": "realistic"
+            }],
+        ],
+
+        "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+            {"enableABS":true},
+        ],
+    },
+}

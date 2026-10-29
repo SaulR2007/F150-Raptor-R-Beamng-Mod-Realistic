@@ -1,0 +1,13 @@
+{
+    "Config Type":  "Off-Road",
+    "Configuration":  "F-150 Baja",
+    "Description":  "Desert race trim. Drive mode is Baja only (ESC/TCS off, locked transfer case, Baja springs). Softened suspension and boards removed for travel. Speed-limited gearbox for stock top end.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "SC",
+    "Performance Class":  "5",
+    "Population":  120,
+    "Value":  105000,
+    "defaultPaintName1":  "Flame Orange"
+}

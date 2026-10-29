@@ -1,0 +1,483 @@
+{
+    "sdd_trx2_drivemodes_f150": {
+        "information":{
+            "authors":"Saul D Rogers",
+            "name":"F150 AdvanceTrac",
+            "value":250,
+        },
+        "slotType" : "sdd_trx2_drivemodes",
+        "slots":[
+            ["type", "default", "description"],
+            //["sdd_trx2_drivemodes_tow","sdd_trx2_drivemodes_tow", "Hall Drive Mode"],
+        ]
+
+        "controller": [
+            ["fileName"],
+            ["driveModes", "driveModes.lua"],
+            ["dseReapply", "dseReapply.lua"],
+        ],
+
+        "driveModes": {
+            "enabledModes":["slippery", "tow", "sport", "comfort", "offroad", "sand", "baja", "rock crawl"],
+            "defaultMode": "comfort",
+            "defaultSettings": [
+                ["type"],
+                ["exhaust", {"name": "mainEngine", "mufflingOffset": -0.25, "gainOffset": 1.0}],
+                ["transmission", {"defaultForwardMode": "D"}],
+                ["controller", {"controllerName":"activeRearSpring", "springMode":"normal"}],
+                ["controller", {"controllerName":"activeFrontSpring", "springMode":"normal"}],
+            ],
+            "modes": {
+                "slippery": {
+                    "name": "Slippery",
+                    "order": 10,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.05,
+                            "tractionControl.wheelGroupSettings.mainEngine.minimumThrottleLimit": 0.0002,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.06,
+                            "yawControl.yawAvThreshold": 0.5
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.012,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.008,
+                            "yawControl.yawAvThreshold": 0.6
+                        }],
+                        ["controller", {"controllerName":"awdControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.03,
+                        }],
+                        ["controller", {"controllerName":"diffControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.openRearDiffOversteerThresholdMin":0.02,
+                            "yawControl.openRearDiffOversteerThresholdMax":0.1,
+
+                            "yawControl.lockableFrontDiffOversteerThresholdMin":0.02,
+                            "yawControl.lockableFrontDiffOversteerThresholdMax":0.2,
+                            "yawControl.lockableRearDiffOversteerThresholdMin":0.02,
+                            "yawControl.lockableRearDiffOversteerThresholdMax":0.2,
+                        }],
+                        ["controller", {"controllerName":"aeroControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                        }],
+                        
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "Slippery",
+                            "modeColor": "#001f53ff",
+                            "page": "time",
+                            "dseLights":{
+                                "esc":"#001f53ff",
+                                "tcs":"#001f53ff",
+                                "powertrain":"#001f53ff",
+                                "suspension":"#001f53ff"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"001f53ff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "tow": {
+                    "name": "Tow / Hall",
+                    "order": 20,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.2,
+                            "tractionControl.wheelGroupSettings.mainEngine.minimumThrottleLimit": 0.2,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.1,
+                            "yawControl.yawAvThreshold": 0.6
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.15,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.12,
+                            "yawControl.yawAvThreshold": 0.7
+                        }],
+                        ["controller", {"controllerName":"awdControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.07,
+                        }],
+                        ["controller", {"controllerName":"diffControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.openRearDiffOversteerThresholdMin":0.05,
+                            "yawControl.openRearDiffOversteerThresholdMax":0.1,
+
+                            "yawControl.lockableFrontDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableFrontDiffOversteerThresholdMax":0.2,
+                            "yawControl.lockableRearDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableRearDiffOversteerThresholdMax":0.2,
+                        }],
+                        ["controller", {"controllerName":"aeroControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                        }],
+
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "TOW",
+                            "modeColor": "#415266ff",
+                            "page": "gmeter",
+                            "dseLights":{
+                                "esc":"#415266ff",
+                                "tcs":"#415266ff",
+                                "powertrain":"#415266ff",
+                                "suspension":"#415266ff"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"415266ff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "sport": {
+                    "name": "Sport",
+                    "order": 30,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.6,
+                            "tractionControl.wheelGroupSettings.mainEngine.minimumThrottleLimit": 0.6,
+
+                            "yawControl.isEnabled":false,
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.45,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.6,
+                            "yawControl.yawAvThreshold": 2.1
+                        }],
+                        ["controller", {"controllerName":"awdControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.3,
+                        }],
+                        ["controller", {"controllerName":"diffControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.openRearDiffOversteerThresholdMin":0.15,
+                            "yawControl.openRearDiffOversteerThresholdMax":0.3,
+
+                            "yawControl.lockableFrontDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableFrontDiffOversteerThresholdMax":0.2,
+                            "yawControl.lockableRearDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableRearDiffOversteerThresholdMax":0.2,
+                        }],
+                        ["controller", {"controllerName":"aeroControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.6,
+                        }],
+
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "Sport",
+                            "modeColor": "#fb0003",
+                            "page": "tires",
+                            "dseLights":{
+                                "esc":"#fb0003",
+                                "tcs":"#fb0003",
+                                "powertrain":"#fb0003",
+                                "suspension":"#fb0003"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"FB0003", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "comfort": {
+                    "name": "Normal",
+                    "order": 40,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.2,
+                            "tractionControl.wheelGroupSettings.mainEngine.minimumThrottleLimit": 0.2,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.1,
+                            "yawControl.yawAvThreshold": 0.6
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.15,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.12,
+                            "yawControl.yawAvThreshold": 0.7
+                        }],
+                        ["controller", {"controllerName":"awdControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.07,
+                        }],
+                        ["controller", {"controllerName":"diffControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.openRearDiffOversteerThresholdMin":0.05,
+                            "yawControl.openRearDiffOversteerThresholdMax":0.1,
+
+                            "yawControl.lockableFrontDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableFrontDiffOversteerThresholdMax":0.2,
+                            "yawControl.lockableRearDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableRearDiffOversteerThresholdMax":0.2,
+                        }],
+                        ["controller", {"controllerName":"aeroControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                        }],
+
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "NORMAL",
+                            "modeColor": "#0253afff",
+                            "page": "gmeter",
+                            "dseLights":{
+                                "esc":"#0253afff",
+                                "tcs":"#0253afff",
+                                "powertrain":"#0253afff",
+                                "suspension":"#0253afff"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"0253afff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "offroad": {
+                    "name": "Off-Road",
+                    "order": 50,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.1,
+                            "tractionControl.wheelGroupSettings.mainEngine.minimumThrottleLimit": 0.2,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.05,
+                            "yawControl.yawAvThreshold": 0.4
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.15,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.08,
+                            "yawControl.yawAvThreshold": 0.5
+                        }],
+                        ["controller", {"controllerName":"awdControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.1,
+                        }],
+                        ["controller", {"controllerName":"diffControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.openRearDiffOversteerThresholdMin":0,
+                            "yawControl.openRearDiffOversteerThresholdMax":0.1,
+
+                            "yawControl.lockableFrontDiffOversteerThresholdMin":0,
+                            "yawControl.lockableFrontDiffOversteerThresholdMax":0.2,
+                            "yawControl.lockableRearDiffOversteerThresholdMin":0,
+                            "yawControl.lockableRearDiffOversteerThresholdMax":0.2,
+                        }],
+                        ["controller", {"controllerName":"aeroControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                        }],
+
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "Off-Road",
+                            "modeColor": "#9dd1bdff",
+                            "page": "time",
+                            "dseLights":{
+                                "esc":"#9dd1bdff",
+                                "tcs":"#9dd1bdff",
+                                "powertrain":"#9dd1bdff",
+                                "suspension":"#9dd1bdff"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"9dd1bdff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "sand": {
+                    "name": "Sand",
+                    "order": 60,
+                    "settings": [
+                        ["type"]
+                         //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "yawControl.isEnabled":false,
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                            "yawControl.yawAvThreshold": 999
+                        }],
+                        ["controller", {"controllerName":"awdControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold":0.3,
+                        }],
+                        ["controller", {"controllerName":"diffControl",
+                            "yawControl.isEnabled":false,
+                        }],
+                        ["controller", {"controllerName":"aeroControl",
+                            "yawControl.isEnabled":false,
+                        }],
+
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "Sand",
+                            "modeColor": "#d1ce00ff",
+                            "page": "text",
+                            "dseLights":{
+                                "esc":"#d1ce00ff",
+                                "tcs":"#d1ce00ff",
+                                "powertrain":"#d1ce00ff",
+                                "suspension":"#d1ce00ff"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"d1ce00ff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "baja": {
+                    "name": "Baja",
+                    "order": 70,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":false}]
+
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "Baja",
+                            "modeColor": "#ce7f17ff",
+                            "page": "text",
+                            "dseLights":{
+                                "esc":"#ce7f17ff",
+                                "tcs":"#ce7f17ff",
+                                "powertrain":"#ce7f17ff",
+                                "suspension":"#ce7f17ff"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"ce7f17ff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "rock crawl": {
+                    "name": "Rock Crawl",
+                    "order": 80,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.2,
+                            "tractionControl.wheelGroupSettings.mainEngine.minimumThrottleLimit": 0.2,
+
+                            "yawControl.isEnabled":false,
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.15,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                            "yawControl.yawAvThreshold": 0.7
+                        }],
+                        ["controller", {"controllerName":"awdControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.1,
+                        }],
+                        ["controller", {"controllerName":"diffControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.openRearDiffOversteerThresholdMin":0.05,
+                            "yawControl.openRearDiffOversteerThresholdMax":0.1,
+
+                            "yawControl.lockableFrontDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableFrontDiffOversteerThresholdMax":0.2,
+                            "yawControl.lockableRearDiffOversteerThresholdMin":0.05,
+                            "yawControl.lockableRearDiffOversteerThresholdMax":0.2,
+                        }],
+                        ["controller", {"controllerName":"aeroControl",
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                        }],
+
+                        //UI & Gauges
+                        ["controller", {"controllerName":"gauge",
+                            "modeName": "Rock Crawl",
+                            "modeColor": "#642d00ff",
+                            "page": "tires",
+                            "dseLights":{
+                                "esc":"#642d00ff",
+                                "tcs":"#642d00ff",
+                                "powertrain":"#642d00ff",
+                                "suspension":"#642d00ff"
+                            }
+                        }]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"642d00ff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],                
+                },
+            },
+        },
+    },
+    //"sdd_trx2_drivemodes_tow": {
+    //    "information":{
+    //        "authors":"Diamondback",
+    //        "name":"Hall Mode",
+    //        "value":500,
+    //    },
+    //    "slotType" : "sdd_trx2_drivemodes_tow",
+    //    
+    //    "driveModes": {
+    //        "enabledModes_drift":["tow"]
+    //    }
+    //},
+
+    //"sdd_trx2_drivemodes_heavytow": {
+    //    "information":{
+    //        "authors":"Diamondback",
+    //        "name":"Heavy Hall Mode",
+    //        "value":500,
+    //    },
+    //    "slotType" : "sdd_trx2_drivemodes_tow",
+    //
+    //    "driveModes": {
+    //        "enabledModes_track":["heavytow"]
+    //    }
+    //},
+
+}

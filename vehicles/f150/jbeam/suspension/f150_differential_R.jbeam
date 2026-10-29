@@ -1,0 +1,256 @@
+{
+"sdd_trx2_differential_R": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Open Rear Differential",
+        "value":450,
+    },
+    "slotType" : "sdd_trx2_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        //["sdd_trx2_driveshaft_R","sdd_trx2_driveshaft_R","Rear Driveshaft"],
+        ["sdd_trx2_finaldrive_R","sdd_trx2_finaldrive_R_355", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear diff
+        ["differential", "differential_R", "driveshaft", 1, {"diffType":"open", "uiName":"Rear Differential","defaultVirtualInertia":0.5}],
+    ],
+    "differential_R": {
+        "friction": 6.6,
+        "dynamicFriction": 0.00311,
+        "torqueLossCoef": 0.03,
+    },
+},
+"sdd_trx2_differential_R_LSD": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Limited Slip Rear Differential",
+        "value":750,
+    },
+    "slotType" : "sdd_trx2_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        //["sdd_trx2_driveshaft_R","sdd_trx2_driveshaft_R","Rear Driveshaft"],
+        ["sdd_trx2_finaldrive_R","sdd_trx2_finaldrive_R_355", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear diff
+        ["differential", "differential_R", "driveshaft", 1, {"diffType":"lsd", "lsdPreload":150, "lsdLockCoef":0.15, "lsdRevLockCoef":0.075, "uiName":"Rear Differential","defaultVirtualInertia":0.5}],
+    ],
+    "differential_R": {
+        "friction": 6.6,
+        "dynamicFriction": 0.00311,
+        "torqueLossCoef": 0.03,
+    },
+},
+"sdd_trx2_differential_R_heavy_LSD": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Heavy Duty Limited Slip Rear Differential",
+        "value":850,
+    },
+    "slotType" : "sdd_trx2_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        //["sdd_trx2_driveshaft_R","sdd_trx2_driveshaft_R","Rear Driveshaft"],
+        ["sdd_trx2_finaldrive_R","sdd_trx2_finaldrive_R_355", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear diff
+        ["differential", "differential_R", "driveshaft", 1, {"diffType":"lsd", "lsdPreload":250, "lsdLockCoef":0.2, "lsdRevLockCoef":0.2, "uiName":"Rear Differential","defaultVirtualInertia":0.5}],
+    ],
+    "differential_R": {
+        "friction": 4.95,
+        "dynamicFriction": 0.00218,
+        "torqueLossCoef": 0.03,
+    },
+},
+"sdd_trx2_differential_R_welded": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Welded Rear Differential",
+        "value":450,
+    },
+    "slotType" : "sdd_trx2_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        //["sdd_trx2_driveshaft_R","sdd_trx2_driveshaft_R","Rear Driveshaft"],
+        ["sdd_trx2_finaldrive_R","sdd_trx2_finaldrive_R_355", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear diff
+        ["differential", "differential_R", "driveshaft", 1, {"diffType":"locked", "lockTorque":10000, "uiName":"Rear Differential","defaultVirtualInertia":0.5}],
+    ],
+    "differential_R": {
+        "friction": 6.6,
+        "dynamicFriction": 0.00311,
+        "torqueLossCoef": 0.03,
+    },
+},
+"sdd_trx2_differential_R_locking": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Locking Rear Differential",
+        "value":950,
+    },
+    "slotType" : "sdd_trx2_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        //["sdd_trx2_driveshaft_R","sdd_trx2_driveshaft_R","Rear Driveshaft"],
+        ["sdd_trx2_finaldrive_R","sdd_trx2_finaldrive_R_355", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear diff
+        ["differential", "differential_R", "driveshaft", 1, {"diffType":["open","locked"], "lockTorque":20000, "uiName":"Rear Differential","defaultVirtualInertia":0.5}],
+    ],
+    "differential_R": {
+        "friction": 6.6,
+        "dynamicFriction": 0.00311,
+        "torqueLossCoef": 0.03,
+    },
+},
+"sdd_trx2_differential_R_locking_f150": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"F150 Raptor R Locking Rear Differential",
+        "value":950,
+    },
+    "slotType" : "sdd_trx2_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear diff
+        ["differential", "differential_R", "driveshaft", 1, {"diffType":["open","locked"], "lockTorque":20000, "uiName":"Rear Differential","defaultVirtualInertia":0.5}],
+    ],
+    "differential_R": {
+        "friction": 6.6,
+        "dynamicFriction": 0.00311,
+        "torqueLossCoef": 0.03,
+        "gearRatio":4.10,
+    },
+},
+"sdd_trx2_finaldrive_R_355": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"3.55:1 Rear Final Drive",
+        "value":150,
+    },
+
+    "slotType" : "sdd_trx2_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.55,
+    },
+},
+"sdd_trx2_finaldrive_R_410": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"4.10:1 Rear Final Drive",
+        "value":150,
+    },
+
+    "slotType" : "sdd_trx2_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":4.10,
+    },
+},
+"sdd_trx2_finaldrive_R_444": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"4.44:1 Rear Final Drive",
+        "value":150,
+    },
+
+    "slotType" : "sdd_trx2_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":4.44,
+    },
+},
+"sdd_trx2_finaldrive_R_race": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Race Adjustable Rear Final Drive",
+        "value":750,
+    },
+
+    "slotType" : "sdd_trx2_finaldrive_R",
+
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$finaldrive_R", "range", ":1", "Differentials", 4.10, 2.0, 6.0, "Final Drive Gear Ratio", "Torque multiplication ratio", {"subCategory":"Rear", "stepDis":0.01}],
+    ],
+
+    "differential_R" : {
+        "gearRatio":"$finaldrive_R",
+    },
+},
+"sdd_trx2_driveshaft_R_crew": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Crew Rear Driveshaft",
+        "value":580,
+    },
+    "slotType" : "sdd_trx2_driveshaft_R_crew",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear driveshaft
+        ["torsionReactor", "torsionReactorR", "transfercase", 1, {}],
+        ["shaft", "driveshaft", "torsionReactorR", 1, {"breakTriggerBeam":"driveshaft", "uiName":"Rear Driveshaft", "electricsName":"driveshaft", "friction":0.519, "dynamicFriction": 0.00112}],
+    ],
+    "torsionReactorR": {
+        "torqueReactionNodes:":["e1l","e2l","e4r"],
+    },
+    "props": [
+        ["func",       "mesh",                 "idRef:","idX:","idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier",],
+        ["driveshaft", "sdd_trx2_driveshaft_crew","ax3r","ax3l", "tra1",  {"x":-88.2, "y":0, "z":0}, {"x":0, "y":1, "z":0}, {"x":0.0, "y":0.0, "z":0.0}, -360, 360, 0, 1, {"breakGroup":"driveshaft","deformGroup":"driveshaft","optional":true}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //driveshaft
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.075, "beamShortBound":0.075},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":3535,"beamStrength":4599},
+          {"beamLimitSpring":10001000,"beamLimitDamp":1000},
+          ["ax3","tra1", {"name":"driveshaft","optional":true,"breakGroup":"driveshaft","deformGroup":"driveshaft"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sdd_trx2_driveshaft_R": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Rear Driveshaft",
+        "value":580,
+    },
+    "slotType" : "sdd_trx2_driveshaft_R",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear driveshaft
+        ["torsionReactor", "torsionReactorR", "transfercase", 1, {}],
+        ["shaft", "driveshaft", "torsionReactorR", 1, {"breakTriggerBeam":"driveshaft", "uiName":"Rear Driveshaft", "electricsName":"driveshaft", "friction":0.519, "dynamicFriction": 0.00112}],
+    ],
+    "torsionReactorR": {
+        "torqueReactionNodes:":["e1l","e2l","e4r"],
+    },
+    "props": [
+        ["func",       "mesh",                 "idRef:","idX:","idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier",],
+        ["driveshaft", "sdd_trx2_driveshaft","ax3r","ax3l", "tra1",  {"x":-88.2, "y":0, "z":0}, {"x":0, "y":1, "z":0}, {"x":0.0, "y":0.0, "z":0.0}, -360, 360, 0, 1, {"breakGroup":"driveshaft","deformGroup":"driveshaft","optional":true}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //driveshaft
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.075, "beamShortBound":0.075},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":3535,"beamStrength":4599},
+          {"beamLimitSpring":10001000,"beamLimitDamp":1000},
+          ["ax3","tra1", {"name":"driveshaft","optional":true,"breakGroup":"driveshaft","deformGroup":"driveshaft"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

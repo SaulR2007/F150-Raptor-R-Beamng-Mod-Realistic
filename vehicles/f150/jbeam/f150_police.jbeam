@@ -1,0 +1,186 @@
+{
+"sdd_trx2_policelights": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Red and Blue Police Lights",
+        "value":130,
+    },
+    "slotType" : "sdd_trx2_policelights",
+	    "slots": [
+        ["type", "default", "description"],
+        ["soundscape_siren","soundscape_siren_21", "Siren Audio"]
+    ],
+    "soundscape": [
+        ["name", "src"],
+        //affects siren location because siren soundscape part is loaded after
+        {"node:":"f6r"}
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["trx_bumperlightbar_rb", "sdd_trx2_bumper_R"],
+		["trx_frontlightbar_rb", "sdd_trx2_valance"],
+		["trx_lightbar_rb", "sdd_trx2_body"],
+		["trx_rearlightbar_rb", "sdd_trx2_body"],
+    ],
+    "controller": [
+        ["fileName"],
+        ["lightbar", {
+            "defaultModeIndex": 1,
+            "modes": [
+                ["name", "config"],
+                ["Chase", [
+                    ["electric", "value", "duration"],
+
+
+                        ["blue_4", 1, 0.2],
+                        ["blue_4", 0, 0.1],
+                        ["blue_4", 1, 0.05],
+                        ["blue_4", 0, 0.1],
+                        ["blue_4", 1, 0.05],
+                        ["blue_4", 0, 0.2],
+
+                        ["red_4", 0, 0.1],
+                        ["red_4", 1, 0.1],
+                        ["red_4", 0, 0.1],
+                        ["red_4", 1, 0.3],
+
+                    ]
+                ]
+            ]
+        }]
+    ],
+    "glowMap":{
+            "police_flasher_led_L":                   {"simpleFunction":"blue_4", "off":"sdd_trx2_flashers_blue", "on":"sdd_trx2_flashers_blue_on"},
+            "police_flasher_led_R":                   {"simpleFunction":"red_4", "off":"sdd_trx2_flashers_red", "on":"sdd_trx2_flashers_red_on"},
+    },
+    "props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":100,
+            "lightBrightness":0.8,
+            "lightRange":15,
+            "lightColor":{"r":0, "g":0, "b":255, "a":250}
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        ["blue_4"    , "SPOTLIGHT"        , "g1","g1r", "g3", {"x":-65, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":-0.2, "z":-0.03},"deformGroup":"grille_M"}],
+        ["blue_4"    , "SPOTLIGHT"        , "tb1r","tb1", "p9r", {"x":70, "y":-180, "z":180} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.55, "y":0.30, "z":0.02},"deformGroup":"backlight_break"}],
+        {
+            "lightBrightness":0.6,
+            "lightColor":{"r":255, "g":0, "b":0, "a":250}
+        },
+        ["red_4"    , "SPOTLIGHT"        , "g1","g1l", "g3", {"x":-65, "y":0, "z":180} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":-0.2, "z":0.03},"deformGroup":"grille_M"}],
+        ["red_4"    , "SPOTLIGHT"        , "tb1l","tb1", "p9l", {"x":70, "y":-180, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.55, "y":0.30, "z":-0.02},"deformGroup":"backlight_break"}],
+		
+    ],
+},
+"sdd_trx2_policelights_2": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Blue and White Police Lights",
+        "value":130,
+    },
+    "slotType" : "sdd_trx2_policelights",
+	    "slots": [
+        ["type", "default", "description"],
+        ["soundscape_siren","soundscape_siren_21", "Siren Audio"]
+    ],
+    "soundscape": [
+        ["name", "src"],
+        //affects siren location because siren soundscape part is loaded after
+        {"node:":"f6r"}
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["trx_bumperlightbar_bw", "sdd_trx2_bumper_R"],
+		["trx_frontlightbar_bw", "sdd_trx2_valance"],
+		["trx_lightbar_bw", "sdd_trx2_body"],
+		["trx_rearlightbar_bw", "sdd_trx2_body"],
+    ],
+    "controller": [
+        ["fileName"],
+        ["lightbar", {
+            "defaultModeIndex": 1,
+            "modes": [
+                ["name", "config"],
+                ["Chase", [
+                    ["electric", "value", "duration"],
+
+
+                        ["blue_4", 1, 0.2],
+                        ["blue_4", 0, 0.1],
+                        ["blue_4", 1, 0.05],
+                        ["blue_4", 0, 0.1],
+                        ["blue_4", 1, 0.05],
+                        ["blue_4", 0, 0.2],
+
+                        ["white_4", 0, 0.1],
+                        ["white_4", 1, 0.1],
+                        ["white_4", 0, 0.1],
+                        ["white_4", 1, 0.3],
+
+                    ]
+                ]
+            ]
+        }]
+    ],
+    "glowMap":{
+            "police_flasher_led_L":                   {"simpleFunction":"blue_4", "off":"sdd_trx2_flashers_blue", "on":"sdd_trx2_flashers_blue_on"},
+            "police_flasher_led_R_2":                   {"simpleFunction":"white_4", "off":"sdd_trx2_flashers_white", "on":"sdd_trx2_flashers_white_on"},
+    },
+    "props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":100,
+            "lightBrightness":0.8,
+            "lightRange":15,
+            "lightColor":{"r":0, "g":0, "b":255, "a":250}
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        ["blue_4"    , "SPOTLIGHT"        , "g1","g1r", "g3", {"x":-65, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":-0.2, "z":-0.03},"deformGroup":"grille_M"}],
+        ["blue_4"    , "SPOTLIGHT"        , "tb1r","tb1", "p9r", {"x":70, "y":-180, "z":180} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.55, "y":0.30, "z":0.02},"deformGroup":"backlight_break"}],
+        {
+            "lightBrightness":0.6,
+            "lightColor":{"r":255, "g":0, "b":0, "a":250}
+        },
+        ["red_4"    , "SPOTLIGHT"        , "g1","g1l", "g3", {"x":-65, "y":0, "z":180} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":-0.2, "z":0.03},"deformGroup":"grille_M"}],
+        ["red_4"    , "SPOTLIGHT"        , "tb1l","tb1", "p9l", {"x":70, "y":-180, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.55, "y":0.30, "z":-0.02},"deformGroup":"backlight_break"}],
+		
+    ],
+},
+"sdd_trx2_police": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Police Interior",
+        "value":400,
+    },
+    "slotType" : "sdd_trx2_police",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_police", ["sdd_trx2_body"], [], {"pos":{"x": 0, "y":0, "z":0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ],
+},
+"sdd_trx2_windowbar": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Rear Window Bar",
+        "value":400,
+    },
+    "slotType" : "sdd_trx2_windowbar",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["sdd_trx2_windowbar", ["sdd_trx2_body"], [], {"pos":{"x": 0, "y":0, "z":0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ],
+},
+}

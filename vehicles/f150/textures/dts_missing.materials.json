@@ -1,0 +1,1772 @@
+{
+    "vehicle_interior":  {
+                             "name":  "vehicle_interior",
+                             "mapTo":  "vehicle_interior",
+                             "class":  "Material",
+                             "persistentId":  "1c14faf4-c68c-4a50-b284-0d2f44d128d1",
+                             "Stages":  [
+                                            {
+                                                "baseColorMap":  "/vehicles/f150/textures/x3_bad03",
+                                                "metallicFactor":  0.2,
+                                                "normalMap":  "/vehicles/f150/textures/x3_bad03_nm.png",
+                                                "roughnessFactor":  0.72
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "translucentBlendOp":  "None",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_005":  {
+                             "name":  "vehicle_mesh_005",
+                             "mapTo":  "vehicle_mesh.005",
+                             "class":  "Material",
+                             "persistentId":  "98fe945f-908e-4ae2-b2a6-7f968d73e6aa",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_009":  {
+                             "name":  "vehicle_mesh_009",
+                             "mapTo":  "vehicle_mesh.009",
+                             "class":  "Material",
+                             "persistentId":  "6fcda93f-9ee0-4f07-8919-fd19a9ac98e1",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_010":  {
+                             "name":  "vehicle_mesh_010",
+                             "mapTo":  "vehicle_mesh.010",
+                             "class":  "Material",
+                             "persistentId":  "5d4b00d5-6b5d-4fa1-a646-32d1de967531",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_012":  {
+                             "name":  "vehicle_mesh_012",
+                             "mapTo":  "vehicle_mesh.012",
+                             "class":  "Material",
+                             "persistentId":  "fd69479a-ae09-4ad2-aed8-f413e359a70b",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_013":  {
+                             "name":  "vehicle_mesh_013",
+                             "mapTo":  "vehicle_mesh.013",
+                             "class":  "Material",
+                             "persistentId":  "e8e1ac4f-20ab-4851-8cbd-366dea26fbac",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_030":  {
+                             "name":  "vehicle_mesh_030",
+                             "mapTo":  "vehicle_mesh.030",
+                             "class":  "Material",
+                             "persistentId":  "436c1697-29d7-4a1c-a9b3-0702a8721d0a",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_038":  {
+                             "name":  "vehicle_mesh_038",
+                             "mapTo":  "vehicle_mesh.038",
+                             "class":  "Material",
+                             "persistentId":  "163deb5d-f8d1-46ec-a72c-6b6c60646815",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_mesh_039":  {
+                             "name":  "vehicle_mesh_039",
+                             "mapTo":  "vehicle_mesh.039",
+                             "class":  "Material",
+                             "persistentId":  "c1e1500f-9c60-42ed-8e04-98816a5ca3bc",
+                             "Stages":  [
+                                            {
+                                                "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                "clearCoatFactor":  1,
+                                                "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                "colorPaletteMapUseUV":  1,
+                                                "instanceDiffuse":  true,
+                                                "metallicFactor":  1,
+                                                "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                "useAnisotropic":  true
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "activeLayers":  1,
+                             "doubleSided":  true,
+                             "materialTag0":  "beamng",
+                             "materialTag1":  "vehicle",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "vehicle_badges_001":  {
+                               "name":  "vehicle_badges_001",
+                               "mapTo":  "vehicle_badges.001",
+                               "class":  "Material",
+                               "persistentId":  "f73e8fa1-f14e-4b8c-bb2d-80f8cc06d2df",
+                               "Stages":  [
+                                              {
+                                                  "baseColorMap":  "/vehicles/f150/textures/x3_bad01",
+                                                  "metallicFactor":  1,
+                                                  "opacityMap":  "/vehicles/f150/textures/x3_bad01.dds",
+                                                  "roughnessFactor":  0.55
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "alphaRef":  0,
+                               "alphaTest":  true,
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "vehicle_badges_006":  {
+                               "name":  "vehicle_badges_006",
+                               "mapTo":  "vehicle_badges.006",
+                               "class":  "Material",
+                               "persistentId":  "bc68b8b4-cc87-47cb-bd28-f58b775440df",
+                               "Stages":  [
+                                              {
+                                                  "baseColorMap":  "/vehicles/f150/textures/x3_bad04",
+                                                  "metallicFactor":  1,
+                                                  "normalMap":  "/vehicles/f150/textures/x3_bad04_nm.png",
+                                                  "opacityMap":  "/vehicles/f150/textures/x3_bad04.dds",
+                                                  "roughnessFactor":  0.55
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "alphaRef":  0,
+                               "alphaTest":  true,
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "vehicle_lightsemissive":  {
+                                   "name":  "vehicle_lightsemissive",
+                                   "mapTo":  "vehicle_lightsemissive",
+                                   "class":  "Material",
+                                   "persistentId":  "2f16275f-8f1f-4feb-a9e7-ed25804778ba",
+                                   "Stages":  [
+                                                  {
+                                                      "baseColorMap":  "/vehicles/f150/textures/x3_light01",
+                                                      "emissiveMap":  "/vehicles/f150/textures/x3_light01",
+                                                      "metallicFactor":  0,
+                                                      "roughnessFactor":  0.35
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  }
+                                              ],
+                                   "translucentBlendOp":  "None",
+                                   "dynamicCubemap":  true,
+                                   "version":  1.5
+                               },
+    "vehicle_lightsemissive_008":  {
+                                       "name":  "vehicle_lightsemissive_008",
+                                       "mapTo":  "vehicle_lightsemissive.008",
+                                       "class":  "Material",
+                                       "persistentId":  "206d07aa-1a67-4670-aa86-fe44cd7a9c32",
+                                       "Stages":  [
+                                                      {
+                                                          "baseColorMap":  "/vehicles/f150/textures/x3_light01",
+                                                          "emissiveMap":  "/vehicles/f150/textures/x3_light01",
+                                                          "metallicFactor":  0,
+                                                          "roughnessFactor":  0.35
+                                                      },
+                                                      {
+
+                                                      },
+                                                      {
+
+                                                      },
+                                                      {
+
+                                                      }
+                                                  ],
+                                       "translucentBlendOp":  "None",
+                                       "dynamicCubemap":  true,
+                                       "version":  1.5
+                                   },
+    "vehicle_vehglass_010":  {
+                                 "name":  "vehicle_vehglass_010",
+                                 "mapTo":  "vehicle_vehglass.010",
+                                 "class":  "Material",
+                                 "persistentId":  "72e55880-d96e-4b00-98b5-654ee4d6e3eb",
+                                 "Stages":  [
+                                                {
+                                                    "baseColorFactor":  [
+                                                                            0.47,
+                                                                            0.47,
+                                                                            0.47,
+                                                                            0.82
+                                                                        ],
+                                                    "metallicFactor":  1,
+                                                    "roughnessFactor":  0
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "translucent":  true,
+                                 "translucentBlendOp":  "AddAlpha",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "sdd_trx2_lightbar":  {
+                              "name":  "sdd_trx2_lightbar",
+                              "mapTo":  "sdd_trx2_lightbar",
+                              "class":  "Material",
+                              "persistentId":  "3a6e7680-74f9-4d87-985d-cae9e67d73a3",
+                              "Stages":  [
+                                             {
+                                                 "baseColorMap":  "/vehicles/f150/textures/x3_light01",
+                                                 "emissiveMap":  "/vehicles/f150/textures/x3_light01",
+                                                 "metallicFactor":  0.1,
+                                                 "roughnessFactor":  0.4
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             }
+                                         ],
+                              "translucentBlendOp":  "None",
+                              "dynamicCubemap":  true,
+                              "version":  1.5
+                          },
+    "sdd_trx2_henlogo":  {
+                             "name":  "sdd_trx2_henlogo",
+                             "mapTo":  "sdd_trx2_henlogo",
+                             "class":  "Material",
+                             "persistentId":  "b0f82e8f-1fb1-4fd7-8b4c-b40ec358bc7b",
+                             "Stages":  [
+                                            {
+                                                "baseColorMap":  "/vehicles/f150/textures/emblem.dds",
+                                                "metallicFactor":  1,
+                                                "roughnessFactor":  0.45
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "alphaRef":  0,
+                             "alphaTest":  true,
+                             "translucentBlendOp":  "None",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "sdd_trx2_rad":  {
+                         "name":  "sdd_trx2_rad",
+                         "mapTo":  "sdd_trx2_rad",
+                         "class":  "Material",
+                         "persistentId":  "46fbc08d-4163-4184-85ca-6bee2c1abdc0",
+                         "Stages":  [
+                                        {
+                                            "baseColorMap":  "/vehicles/f150/textures/trx2_f150_rad_BaseColor.png",
+                                            "metallicFactor":  0.85,
+                                            "normalMap":  "/vehicles/f150/textures/trx2_f150_rad_Normal.png",
+                                            "roughnessFactor":  0.55
+                                        },
+                                        {
+
+                                        },
+                                        {
+
+                                        },
+                                        {
+
+                                        }
+                                    ],
+                         "translucentBlendOp":  "None",
+                         "dynamicCubemap":  true,
+                         "version":  1.5
+                     },
+    "sdd_trx2_glass_amber":  {
+                                 "name":  "sdd_trx2_glass_amber",
+                                 "mapTo":  "sdd_trx2_glass_amber",
+                                 "class":  "Material",
+                                 "persistentId":  "724d1eec-6f33-4dd6-98ea-174097fe5734",
+                                 "Stages":  [
+                                                {
+                                                    "baseColorFactor":  [
+                                                                            1,
+                                                                            0.55,
+                                                                            0.05,
+                                                                            0.75
+                                                                        ],
+                                                    "metallicFactor":  0.2,
+                                                    "roughnessFactor":  0.05
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "translucent":  true,
+                                 "translucentBlendOp":  "AddAlpha",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "sdd_trx2_amberpods":  {
+                               "name":  "sdd_trx2_amberpods",
+                               "mapTo":  "sdd_trx2_amberpods",
+                               "class":  "Material",
+                               "persistentId":  "83562584-2ba3-4981-8630-de2c75a35991",
+                               "Stages":  [
+                                              {
+                                                  "baseColorFactor":  [
+                                                                          1,
+                                                                          0.45,
+                                                                          0.02,
+                                                                          1
+                                                                      ],
+                                                  "colorMap":  "x3_light01",
+                                                  "metallicFactor":  0.1,
+                                                  "roughnessFactor":  0.3
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "sdd_trx2_needle":  {
+                            "name":  "sdd_trx2_needle",
+                            "mapTo":  "sdd_trx2_needle",
+                            "class":  "Material",
+                            "persistentId":  "b092038c-eb5b-4cc1-850e-7da94e17172b",
+                            "Stages":  [
+                                           {
+                                               "baseColorFactor":  [
+                                                                       0.95,
+                                                                       0.05,
+                                                                       0.05,
+                                                                       1
+                                                                   ],
+                                               "emissiveFactor":  [
+                                                                      0.8,
+                                                                      0.05,
+                                                                      0.05
+                                                                  ],
+                                               "metallicFactor":  0.2,
+                                               "roughnessFactor":  0.4
+                                           },
+                                           {
+
+                                           },
+                                           {
+
+                                           },
+                                           {
+
+                                           }
+                                       ],
+                            "translucentBlendOp":  "None",
+                            "dynamicCubemap":  true,
+                            "version":  1.5
+                        },
+    "sdd_trx2_bilstein":  {
+                              "name":  "sdd_trx2_bilstein",
+                              "mapTo":  "sdd_trx2_bilstein",
+                              "class":  "Material",
+                              "persistentId":  "404b6f7f-08e0-414c-b8da-6ebbf139ebdf",
+                              "Stages":  [
+                                             {
+                                                 "baseColorMap":  "/vehicles/f150/textures/bilstein_logo.png",
+                                                 "metallicFactor":  0.3,
+                                                 "roughnessFactor":  0.5
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             }
+                                         ],
+                              "alphaRef":  0,
+                              "alphaTest":  true,
+                              "translucentBlendOp":  "None",
+                              "dynamicCubemap":  true,
+                              "version":  1.5
+                          },
+    "sdd_trx2_headlight":  {
+                               "name":  "sdd_trx2_headlight",
+                               "mapTo":  "sdd_trx2_headlight",
+                               "class":  "Material",
+                               "persistentId":  "22c494f5-165c-4373-8c5d-db61b4b4b916",
+                               "Stages":  [
+                                              {
+                                                  "colorMap":  "/vehicles/f150/textures/x3_light01",
+                                                  "metallicFactor":  0.1,
+                                                  "roughnessFactor":  0.25
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "sdd_trx2_drl_L_orange":  {
+                                  "name":  "sdd_trx2_drl_L_orange",
+                                  "mapTo":  "sdd_trx2_drl_L_orange",
+                                  "class":  "Material",
+                                  "persistentId":  "5a226d85-de24-43d4-aa48-1961b5d5abf4",
+                                  "Stages":  [
+                                                 {
+                                                     "baseColorFactor":  [
+                                                                             1,
+                                                                             0.45,
+                                                                             0.05,
+                                                                             1
+                                                                         ],
+                                                     "colorMap":  "x3_light01",
+                                                     "metallicFactor":  0.1,
+                                                     "roughnessFactor":  0.3
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 }
+                                             ],
+                                  "translucentBlendOp":  "None",
+                                  "dynamicCubemap":  true,
+                                  "version":  1.5
+                              },
+    "sdd_trx2_brake_L":  {
+                             "name":  "sdd_trx2_brake_L",
+                             "mapTo":  "sdd_trx2_brake_L",
+                             "class":  "Material",
+                             "persistentId":  "1dd2c6b5-346b-4123-90bd-f35af7171a41",
+                             "Stages":  [
+                                            {
+                                                "colorMap":  "x3_light01",
+                                                "baseColorFactor":  [
+                                                                        1,
+                                                                        0.05,
+                                                                        0.05,
+                                                                        1
+                                                                    ]
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "translucentBlendOp":  "None",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "sdd_trx2_drl_R_orange":  {
+                                  "name":  "sdd_trx2_drl_R_orange",
+                                  "mapTo":  "sdd_trx2_drl_R_orange",
+                                  "class":  "Material",
+                                  "persistentId":  "cb91a468-9b95-4234-8e4b-88489a18e474",
+                                  "Stages":  [
+                                                 {
+                                                     "baseColorFactor":  [
+                                                                             1,
+                                                                             0.45,
+                                                                             0.05,
+                                                                             1
+                                                                         ],
+                                                     "colorMap":  "x3_light01",
+                                                     "metallicFactor":  0.1,
+                                                     "roughnessFactor":  0.3
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 }
+                                             ],
+                                  "translucentBlendOp":  "None",
+                                  "dynamicCubemap":  true,
+                                  "version":  1.5
+                              },
+    "sdd_trx2_brake_R":  {
+                             "name":  "sdd_trx2_brake_R",
+                             "mapTo":  "sdd_trx2_brake_R",
+                             "class":  "Material",
+                             "persistentId":  "cced386f-955b-4c94-80d3-20ea36d45dbe",
+                             "Stages":  [
+                                            {
+                                                "colorMap":  "x3_light01",
+                                                "baseColorFactor":  [
+                                                                        1,
+                                                                        0.05,
+                                                                        0.05,
+                                                                        1
+                                                                    ]
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "translucentBlendOp":  "None",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "sdd_raptR_screw":  {
+                            "name":  "sdd_raptR_screw",
+                            "mapTo":  "sdd_raptR_screw",
+                            "class":  "Material",
+                            "persistentId":  "7a57edb1-7b4d-4ef3-96bb-e0d9fcfee061",
+                            "Stages":  [
+                                           {
+                                               "baseColorMap":  "/vehicles/f150/textures/x3_bad05",
+                                               "metallicFactor":  1,
+                                               "normalMap":  "/vehicles/f150/textures/x3_bad05_nm.png",
+                                               "roughnessFactor":  0.55
+                                           },
+                                           {
+
+                                           },
+                                           {
+
+                                           },
+                                           {
+
+                                           }
+                                       ],
+                            "translucentBlendOp":  "None",
+                            "dynamicCubemap":  true,
+                            "version":  1.5
+                        },
+    "mirror":  {
+                   "name":  "mirror",
+                   "mapTo":  "mirror",
+                   "class":  "Material",
+                   "persistentId":  "e8d8ef2d-f4e1-4d6f-84cd-979b6393eea9",
+                   "Stages":  [
+                                  {
+                                      "baseColorFactor":  [
+                                                              0.85,
+                                                              0.85,
+                                                              0.9,
+                                                              1
+                                                          ],
+                                      "metallicFactor":  1,
+                                      "roughnessFactor":  0.02
+                                  },
+                                  {
+
+                                  },
+                                  {
+
+                                  },
+                                  {
+
+                                  }
+                              ],
+                   "translucentBlendOp":  "None",
+                   "dynamicCubemap":  true,
+                   "version":  1.5
+               },
+    "trucks_mechanical":  {
+                              "name":  "trucks_mechanical",
+                              "mapTo":  "trucks_mechanical",
+                              "class":  "Material",
+                              "persistentId":  "886d45b8-d144-45dc-a8f2-a7636ff8c9d5",
+                              "Stages":  [
+                                             {
+                                                 "baseColorMap":  "/vehicles/f150/textures/trxframe_f150_frame_BaseColor.png",
+                                                 "metallicMap":  "/vehicles/f150/textures/trxframe_f150_frame_Metallic.png",
+                                                 "normalMap":  "/vehicles/f150/textures/trxframe_f150_frame_Normal.png",
+                                                 "roughnessMap":  "/vehicles/f150/textures/trxframe_f150_frame_Roughness.png",
+                                                 "metallicFactor":  1
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             }
+                                         ],
+                              "translucentBlendOp":  "None",
+                              "dynamicCubemap":  true,
+                              "version":  1.5
+                          },
+    "bastion_engine":  {
+                           "name":  "bastion_engine",
+                           "mapTo":  "bastion_engine",
+                           "class":  "Material",
+                           "persistentId":  "ef91e39d-f28a-4455-9f59-453880fdd93d",
+                           "Stages":  [
+                                          {
+                                              "baseColorMap":  "/vehicles/f150/textures/trxframe_f150_engine_BaseColor.png",
+                                              "metallicMap":  "/vehicles/f150/textures/trxframe_f150_engine_Metallic.png",
+                                              "normalMap":  "/vehicles/f150/textures/trxframe_f150_engine_Normal.png",
+                                              "roughnessMap":  "/vehicles/f150/textures/trxframe_f150_engine_Roughness.png",
+                                              "metallicFactor":  1
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          }
+                                      ],
+                           "translucentBlendOp":  "None",
+                           "dynamicCubemap":  true,
+                           "version":  1.5
+                       },
+    "gavril_v8":  {
+                      "name":  "gavril_v8",
+                      "mapTo":  "gavril_v8",
+                      "class":  "Material",
+                      "persistentId":  "d40e0e2a-50c1-4798-a36e-10e2292d9a87",
+                      "Stages":  [
+                                     {
+                                         "baseColorMap":  "/vehicles/f150/textures/trxframe_f150_engine_BaseColor.png",
+                                         "metallicFactor":  1,
+                                         "normalMap":  "/vehicles/f150/textures/trxframe_f150_engine_Normal.png",
+                                         "roughnessFactor":  0.45
+                                     },
+                                     {
+
+                                     },
+                                     {
+
+                                     },
+                                     {
+
+                                     }
+                                 ],
+                      "translucentBlendOp":  "None",
+                      "dynamicCubemap":  true,
+                      "version":  1.5
+                  },
+    "pickup":  {
+                   "name":  "pickup",
+                   "mapTo":  "pickup",
+                   "class":  "Material",
+                   "persistentId":  "969ac622-5fc7-4c80-aae8-24c95bcf3bdd",
+                   "Stages":  [
+                                  {
+                                      "baseColorFactor":  [
+                                                              0.12,
+                                                              0.12,
+                                                              0.12,
+                                                              1
+                                                          ],
+                                      "metallicFactor":  0.3,
+                                      "roughnessFactor":  0.7
+                                  },
+                                  {
+
+                                  },
+                                  {
+
+                                  },
+                                  {
+
+                                  }
+                              ],
+                   "translucentBlendOp":  "None",
+                   "dynamicCubemap":  true,
+                   "version":  1.5
+               },
+    "RLA_Mat_Rubber_v1_003":  {
+                                  "name":  "RLA_Mat_Rubber_v1_003",
+                                  "mapTo":  "RLA_Mat_Rubber_v1.003",
+                                  "class":  "Material",
+                                  "persistentId":  "23cc0f63-cd83-4ba9-95c7-a04dfe4d143b",
+                                  "Stages":  [
+                                                 {
+                                                     "baseColorFactor":  [
+                                                                             0.02,
+                                                                             0.02,
+                                                                             0.02,
+                                                                             1
+                                                                         ],
+                                                     "roughnessFactor":  0.88
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 }
+                                             ],
+                                  "doubleSided":  true,
+                                  "translucentBlendOp":  "None",
+                                  "dynamicCubemap":  true,
+                                  "version":  1.5
+                              },
+    "police_flasher_led_L":  {
+                                 "name":  "police_flasher_led_L",
+                                 "mapTo":  "police_flasher_led_L",
+                                 "class":  "Material",
+                                 "persistentId":  "c25122b3-221c-4e25-b3ba-7d7ab06cf984",
+                                 "Stages":  [
+                                                {
+                                                    "baseColorFactor":  [
+                                                                            0.05,
+                                                                            0.15,
+                                                                            1,
+                                                                            1
+                                                                        ],
+                                                    "colorMap":  "x3_light01",
+                                                    "emissiveMap":  "/vehicles/f150/textures/x3_light01",
+                                                    "metallicFactor":  0,
+                                                    "roughnessFactor":  0.25
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "translucentBlendOp":  "None",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "police_flasher_led_R":  {
+                                 "name":  "police_flasher_led_R",
+                                 "mapTo":  "police_flasher_led_R",
+                                 "class":  "Material",
+                                 "persistentId":  "c1e2ebb3-4708-45e4-a632-a206b5e5ea2a",
+                                 "Stages":  [
+                                                {
+                                                    "baseColorFactor":  [
+                                                                            1,
+                                                                            0.05,
+                                                                            0.05,
+                                                                            1
+                                                                        ],
+                                                    "colorMap":  "x3_light01",
+                                                    "emissiveMap":  "/vehicles/f150/textures/x3_light01",
+                                                    "metallicFactor":  0,
+                                                    "roughnessFactor":  0.25
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "translucentBlendOp":  "None",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "police_flasher_led_R_2":  {
+                                   "name":  "police_flasher_led_R_2",
+                                   "mapTo":  "police_flasher_led_R_2",
+                                   "class":  "Material",
+                                   "persistentId":  "e81c5557-7973-42fa-a79a-b805b1358b9e",
+                                   "Stages":  [
+                                                  {
+                                                      "baseColorFactor":  [
+                                                                              1,
+                                                                              0.05,
+                                                                              0.05,
+                                                                              1
+                                                                          ],
+                                                      "colorMap":  "x3_light01",
+                                                      "emissiveMap":  "/vehicles/f150/textures/x3_light01",
+                                                      "metallicFactor":  0,
+                                                      "roughnessFactor":  0.25
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  }
+                                              ],
+                                   "translucentBlendOp":  "None",
+                                   "dynamicCubemap":  true,
+                                   "version":  1.5
+                               },
+    "RRpbrChromeREF":  {
+                           "name":  "RRpbrChromeREF",
+                           "mapTo":  "RRpbrChromeREF",
+                           "class":  "Material",
+                           "persistentId":  "1bd1d42d-d200-4691-9653-0ab0b3f0021f",
+                           "Stages":  [
+                                          {
+                                              "baseColorFactor":  [
+                                                                      0.95,
+                                                                      0.95,
+                                                                      0.95,
+                                                                      1
+                                                                  ],
+                                              "metallicFactor":  1,
+                                              "roughnessFactor":  0,
+                                              "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          }
+                                      ],
+                           "translucentBlendOp":  "None",
+                           "dynamicCubemap":  true,
+                           "version":  1.5
+                       },
+    "RRpbrSteelREF":  {
+                          "name":  "RRpbrSteelREF",
+                          "mapTo":  "RRpbrSteelREF",
+                          "class":  "Material",
+                          "persistentId":  "8417d6fe-09dc-411b-8161-0f28662d0f04",
+                          "Stages":  [
+                                         {
+                                             "baseColorFactor":  [
+                                                                     0.55,
+                                                                     0.55,
+                                                                     0.58,
+                                                                     1
+                                                                 ],
+                                             "metallicFactor":  1,
+                                             "roughnessFactor":  0.35,
+                                             "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                         },
+                                         {
+
+                                         },
+                                         {
+
+                                         },
+                                         {
+
+                                         }
+                                     ],
+                          "translucentBlendOp":  "None",
+                          "dynamicCubemap":  true,
+                          "version":  1.5
+                      },
+    "RRpbrAluminumPolishREF":  {
+                                   "name":  "RRpbrAluminumPolishREF",
+                                   "mapTo":  "RRpbrAluminumPolishREF",
+                                   "class":  "Material",
+                                   "persistentId":  "0176c7ce-5084-43f3-9626-2681058815b7",
+                                   "Stages":  [
+                                                  {
+                                                      "baseColorFactor":  [
+                                                                              0.75,
+                                                                              0.75,
+                                                                              0.78,
+                                                                              1
+                                                                          ],
+                                                      "metallicFactor":  1,
+                                                      "roughnessFactor":  0.15,
+                                                      "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  }
+                                              ],
+                                   "translucentBlendOp":  "None",
+                                   "dynamicCubemap":  true,
+                                   "version":  1.5
+                               },
+    "RRpbrAluminumSemiPolishREF":  {
+                                       "name":  "RRpbrAluminumSemiPolishREF",
+                                       "mapTo":  "RRpbrAluminumSemiPolishREF",
+                                       "class":  "Material",
+                                       "persistentId":  "e755210b-2334-470a-9835-a0a0d888709f",
+                                       "Stages":  [
+                                                      {
+                                                          "baseColorFactor":  [
+                                                                                  0.65,
+                                                                                  0.65,
+                                                                                  0.68,
+                                                                                  1
+                                                                              ],
+                                                          "metallicFactor":  1,
+                                                          "roughnessFactor":  0.35,
+                                                          "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                                      },
+                                                      {
+
+                                                      },
+                                                      {
+
+                                                      },
+                                                      {
+
+                                                      }
+                                                  ],
+                                       "translucentBlendOp":  "None",
+                                       "dynamicCubemap":  true,
+                                       "version":  1.5
+                                   },
+    "RRpbrBrassREF":  {
+                          "name":  "RRpbrBrassREF",
+                          "mapTo":  "RRpbrBrassREF",
+                          "class":  "Material",
+                          "persistentId":  "d937ea95-315b-41cc-a43b-41ea4bdc6c40",
+                          "Stages":  [
+                                         {
+                                             "baseColorFactor":  [
+                                                                     0.78,
+                                                                     0.57,
+                                                                     0.25,
+                                                                     1
+                                                                 ],
+                                             "metallicFactor":  1,
+                                             "roughnessFactor":  0.25,
+                                             "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                         },
+                                         {
+
+                                         },
+                                         {
+
+                                         },
+                                         {
+
+                                         }
+                                     ],
+                          "translucentBlendOp":  "None",
+                          "dynamicCubemap":  true,
+                          "version":  1.5
+                      },
+    "RRpbrBronzeREF":  {
+                           "name":  "RRpbrBronzeREF",
+                           "mapTo":  "RRpbrBronzeREF",
+                           "class":  "Material",
+                           "persistentId":  "cce79d20-f966-4d57-9dd9-49cf48e8675e",
+                           "Stages":  [
+                                          {
+                                              "baseColorFactor":  [
+                                                                      0.65,
+                                                                      0.4,
+                                                                      0.2,
+                                                                      1
+                                                                  ],
+                                              "metallicFactor":  1,
+                                              "roughnessFactor":  0.3,
+                                              "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          }
+                                      ],
+                           "translucentBlendOp":  "None",
+                           "dynamicCubemap":  true,
+                           "version":  1.5
+                       },
+    "RRpbrCopperREF":  {
+                           "name":  "RRpbrCopperREF",
+                           "mapTo":  "RRpbrCopperREF",
+                           "class":  "Material",
+                           "persistentId":  "e71dea47-99aa-4717-96c5-9898680e2ab7",
+                           "Stages":  [
+                                          {
+                                              "baseColorFactor":  [
+                                                                      0.72,
+                                                                      0.35,
+                                                                      0.22,
+                                                                      1
+                                                                  ],
+                                              "metallicFactor":  1,
+                                              "roughnessFactor":  0.25,
+                                              "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          },
+                                          {
+
+                                          }
+                                      ],
+                           "translucentBlendOp":  "None",
+                           "dynamicCubemap":  true,
+                           "version":  1.5
+                       },
+    "RRpbrGoldPolishedREF":  {
+                                 "name":  "RRpbrGoldPolishedREF",
+                                 "mapTo":  "RRpbrGoldPolishedREF",
+                                 "class":  "Material",
+                                 "persistentId":  "d784ef44-6768-4a8a-bcb8-d0ae5be0c207",
+                                 "Stages":  [
+                                                {
+                                                    "baseColorFactor":  [
+                                                                            0.9,
+                                                                            0.72,
+                                                                            0.25,
+                                                                            1
+                                                                        ],
+                                                    "metallicFactor":  1,
+                                                    "roughnessFactor":  0.12,
+                                                    "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "translucentBlendOp":  "None",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "RRpbrGlossBlackREF":  {
+                               "name":  "RRpbrGlossBlackREF",
+                               "mapTo":  "RRpbrGlossBlackREF",
+                               "class":  "Material",
+                               "persistentId":  "37b1af0a-4595-4a70-8ed4-0cb517cc9d1a",
+                               "Stages":  [
+                                              {
+                                                  "baseColorFactor":  [
+                                                                          0.02,
+                                                                          0.02,
+                                                                          0.02,
+                                                                          1
+                                                                      ],
+                                                  "metallicFactor":  0.9,
+                                                  "roughnessFactor":  0.08,
+                                                  "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "RRpbrMatteBlackREF":  {
+                               "name":  "RRpbrMatteBlackREF",
+                               "mapTo":  "RRpbrMatteBlackREF",
+                               "class":  "Material",
+                               "persistentId":  "9c1bece0-ce47-4313-9798-fb21e9f1b96a",
+                               "Stages":  [
+                                              {
+                                                  "baseColorFactor":  [
+                                                                          0.03,
+                                                                          0.03,
+                                                                          0.03,
+                                                                          1
+                                                                      ],
+                                                  "metallicFactor":  0.2,
+                                                  "roughnessFactor":  0.75,
+                                                  "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "RRpbrGlossWhiteREF":  {
+                               "name":  "RRpbrGlossWhiteREF",
+                               "mapTo":  "RRpbrGlossWhiteREF",
+                               "class":  "Material",
+                               "persistentId":  "94ec3b47-357c-4395-ae71-73edaa4ec7ef",
+                               "Stages":  [
+                                              {
+                                                  "baseColorFactor":  [
+                                                                          0.95,
+                                                                          0.95,
+                                                                          0.95,
+                                                                          1
+                                                                      ],
+                                                  "metallicFactor":  0.2,
+                                                  "roughnessFactor":  0.08,
+                                                  "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "RRpbrMatteWhiteREF":  {
+                               "name":  "RRpbrMatteWhiteREF",
+                               "mapTo":  "RRpbrMatteWhiteREF",
+                               "class":  "Material",
+                               "persistentId":  "6377e3a7-f160-4ff8-b14d-dc30f9b7dcac",
+                               "Stages":  [
+                                              {
+                                                  "baseColorFactor":  [
+                                                                          0.9,
+                                                                          0.9,
+                                                                          0.9,
+                                                                          1
+                                                                      ],
+                                                  "metallicFactor":  0.1,
+                                                  "roughnessFactor":  0.7,
+                                                  "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              },
+                                              {
+
+                                              }
+                                          ],
+                               "translucentBlendOp":  "None",
+                               "dynamicCubemap":  true,
+                               "version":  1.5
+                           },
+    "RRpbrMatteRedREF":  {
+                             "name":  "RRpbrMatteRedREF",
+                             "mapTo":  "RRpbrMatteRedREF",
+                             "class":  "Material",
+                             "persistentId":  "a14efb53-1d87-4cbf-a007-2b175d8eb524",
+                             "Stages":  [
+                                            {
+                                                "baseColorFactor":  [
+                                                                        0.55,
+                                                                        0.05,
+                                                                        0.05,
+                                                                        1
+                                                                    ],
+                                                "metallicFactor":  0.2,
+                                                "roughnessFactor":  0.7,
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "translucentBlendOp":  "None",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "RRpbrMatteRedDarkREF":  {
+                                 "name":  "RRpbrMatteRedDarkREF",
+                                 "mapTo":  "RRpbrMatteRedDarkREF",
+                                 "class":  "Material",
+                                 "persistentId":  "2595f784-7078-4c10-a115-a55c0416fefa",
+                                 "Stages":  [
+                                                {
+                                                    "baseColorFactor":  [
+                                                                            0.25,
+                                                                            0.03,
+                                                                            0.03,
+                                                                            1
+                                                                        ],
+                                                    "metallicFactor":  0.2,
+                                                    "roughnessFactor":  0.75,
+                                                    "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "translucentBlendOp":  "None",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "RRpbrCandyRedREF":  {
+                             "name":  "RRpbrCandyRedREF",
+                             "mapTo":  "RRpbrCandyRedREF",
+                             "class":  "Material",
+                             "persistentId":  "7e898290-f548-4631-9417-a640a197998d",
+                             "Stages":  [
+                                            {
+                                                "baseColorFactor":  [
+                                                                        0.7,
+                                                                        0.02,
+                                                                        0.02,
+                                                                        1
+                                                                    ],
+                                                "metallicFactor":  0.85,
+                                                "roughnessFactor":  0.15,
+                                                "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            },
+                                            {
+
+                                            }
+                                        ],
+                             "translucentBlendOp":  "None",
+                             "dynamicCubemap":  true,
+                             "version":  1.5
+                         },
+    "RRpbrVinylWrapBlueREF":  {
+                                  "name":  "RRpbrVinylWrapBlueREF",
+                                  "mapTo":  "RRpbrVinylWrapBlueREF",
+                                  "class":  "Material",
+                                  "persistentId":  "f44d1ac5-7113-4c39-9362-da23a61e73d8",
+                                  "Stages":  [
+                                                 {
+                                                     "baseColorFactor":  [
+                                                                             0.05,
+                                                                             0.15,
+                                                                             0.55,
+                                                                             1
+                                                                         ],
+                                                     "metallicFactor":  0.15,
+                                                     "roughnessFactor":  0.55,
+                                                     "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 }
+                                             ],
+                                  "translucentBlendOp":  "None",
+                                  "dynamicCubemap":  true,
+                                  "version":  1.5
+                              },
+    "RRpbrWhiteGlowREF":  {
+                              "name":  "RRpbrWhiteGlowREF",
+                              "mapTo":  "RRpbrWhiteGlowREF",
+                              "class":  "Material",
+                              "persistentId":  "5bad823d-527a-459a-9b5f-5004d1bd3259",
+                              "Stages":  [
+                                             {
+                                                 "baseColorFactor":  [
+                                                                         1,
+                                                                         1,
+                                                                         1,
+                                                                         1
+                                                                     ],
+                                                 "emissiveFactor":  [
+                                                                        1,
+                                                                        1,
+                                                                        1,
+                                                                        1
+                                                                    ],
+                                                 "metallicFactor":  0,
+                                                 "roughnessFactor":  0.2
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             },
+                                             {
+
+                                             }
+                                         ],
+                              "translucentBlendOp":  "None",
+                              "dynamicCubemap":  true,
+                              "version":  1.5
+                          },
+    "RRpbrTertiaryGlowREF":  {
+                                 "name":  "RRpbrTertiaryGlowREF",
+                                 "mapTo":  "RRpbrTertiaryGlowREF",
+                                 "class":  "Material",
+                                 "persistentId":  "53ac8a3e-3c2b-4ce6-a578-3c357fb526a5",
+                                 "Stages":  [
+                                                {
+                                                    "baseColorFactor":  [
+                                                                            1,
+                                                                            0.85,
+                                                                            0.2,
+                                                                            1
+                                                                        ],
+                                                    "emissiveFactor":  [
+                                                                           1,
+                                                                           0.85,
+                                                                           0.2,
+                                                                           1
+                                                                       ],
+                                                    "metallicFactor":  0,
+                                                    "roughnessFactor":  0.2
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "translucentBlendOp":  "None",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "RRpbrPaintPrimaryREF":  {
+                                 "name":  "RRpbrPaintPrimaryREF",
+                                 "mapTo":  "RRpbrPaintPrimaryREF",
+                                 "class":  "Material",
+                                 "persistentId":  "79b6e6ca-fcef-4e12-9f9f-dd527797c68d",
+                                 "Stages":  [
+                                                {
+                                                    "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                    "clearCoatFactor":  1,
+                                                    "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                    "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                    "colorPaletteMapUseUV":  1,
+                                                    "instanceDiffuse":  true,
+                                                    "metallicFactor":  1,
+                                                    "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                    "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                    "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                    "useAnisotropic":  true
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                },
+                                                {
+
+                                                }
+                                            ],
+                                 "activeLayers":  1,
+                                 "doubleSided":  true,
+                                 "materialTag0":  "beamng",
+                                 "materialTag1":  "vehicle",
+                                 "dynamicCubemap":  true,
+                                 "version":  1.5
+                             },
+    "RRpbrPaintSecondaryREF":  {
+                                   "name":  "RRpbrPaintSecondaryREF",
+                                   "mapTo":  "RRpbrPaintSecondaryREF",
+                                   "class":  "Material",
+                                   "persistentId":  "ea91a9f5-555c-4c54-9af2-e027ebc123f5",
+                                   "Stages":  [
+                                                  {
+                                                      "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                      "clearCoatFactor":  1,
+                                                      "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                      "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                      "colorPaletteMapUseUV":  1,
+                                                      "instanceDiffuse":  true,
+                                                      "metallicFactor":  1,
+                                                      "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                      "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                      "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                      "useAnisotropic":  true
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  },
+                                                  {
+
+                                                  }
+                                              ],
+                                   "activeLayers":  1,
+                                   "doubleSided":  true,
+                                   "materialTag0":  "beamng",
+                                   "materialTag1":  "vehicle",
+                                   "dynamicCubemap":  true,
+                                   "version":  1.5
+                               },
+    "RRpbrPaintTertiaryREF":  {
+                                  "name":  "RRpbrPaintTertiaryREF",
+                                  "mapTo":  "RRpbrPaintTertiaryREF",
+                                  "class":  "Material",
+                                  "persistentId":  "ea06558d-8b4b-4078-bf18-d4d89f098ba5",
+                                  "Stages":  [
+                                                 {
+                                                     "ambientOcclusionMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+                                                     "clearCoatFactor":  1,
+                                                     "clearCoatMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+                                                     "colorPaletteMap":  "/vehicles/common/nullcolormaskR.dds",
+                                                     "colorPaletteMapUseUV":  1,
+                                                     "instanceDiffuse":  true,
+                                                     "metallicFactor":  1,
+                                                     "metallicMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+                                                     "normalMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+                                                     "roughnessMap":  "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+                                                     "useAnisotropic":  true
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 },
+                                                 {
+
+                                                 }
+                                             ],
+                                  "activeLayers":  1,
+                                  "doubleSided":  true,
+                                  "materialTag0":  "beamng",
+                                  "materialTag1":  "vehicle",
+                                  "dynamicCubemap":  true,
+                                  "version":  1.5
+                              }
+}

@@ -1,0 +1,42 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>mod_exhaust",
+    "samples" : 
+    [
+        [
+           ["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_750.wav", 750],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_1143.wav", 1143],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_1410.wav", 1410],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_1806.wav", 1806],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_2190.wav", 2190],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_2600.wav", 2600],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_3007.wav", 3007],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_3402.wav", 3402],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_3807.wav", 3807],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_4204.wav", 4204],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_4608.wav", 4608],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_5004.wav", 5004],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_5398.wav", 5398],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_5824.wav", 5824],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_deccel_5950.wav", 5950]
+        ],
+        [
+           ["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_1194.wav", 1194],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_1402.wav", 1402],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_1810.wav", 1810],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_2214.wav", 2214],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_2608.wav", 2608],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_3000.wav", 3000],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_3402.wav", 3402],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_3812.wav", 3812],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_4189.wav", 4189],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_4604.wav", 4604],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_5000.wav", 5000],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_5403.wav", 5403],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_5806.wav", 5806],
+["art/sound/engine/Redknee_hellcat_exhaust/hellcat_exhaust_accel_6167.wav", 6167]
+        ]
+    ]
+}

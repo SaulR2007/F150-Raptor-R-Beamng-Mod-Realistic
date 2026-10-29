@@ -1,0 +1,37 @@
+<div class="bng-app ford-control" ng-class="{'is-hidden': !visible}">
+  <link rel="stylesheet" type="text/css" href="/ui/modules/apps/fordControl/app.css?v=16">
+
+  <div class="shell">
+  <div class="side-col">
+    <button type="button" class="icon-btn front" ng-class="{active: frontLock}" ng-click="toggleDiff('front')" title="Front locker"></button>
+    <button type="button" class="icon-btn rear" ng-class="{active: rearLock}" ng-click="toggleDiff('rear')" title="Rear locker"></button>
+    <div class="trail-stack" ng-class="{active: trailOn}">
+      <button type="button" class="icon-btn trail" ng-class="{active: trailOn}" ng-click="toggleTrail()" title="Trail Control">
+        <span class="trail-spd" ng-show="trailOn">{{trailSpeed}}</span>
+      </button>
+      <div class="step-row">
+        <button type="button" class="nudge" ng-click="adjustTrail(-1)" title="Lower trail speed">-</button>
+        <button type="button" class="nudge" ng-click="adjustTrail(1)" title="Raise trail speed">+</button>
+      </div>
+    </div>
+    <button type="button" class="icon-btn cam" ng-click="trailCam()" title="Trail camera"></button>
+  </div>
+  <div class="dial-stage">
+    <button class="side-arrow left" type="button" ng-click="cycleDse(-1)" title="Previous drive mode">&#9664;</button>
+    <button class="side-arrow right" type="button" ng-click="cycleDse(1)" title="Next drive mode">&#9654;</button>
+    <div class="pad-wrap">
+    <div class="bezel">
+      <div class="arc-label">DRIVE MODES</div>
+
+      <div class="cross">
+        <button class="pad-btn north" type="button" ng-class="{active: four === '4H'}" ng-click="setFour('4H')">4H</button>
+        <button class="pad-btn east" type="button" ng-class="{active: four === '4L'}" ng-click="setFour('4L')">4L</button>
+        <button class="pad-btn south" type="button" ng-class="{active: four === '4A'}" ng-click="setFour('4A')">4A</button>
+        <button class="pad-btn west" type="button" ng-class="{active: four === '2H'}" ng-click="setFour('2H')">2H</button>
+        <div class="hub">{{dseName}}</div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>

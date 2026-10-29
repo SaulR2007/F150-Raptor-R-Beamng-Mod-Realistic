@@ -1,0 +1,1691 @@
+{
+  "default_spec": {
+    "name": "default_spec",
+    "mapTo": "default_spec",
+    "class": "material",
+    "persistentId": "91c3601a-acfe-4f49-bb0a-f1c5637d8312",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_alc": {
+    "name": "sdd_trx2_alc",
+    "mapTo": "sdd_trx2_alc",
+    "class": "Material",
+    "persistentId": "a438fab6-f79d-4afe-8ee5-49f396c75c81",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.901419997,
+          0.901419997,
+          0.901419997,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_xalcantara01",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/f150/textures/x3_xalcantara01_nm.png",
+        "normalMapStrength": 2.11999989
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_amber": {
+    "name": "sdd_trx2_amber",
+    "mapTo": "sdd_trx2_amber",
+    "class": "material",
+    "persistentId": "16ad47ba-dc17-4e0a-b46b-e93597204a12",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_braided": {
+    "name": "sdd_trx2_braided",
+    "mapTo": "sdd_trx2_braided",
+    "class": "Material",
+    "persistentId": "ca912f17-4403-47f7-8c71-d6bf90a3327d",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/s189772745713394276_p8044_i290_w1500.png",
+        "metallicFactor": 0.606999993,
+        "roughnessFactor": 0.688000023
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_brake": {
+    "name": "sdd_trx2_brake",
+    "mapTo": "sdd_trx2_brake",
+    "class": "material",
+    "persistentId": "e550ef5b-ee8b-49df-87db-668ebf84b5a8",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_bumper_R": {
+    "name": "sdd_trx2_bumper_R",
+    "mapTo": "sdd_trx2_bumper_R",
+    "class": "Material",
+    "persistentId": "57d51eaf-fbd2-4a4d-8afe-1182908c9818",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.33732,
+          0.33732,
+          0.33732,
+          1
+        ],
+        "metallicFactor": 0.944999993,
+        "normalMap": "/vehicles/f150/textures/x3_grill03_nm.png",
+        "roughnessFactor": 0.825999975
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_carbon": {
+    "name": "sdd_trx2_carbon",
+    "mapTo": "sdd_trx2_carbon",
+    "class": "Material",
+    "persistentId": "24c941b1-b5f7-411f-94ac-8a2a988b48df",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_carbon",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_chmsl": {
+    "name": "sdd_trx2_chmsl",
+    "mapTo": "sdd_trx2_chmsl",
+    "class": "material",
+    "persistentId": "62b88881-1732-4ed7-8206-4b2476381121",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx_dash": {
+    "name": "sdd_trx_dash",
+    "mapTo": "sdd_trx_dash",
+    "class": "Material",
+    "persistentId": "f7feaa77-0660-481e-9054-940e78a7981e",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.512574017,
+          0.512574017,
+          0.512574017,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_grill05.dds",
+        "metallicFactor": 0.476999998,
+        "normalMap": "/vehicles/f150/textures/x3_grill05_nm.png",
+        "roughnessFactor": 0.411000013
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_dash2": {
+    "name": "sdd_trx2_dash2",
+    "mapTo": "sdd_trx2_dash2",
+    "class": "Material",
+    "persistentId": "a5acf209-44d8-4bbd-8192-d4554c4da7a8",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.578294992,
+          0.578294992,
+          0.578294992,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_grill04",
+        "metallicFactor": 0.623000026,
+        "normalMap": "/vehicles/f150/textures/x3_grill04_nm.png",
+        "opacityMap": "/vehicles/f150/textures/x3_grill04.dds",
+        "roughnessFactor": 0.463999987
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 3,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_dash4": {
+    "name": "sdd_trx2_dash4",
+    "mapTo": "sdd_trx2_dash4",
+    "class": "Material",
+    "persistentId": "d3d7f370-4211-432e-b8ef-dfd584eb1d07",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_grill07",
+        "normalMap": "/vehicles/f150/textures/x3_grill07_nm.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_diff": {
+    "name": "sdd_trx2_diff",
+    "mapTo": "sdd_trx2_diff",
+    "class": "Material",
+    "persistentId": "8684ef94-e858-4971-9bdd-d4bb0b484857",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_mix",
+        "metallicFactor": 1,
+        "roughnessFactor": 0.54400003
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_display": {
+    "name": "sdd_trx2_display",
+    "mapTo": "sdd_trx2_display",
+    "class": "Material",
+    "persistentId": "821ea116-c79a-493d-8a81-64813bd4eb56",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad06",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0.107000001,
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveMap": "/vehicles/f150/textures/x3_bad06.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissive": null,
+        "emissiveFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissive": null,
+        "emissiveFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissive": null,
+        "emissiveFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_drl_L": {
+    "name": "sdd_trx2_drl_L",
+    "mapTo": "sdd_trx2_drl_L",
+    "class": "Material",
+    "persistentId": "1ca4d8b1-67fd-421a-82ea-c58ea87c6bc4",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_drl_R": {
+    "name": "sdd_trx2_drl_R",
+    "mapTo": "sdd_trx2_drl_R",
+    "class": "material",
+    "persistentId": "6fbd48c6-203c-45ad-9c52-2a5cd8b6ba7a",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_engbay_badges": {
+    "name": "sdd_trx2_engbay_badges",
+    "mapTo": "sdd_trx2_engbay_badges",
+    "class": "Material",
+    "persistentId": "5946f0c7-e2c6-4a19-b322-e23a5845982c",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad01",
+        "metallicFactor": 1,
+        "opacityMap": "/vehicles/f150/textures/x3_bad01.dds",
+        "roughnessFactor": 0.254999995
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 155,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_engbelt": {
+    "name": "sdd_trx2_engbelt",
+    "mapTo": "sdd_trx2_engbelt",
+    "class": "material",
+    "persistentId": "b7356248-1bdb-4b22-8fe4-2cc545c64705",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0109601002,
+          0.01096009,
+          0.01096009,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_engine": {
+    "name": "sdd_trx2_engine",
+    "mapTo": "sdd_trx2_engine",
+    "class": "Material",
+    "persistentId": "b6d67f57-9296-4033-b9cf-3a8bacca1fbd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.906895995,
+          0.906895995,
+          0.906895995,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/trxframe_f150_engine_BaseColor.png",
+        "detailNormalMap": "/vehicles/f150/textures/trxframe_f150_engine_Normal.png",
+        "detailNormalMapStrength": 0.959999979,
+        "metallicFactor": 0.774999976,
+        "metallicMap": "/vehicles/f150/textures/trxframe_f150_engine_Metallic.png",
+        "roughnessMap": "/vehicles/f150/textures/trxframe_f150_engine_Roughness.png"
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_engsymbols": {
+    "name": "sdd_trx2_engsymbols",
+    "mapTo": "sdd_trx2_engsymbols",
+    "class": "Material",
+    "persistentId": "dfe66b13-6e56-497d-9b82-95ba1237c715",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/common/null"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_floormat": {
+    "name": "sdd_trx2_floormat",
+    "mapTo": "sdd_trx2_floormat",
+    "class": "Material",
+    "persistentId": "bb942573-f2c4-4307-9abd-a39ea917d0a3",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_grill07",
+        "normalMap": "/vehicles/f150/textures/x3_grill07_nm.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_fog": {
+    "name": "sdd_trx2_fog",
+    "mapTo": "sdd_trx2_fog",
+    "class": "material",
+    "persistentId": "b29102ae-edbc-4d84-875b-283f5936edb7",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_frame": {
+    "name": "sdd_trx2_frame",
+    "mapTo": "sdd_trx2_frame",
+    "class": "Material",
+    "persistentId": "d5cba905-cc20-4720-b371-7e5ab550f964",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.457807988,
+          0.457807988,
+          0.457807988,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/trxframe_f150_frame_BaseColor.png",
+        "metallicFactor": 0.638000011,
+        "metallicMap": "/vehicles/f150/textures/trxframe_f150_frame_Metallic.png",
+        "normalMap": "/vehicles/f150/textures/trxframe_f150_frame_Normal.png",
+        "roughnessMap": "/vehicles/f150/textures/trxframe_f150_frame_Roughness.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_glass": {
+    "name": "sdd_trx2_glass",
+    "mapTo": "sdd_trx2_glass",
+    "class": "Material",
+    "persistentId": "9e43b4b5-ae4d-417a-8426-5fc08f223877",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.468760997,
+          0.468760997,
+          0.468760997,
+          0.822660029
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha",
+    "version": 1.5
+  },
+  "sdd_trx2_grille": {
+    "name": "sdd_trx2_grille",
+    "mapTo": "sdd_trx2_grille",
+    "class": "Material",
+    "persistentId": "8034281a-e2b6-4268-ba10-187b62fb1f42",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_grill02",
+        "metallicFactor": 0.51700002,
+        "normalMap": "/vehicles/f150/textures/x3_grill02_nm.png",
+        "opacityMap": "/vehicles/f150/textures/x3_grill02.dds",
+        "roughnessFactor": 0.54400003
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_grille2": {
+    "name": "sdd_trx2_grille2",
+    "mapTo": "sdd_trx2_grille2",
+    "class": "Material",
+    "persistentId": "ed4bd33a-d952-48b4-9271-7b7ce6591178",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_grill06",
+        "metallicFactor": 0.67900002,
+        "normalMap": "/vehicles/f150/textures/x3_grill06_nm.png",
+        "opacityMap": "/vehicles/f150/textures/x3_grill06.dds",
+        "roughnessFactor": 0.634000003
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 31,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_headlightdiff": {
+    "name": "sdd_trx2_headlightdiff",
+    "mapTo": "sdd_trx2_headlightdiff",
+    "class": "Material",
+    "persistentId": "0dd2abe8-9a38-4b9b-af0b-76000675ea64",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_highbeam": {
+    "name": "sdd_trx2_highbeam",
+    "mapTo": "sdd_trx2_highbeam",
+    "class": "material",
+    "persistentId": "27536593-d560-403e-a957-776ff80f4707",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_innerglass": {
+    "name": "sdd_trx2_innerglass",
+    "mapTo": "sdd_trx2_innerglass",
+    "class": "Material",
+    "persistentId": "e4052f16-5643-453e-825b-95c82c14d610",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.309937,
+          0.309937,
+          0.309937,
+          0.822660029
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.723999977
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha",
+    "version": 1.5
+  },
+  "sdd_trx2_leather": {
+    "name": "sdd_trx2_leather",
+    "mapTo": "sdd_trx2_leather",
+    "class": "Material",
+    "persistentId": "816a340b-393d-4be0-9674-0f3b89a628b5",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.874036014,
+          0.874036014,
+          0.874036014,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_xleather03",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/f150/textures/leather_mix_2.png",
+        "normalMapStrength": 1.08000004,
+        "roughnessFactor": 0.748000026
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_leather2": {
+    "name": "sdd_trx2_leather2",
+    "mapTo": "sdd_trx2_leather2",
+    "class": "Material",
+    "persistentId": "9bd8575c-f02b-4e5e-9bc6-d7cdeb7a0672",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.463283986,
+          0.463283986,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_xleather02.dds",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/f150/textures/leather_mix_2.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_lights": {
+    "name": "sdd_trx2_lights",
+    "mapTo": "sdd_trx2_lights",
+    "class": "Material",
+    "persistentId": "67ed856f-759e-4372-8995-88e04a17c9fe",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_lowbeam": {
+    "name": "sdd_trx2_lowbeam",
+    "mapTo": "sdd_trx2_lowbeam",
+    "class": "material",
+    "persistentId": "bf49951c-2f49-4bda-96d7-0527e8042f4e",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_mirrorsignal_L": {
+    "name": "sdd_trx2_mirrorsignal_L",
+    "mapTo": "sdd_trx2_mirrorsignal_L",
+    "class": "material",
+    "persistentId": "a8a54d00-80fe-4581-87c1-eb34f107e2fe",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_mirrorsignal_R": {
+    "name": "sdd_trx2_mirrorsignal_R",
+    "mapTo": "sdd_trx2_mirrorsignal_R",
+    "class": "material",
+    "persistentId": "95507db1-8451-4b5d-92b2-a0e24d109d99",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_orange": {
+    "name": "sdd_trx2_orange",
+    "mapTo": "sdd_trx2_orange",
+    "class": "Material",
+    "persistentId": "a5bd3232-cf61-4c21-9224-b01edcb29c2a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.744297981,
+          0.370638996,
+          0.00744100008,
+          1
+        ],
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 0.137999997,
+        "roughnessFactor": 0.593999982
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_perf": {
+    "name": "sdd_trx2_perf",
+    "mapTo": "sdd_trx2_perf",
+    "class": "Material",
+    "persistentId": "1c85a6a0-eddc-42a9-83c4-39cf10d065a6",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_xleather01",
+        "metallicFactor": 1,
+        "normalMapStrength": 1.91999996
+      },
+      {
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "metallicFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_perf2": {
+    "name": "sdd_trx2_perf2",
+    "mapTo": "sdd_trx2_perf2",
+    "class": "Material",
+    "persistentId": "a0022b5d-d84f-49f6-a65e-8f0c0ddbf910",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.260646999,
+          0.260646999,
+          0.260646999,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_grill09",
+        "metallicFactor": 0.395999998,
+        "normalMap": "/vehicles/f150/textures/x3_grill09_nm.png",
+        "normalMapStrength": 1.26999998,
+        "roughnessFactor": 0.799000025
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_plastic": {
+    "name": "sdd_trx2_plastic",
+    "mapTo": "sdd_trx2_plastic",
+    "class": "Material",
+    "persistentId": "35ee95f4-e4df-44c1-8379-247aea4c3469",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad03",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/f150/textures/x3_bad03_nm.png",
+        "roughnessFactor": 0.685000002
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_redlights": {
+    "name": "sdd_trx2_redlights",
+    "mapTo": "sdd_trx2_redlights",
+    "class": "Material",
+    "persistentId": "4aff0e79-4d05-4d47-9e76-9f1ae10ce2d7",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.309937,
+          0.309937,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_light01",
+        "metallicFactor": 0.633000016,
+        "roughnessFactor": 0.54400003
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_reflector": {
+    "name": "sdd_trx2_reflector",
+    "mapTo": "sdd_trx2_reflector",
+    "class": "material",
+    "persistentId": "6bbfbcff-16dc-4d99-a067-495103d1ab9c",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_reverse": {
+    "name": "sdd_trx2_reverse",
+    "mapTo": "sdd_trx2_reverse",
+    "class": "material",
+    "persistentId": "e0cb050d-7a35-446e-b64c-51af09016528",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_screw": {
+    "name": "sdd_trx2_screw",
+    "mapTo": "sdd_trx2_screw",
+    "class": "Material",
+    "persistentId": "9c8c93ae-c3b8-42c0-9e44-d1caa5de018f",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad05",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/f150/textures/x3_bad05_nm.png",
+        "opacityFactor": 0.165000007,
+        "opacityMap": "/vehicles/f150/textures/x3_bad05.dds",
+        "roughnessFactor": 0.209999993
+      },
+      {
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 8,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_seatbadge": {
+    "name": "sdd_trx2_seatbadge",
+    "mapTo": "sdd_trx2_seatbadge",
+    "class": "Material",
+    "persistentId": "24061294-4256-49c9-9a7f-7e3c327fba9f",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad04",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/f150/textures/x3_bad04_nm.png",
+        "opacityMap": "/vehicles/f150/textures/x3_bad04.dds"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "alphaRef": 37,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_seatbelt": {
+    "name": "sdd_trx2_seatbelt",
+    "mapTo": "sdd_trx2_seatbelt",
+    "class": "Material",
+    "persistentId": "93c18296-19a0-4b55-ada0-b9f868c51501",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_xbelt01",
+        "metallicFactor": 0.510999978,
+        "normalMap": "/vehicles/f150/textures/x3_xbelt01_nm.png",
+        "roughnessFactor": 0.816999972
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_signal_L": {
+    "name": "sdd_trx2_signal_L",
+    "mapTo": "sdd_trx2_signal_L",
+    "class": "material",
+    "persistentId": "ee246157-2451-4896-91c3-1bd8a725dca7",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_signal_R": {
+    "name": "sdd_trx2_signal_R",
+    "mapTo": "sdd_trx2_signal_R",
+    "class": "material",
+    "persistentId": "01251a3e-9f79-40b6-8228-697357cd1944",
+    "Stages": [
+      {
+        "colorMap": "x3_light01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_silver": {
+    "name": "sdd_trx2_silver",
+    "mapTo": "sdd_trx2_silver",
+    "class": "Material",
+    "persistentId": "c7a8ce4e-a287-4410-a36b-995169849e05",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad02",
+        "metallicFactor": 1,
+        "roughnessFactor": 0.252000004
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_speaker": {
+    "name": "sdd_trx2_speaker",
+    "mapTo": "sdd_trx2_speaker",
+    "class": "Material",
+    "persistentId": "5ec570be-de85-4071-82b3-bc2597be74bb",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_grill01",
+        "metallicFactor": 0.474000007,
+        "normalMap": "/vehicles/f150/textures/x3_grill01_nm.png",
+        "opacityMap": "/vehicles/f150/textures/x3_grill01.dds",
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 66,
+    "alphaTest": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_steer": {
+    "name": "sdd_trx2_steer",
+    "mapTo": "sdd_trx2_steer",
+    "class": "Material",
+    "persistentId": "f0b74b26-7a4c-425a-a27d-f7b28a1c1d5a",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad03",
+        "metallicFactor": 0.294,
+        "roughnessFactor": 0.799000025
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_stitch": {
+    "name": "sdd_trx2_stitch",
+    "mapTo": "sdd_trx2_stitch",
+    "class": "Material",
+    "persistentId": "1ffe8ae2-ae99-4d6e-8301-fb6cb298ded9",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.430424005,
+          0.272484988,
+          0.272484988,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_bad05",
+        "metallicFactor": 0.774999976,
+        "opacityFactor": 0.730000019,
+        "opacityMap": "/vehicles/f150/textures/x3_bad05.dds",
+        "roughnessFactor": 0.634000003
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 118,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx2_symbols": {
+    "name": "sdd_trx2_symbols",
+    "mapTo": "sdd_trx2_symbols",
+    "class": "Material",
+    "persistentId": "e09d55c8-f5ba-4557-8f2e-1bc838403406",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/x3_bad05",
+        "emissive": true
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      }
+    ],
+    "alphaRef": 33,
+    "alphaTest": true,
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_taillight": {
+    "name": "sdd_trx2_taillight",
+    "mapTo": "sdd_trx2_taillight",
+    "class": "material",
+    "persistentId": "69360b5d-0ba5-4e65-ba79-d9b01007efe5",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.55960077,
+          0,
+          0.000539197994,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx_cameras": {
+    "name": "sdd_trx_cameras",
+    "mapTo": "sdd_trx_cameras",
+    "class": "Material",
+    "persistentId": "7e2358b1-80cd-4e16-855c-9fc191f581d8",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/x3_bad02"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 142,
+    "alphaTest": true,
+    "translucentBlendOp": "None"
+  },
+  "sdd_trx2_dash": {
+    "name": "sdd_trx2_dash",
+    "mapTo": "sdd_trx2_dash",
+    "class": "Material",
+    "persistentId": "16b927d9-d817-485d-a245-a53627762e34",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.512574017,
+          0.512574017,
+          0.512574017,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/x3_grill05.dds",
+        "metallicFactor": 0.476999998,
+        "normalMap": "/vehicles/f150/textures/x3_grill05_nm.png",
+        "roughnessFactor": 0.411000013
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx_dash3": {
+    "name": "sdd_trx_dash3",
+    "mapTo": "sdd_trx_dash3",
+    "class": "Material",
+    "persistentId": "3e0e7fef-92a3-4958-9c1f-9b779955d1b9",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad05",
+        "metallicFactor": 1,
+        "roughnessFactor": 0
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_trx_tailgatecamera": {
+    "name": "sdd_trx_tailgatecamera",
+    "mapTo": "sdd_trx_tailgatecamera",
+    "class": "material",
+    "persistentId": "33614940-eeae-434f-9739-f1e20d2a1d6c",
+    "Stages": [
+      {
+        "colorMap": "x3_bad07"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "vehicle_lightsemissive_002": {
+    "name": "vehicle_lightsemissive_002",
+    "mapTo": "vehicle_lightsemissive.002",
+    "class": "Material",
+    "persistentId": "5ba73f8e-2337-4695-be88-f01f6ebd56db",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_light01",
+        "emissiveMap": "/vehicles/f150/textures/x3_light01",
+        "metallicFactor": 0,
+        "roughnessFactor": 0.35
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "vehicle_lightsemissive_004": {
+    "name": "vehicle_lightsemissive_004",
+    "mapTo": "vehicle_lightsemissive.004",
+    "class": "Material",
+    "persistentId": "acfa963e-2e08-480a-a5d2-5c79fcc5eae3",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_light01",
+        "emissiveMap": "/vehicles/f150/textures/x3_light01",
+        "metallicFactor": 0,
+        "roughnessFactor": 0.35
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "vehicle_mesh_001": {
+    "name": "vehicle_mesh_001",
+    "mapTo": "vehicle_mesh.001",
+    "class": "Material",
+    "persistentId": "7152d04c-1268-4f8a-a5bd-986220e6a562",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormaskR.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "vehicle_mesh_002": {
+    "name": "vehicle_mesh_002",
+    "mapTo": "vehicle_mesh.002",
+    "class": "Material",
+    "persistentId": "0a2ef62f-d4bf-4a3d-b805-2fcae4ecce9c",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormaskR.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "vehicle_mesh_004": {
+    "name": "vehicle_mesh_004",
+    "mapTo": "vehicle_mesh.004",
+    "class": "Material",
+    "persistentId": "2bd32cad-9cc0-45ce-aa82-7c39d95bfcdc",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_bad01",
+        "metallicFactor": 1,
+        "roughnessFactor": 0.685000002
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "vehicle_mesh_018": {
+    "name": "vehicle_mesh_018",
+    "mapTo": "vehicle_mesh.018",
+    "class": "Material",
+    "persistentId": "669adb3d-2841-4df0-8603-ce41aae83160",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/x3_1.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "vehicle_tire_003": {
+    "name": "vehicle_tire_003",
+    "mapTo": "vehicle_tire.003",
+    "class": "material",
+    "persistentId": "b3adf36c-f71a-4777-b2fb-5ae0d614a5cc",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "vehicle_vehglass_004": {
+    "name": "vehicle_vehglass_004",
+    "mapTo": "vehicle_vehglass.004",
+    "class": "material",
+    "persistentId": "9e4a3f96-eac1-44d7-b670-26a5632982b4",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>mod_engine",
+    "samples" : 
+    [
+        [
+           ["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_750.wav", 750],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_1641.wav", 1641],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_2011.wav", 2011],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_2401.wav", 2401],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_2800.wav", 2800],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_3208.wav", 3208],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_3606.wav", 3606],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_4008.wav", 4008],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_4403.wav", 4403],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_4808.wav", 4808],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_5207.wav", 5207],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_5608.wav", 5608],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_deccel_6050.wav", 6050]
+        ],
+        [
+           ["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_1422.wav", 1422],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_1814.wav", 1814],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_2213.wav", 2213],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_2616.wav", 2616],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_3009.wav", 3009],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_3408.wav", 3408],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_3814.wav", 3814],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_4207.wav", 4207],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_4622.wav", 4622],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_4800.wav", 4800],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_5000.wav", 5000],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_5408.wav", 5408],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_5794.wav", 5794],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_6000.wav", 6000],
+["art/sound/engine/Redknee_hellcat_engine/hellcat_engine_accel_6180.wav", 6180]
+        ]
+    ]
+}

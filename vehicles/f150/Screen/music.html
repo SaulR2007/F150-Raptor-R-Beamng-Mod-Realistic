@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: white;
+            overflow: hidden;
+        }
+        
+        .music-player {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 40px; /* Push content down */
+        }
+        
+        .album-art {
+            width: 220px;
+            height: 220px;
+            background-color: #222;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        
+        .album-art img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .track-info {
+            text-align: center;
+            margin-bottom: 30px;
+            width: 90%;
+        }
+        
+        .track-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .artist {
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .progress-bar {
+            width: 90%;
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            width: 30%;
+            background: #f00;
+            border-radius: 2px;
+        }
+        
+        .time-display {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .control-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        
+        .control-button:hover {
+            opacity: 1;
+        }
+        
+        .control-button img {
+            width: 56px;
+            height: 56px;
+        }
+        
+        .play-pause {
+            margin: 0 10px;
+        }
+        
+        .play-pause img {
+            width: 72px;
+            height: 72px;
+        }
+        
+        .no-music {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+        }
+        
+        .no-music.visible {
+            display: flex;
+        }
+        
+        .no-music .title {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        
+        .no-music .subtitle {
+            font-size: 18px;
+            color: #f00;
+            margin-bottom: 10px;
+        }
+        
+        .no-music .website {
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="music-player" id="music-player">
+        <div class="album-art">
+            <img id="album-art-img" src="local://local/vehicles/f150/Screen/album_covers/placeholder.png" alt="Album Art">
+        </div>
+        <div class="track-info">
+            <div class="track-title" id="track-title">Select a song</div>
+            <div class="artist" id="artist"></div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress-fill"></div>
+        </div>
+        <div class="time-display">
+            <span id="current-time">0:00</span>
+            <span id="total-time">0:00</span>
+        </div>
+        <div class="controls">
+            <button class="control-button previous" id="prev-button">
+                <img src="local://local/vehicles/f150/Screen/previous.png" alt="Previous">
+            </button>
+            <button class="control-button play-pause" id="play-button">
+                <img id="play-img" src="local://local/vehicles/f150/Screen/play.png" alt="Play">
+            </button>
+            <button class="control-button next" id="next-button">
+                <img src="local://local/vehicles/f150/Screen/next.png" alt="Next">
+            </button>
+        </div>
+    </div>
+    
+    <div class="no-music" id="no-music">
+        <div class="title">No music found</div>
+        <div class="subtitle">Get some here</div>
+        <div class="website">www.royalrenderings.com/musicpacks</div>
+    </div>
+    
+    <script>
+        const musicPlayer = document.getElementById('music-player');
+        const noMusic = document.getElementById('no-music');
+        const trackTitle = document.getElementById('track-title');
+        const artist = document.getElementById('artist');
+        const albumArtImg = document.getElementById('album-art-img');
+        const progressFill = document.getElementById('progress-fill');
+        const currentTime = document.getElementById('current-time');
+        const totalTime = document.getElementById('total-time');
+        const playImg = document.getElementById('play-img');
+        let isPlaying = false;
+        
+        function formatTime(seconds) {
+            if (isNaN(seconds)) seconds = 0;
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+        
+        document.getElementById('prev-button').addEventListener('click', function() {
+            window.parent.postMessage({ type: 'musicControl', action: 'previous' }, '*');
+        });
+        
+        document.getElementById('play-button').addEventListener('click', function() {
+            window.parent.postMessage({ type: 'musicControl', action: 'toggle' }, '*');
+        });
+        
+        document.getElementById('next-button').addEventListener('click', function() {
+            window.parent.postMessage({ type: 'musicControl', action: 'next' }, '*');
+        });
+        
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'updateTrack') {
+                if (event.data.data.noMusic) {
+                    noMusic.classList.add('visible');
+                    musicPlayer.style.display = 'none';
+                    return;
+                }
+                
+                noMusic.classList.remove('visible');
+                musicPlayer.style.display = 'flex';
+                
+                if (event.data.data.title) trackTitle.textContent = event.data.data.title;
+                if (event.data.data.artist) artist.textContent = event.data.data.artist;
+                if (event.data.data.albumArt) albumArtImg.src = event.data.data.albumArt;
+                
+                isPlaying = event.data.data.isPlaying;
+                playImg.src = isPlaying ? 
+                    'local://local/vehicles/f150/Screen/pause.png' : 
+                    'local://local/vehicles/f150/Screen/play.png';
+            }
+            else if (event.data.type === 'setProgress') {
+                if (event.data.progress !== undefined) {
+                    progressFill.style.width = event.data.progress + '%';
+                }
+                currentTime.textContent = formatTime(event.data.currentTime);
+                totalTime.textContent = formatTime(event.data.totalTime);
+            }
+        });
+        
+        if (window.parent.playlist && window.parent.playlist.length === 0) {
+            noMusic.classList.add('visible');
+            musicPlayer.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

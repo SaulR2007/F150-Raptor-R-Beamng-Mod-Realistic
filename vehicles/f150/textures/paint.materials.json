@@ -1,0 +1,182 @@
+{
+  "RRpbrPaintPrimary": {
+    "name": "RRpbrPaintPrimary",
+    "mapTo": "RRpbrPaintPrimary",
+    "class": "Material",
+    "persistentId": "a1b2c3d4-e5f6-7890-ab12-f150paint0001",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormaskR.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "RRpbrPaintSecondary": {
+    "name": "RRpbrPaintSecondary",
+    "mapTo": "RRpbrPaintSecondary",
+    "class": "Material",
+    "persistentId": "a1b2c3d4-e5f6-7890-ab12-f150paint0002",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormaskG.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "RRpbrPaintTertiary": {
+    "name": "RRpbrPaintTertiary",
+    "mapTo": "RRpbrPaintTertiary",
+    "class": "Material",
+    "persistentId": "a1b2c3d4-e5f6-7890-ab12-f150paint0003",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormask.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "vehicle_paint1": {
+    "name": "vehicle_paint1",
+    "mapTo": "vehicle_paint1",
+    "class": "Material",
+    "persistentId": "a1b2c3d4-e5f6-7890-ab12-f150paint0004",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormaskR.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "vehicle_paint2": {
+    "name": "vehicle_paint2",
+    "mapTo": "vehicle_paint2",
+    "class": "Material",
+    "persistentId": "a1b2c3d4-e5f6-7890-ab12-f150paint0005",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormaskG.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "vehicle_paint3": {
+    "name": "vehicle_paint3",
+    "mapTo": "vehicle_paint3",
+    "class": "Material",
+    "persistentId": "a1b2c3d4-e5f6-7890-ab12-f150paint0006",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/nullcolormask.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

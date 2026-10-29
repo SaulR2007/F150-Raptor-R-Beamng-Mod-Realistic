@@ -1,0 +1,45 @@
+{
+  "sdd_trx2_tire": {
+    "name": "sdd_trx2_tire",
+    "mapTo": "sdd_trx2_tire",
+    "class": "Material",
+    "persistentId": "7812b7fc-e529-4010-8468-40778de0c7cf",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.550911009,
+          0.550911009,
+          0.550911009,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/RaptR_tire_f150_raptR_tire_BaseColor.png",
+        "metallicMap": "/vehicles/f150/textures/RaptR_tire_f150_raptR_tire_Metallic.png",
+        "metallicMapUseUV": 1,
+        "normalMap": "/vehicles/f150/textures/f150_raptR_tire_NM.png",
+        "normalMapStrength": 1.79999995,
+        "normalMapUseUV": 1,
+        "roughnessMap": "/vehicles/f150/textures/RaptR_tire_f150_raptR_tire_Roughness.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicMapUseUV": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicMapUseUV": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicMapUseUV": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  }
+}

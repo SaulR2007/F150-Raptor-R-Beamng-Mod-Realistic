@@ -1,0 +1,16 @@
+{
+  "name": "Ford 4x4 Control",
+  "author": "The_Gamer6000",
+  "version": "1.3.0",
+  "description": "Ford 4x4 pad, drive modes, lockers, trail camera, and Trail Control.",
+  "directive": "fordControl",
+  "domElement": "<ford-control></ford-control>",
+  "types": ["ui.apps.categories.vehicle_control"],
+  "css": {
+    "width": "360px",
+    "height": "250px",
+    "top": "80px",
+    "left": "80px"
+  },
+  "preserveAspectRatio": false
+}

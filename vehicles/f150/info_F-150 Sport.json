@@ -1,0 +1,13 @@
+﻿{
+    "Config Type":  "Custom",
+    "Configuration":  "F-150 Sport",
+    "Description":  "Street sport tune. Naturally aspirated, unlocked 10-speed, firmer springs. No supercharger.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "NA",
+    "Performance Class":  "3",
+    "Population":  300,
+    "Value":  85000,
+    "defaultPaintName1":  "Fire Red"
+}

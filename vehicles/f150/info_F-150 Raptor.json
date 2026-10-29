@@ -1,7 +1,7 @@
-{
+﻿{
     "Config Type":  "Factory",
     "Configuration":  "F-150 Raptor",
-    "Description":  "Factory Raptor baseline. Full AdvanceTrac mode list (Slippery through Rock Crawl), Trail Control UI, speed-limited 10-speed SelectShift.",
+    "Description":  "Factory Raptor. F150 RR Supercharger, full AdvanceTrac mode list, Trail Control UI.",
     "Drivetrain":  "4WD",
     "Transmission":  "Automatic",
     "Fuel Type":  "Gasoline",

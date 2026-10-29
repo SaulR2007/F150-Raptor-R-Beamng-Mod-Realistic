@@ -1,4 +1,4 @@
-{
+﻿{
     "format":  2,
     "licenseName":  "ROYALRENDERINGS",
     "mainPartName":  "f150",
@@ -6,40 +6,40 @@
     "model":  "f150",
     "paints":  [
                    {
-                       "baseColor":  [
-                                         0.02,
-                                         0.02,
-                                         0.02,
-                                         1.2
-                                     ],
                        "clearcoat":  1,
                        "clearcoatRoughness":  0.1,
-                       "metallic":  1,
-                       "roughness":  0.9
+                       "baseColor":  [
+                                         0.02,
+                                         0.02,
+                                         0.02,
+                                         1.2
+                                     ],
+                       "roughness":  0.9,
+                       "metallic":  1
                    },
                    {
+                       "clearcoat":  1,
+                       "clearcoatRoughness":  0.06,
                        "baseColor":  [
                                          0.05,
                                          0.05,
                                          0.05,
                                          1.2
                                      ],
-                       "clearcoat":  1,
-                       "clearcoatRoughness":  0.06,
-                       "metallic":  1,
-                       "roughness":  1
+                       "roughness":  1,
+                       "metallic":  1
                    },
                    {
+                       "clearcoat":  1,
+                       "clearcoatRoughness":  0.06,
                        "baseColor":  [
                                          0.1,
                                          0.1,
                                          0.1,
                                          1.2
                                      ],
-                       "clearcoat":  1,
-                       "clearcoatRoughness":  0.06,
-                       "metallic":  1,
-                       "roughness":  0.8
+                       "roughness":  0.8,
+                       "metallic":  1
                    }
                ],
     "parts":  {
@@ -107,6 +107,7 @@
                   "sdd_trx2_doorpanel_FR":  "sdd_trx2_doorpanel_FR",
                   "sdd_trx2_doorpanel_RL":  "sdd_trx2_doorpanel_RL",
                   "sdd_trx2_doorpanel_RR":  "sdd_trx2_doorpanel_RR",
+                  "sdd_trx2_drivemodes":  "sdd_trx2_drivemodes_sdd_trx2_sc_dtc",
                   "sdd_trx2_driveshaft_F":  "sdd_trx2_driveshaft_F",
                   "sdd_trx2_driveshaft_R_crew":  "sdd_trx2_driveshaft_R_crew",
                   "sdd_trx2_exhaust":  "sdd_trx2_exhaust",
@@ -116,6 +117,7 @@
                   "sdd_trx2_fender_R":  "sdd_trx2_fender_R_raptor",
                   "sdd_trx2_frame":  "sdd_trx2_frame",
                   "sdd_trx2_gauges":  "sdd_trx2_gauges",
+                  "sdd_trx2_gooseneck":  "",
                   "sdd_trx2_grillebadge":  "sdd_trx2_grillebadge",
                   "sdd_trx2_header_v8":  "sdd_trx2_header_v8",
                   "sdd_trx2_headlight_L":  "sdd_trx2_headlight_L",
@@ -156,7 +158,7 @@
                   "sdd_trx2_valance":  "sdd_trx2_valance",
                   "sdd_trx2_windshield":  "sdd_trx2_windshield",
                   "skin_glass":  "",
-                  "skin_interior":  "",
+                  "skin_interior":  "sdd_trx2_skin_interior_raptR",
                   "soundscape_horn":  "soundscape_horn_3",
                   "tire_F_trx":  "sdd_trx2_tire_F",
                   "tire_R_trx":  "sdd_trx2_tire_R",
@@ -164,9 +166,7 @@
                   "wheel_F_6":  "sdd_trx2_wheel_F",
                   "wheel_R_6":  "sdd_trx2_wheel_R",
                   "sdd_trx2_ford_ui":  "sdd_trx2_ford_ui",
-                  "sdd_trx2_transmission":  "sdd_trx2_transmission_10A_f150",
-                  "sdd_trx2_gooseneck":  "",
-                  "sdd_trx2_drivemodes":  "sdd_trx2_drivemodes_sdd_trx2_sc_dtc"
+                  "sdd_trx2_transmission":  "sdd_trx2_transmission_10A_f150"
               },
     "vars":  {
                  "$brakestrength":  1,

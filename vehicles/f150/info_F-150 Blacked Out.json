@@ -1,0 +1,13 @@
+﻿{
+    "Config Type":  "Factory",
+    "Configuration":  "F-150 Blacked Out",
+    "Description":  "All-black cosmetic daily. Naturally aspirated, street modes. No supercharger.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "NA",
+    "Performance Class":  "3",
+    "Population":  350,
+    "Value":  81000,
+    "defaultPaintName1":  "Matte Black"
+}

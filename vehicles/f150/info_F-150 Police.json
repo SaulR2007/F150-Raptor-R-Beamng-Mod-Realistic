@@ -1,13 +1,13 @@
-{
-    "Config Type":  "Service",
+﻿{
+    "Config Type":  "Police",
     "Configuration":  "F-150 Police",
-    "Description":  "Interceptor-style package with police equipment and lightbar. Street drive modes for pursuit on pavement. Speed-limited transmission for patrol duty.",
+    "Description":  "Police interceptor package. Naturally aspirated with police lights and interior. Street modes.",
     "Drivetrain":  "4WD",
     "Transmission":  "Automatic",
     "Fuel Type":  "Gasoline",
-    "Induction Type":  "SC",
-    "Performance Class":  "4",
+    "Induction Type":  "NA",
+    "Performance Class":  "3",
     "Population":  150,
-    "Value":  98000,
-    "defaultPaintName1":  "Jet Black"
+    "Value":  88000,
+    "defaultPaintName1":  "Pearl White"
 }

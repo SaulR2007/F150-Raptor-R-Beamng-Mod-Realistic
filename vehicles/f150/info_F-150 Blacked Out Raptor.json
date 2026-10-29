@@ -1,0 +1,13 @@
+﻿{
+    "Config Type":  "Factory",
+    "Configuration":  "F-150 Blacked Out Raptor",
+    "Description":  "Blacked-out Raptor. F150 RR Supercharger with full AdvanceTrac modes.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "SC",
+    "Performance Class":  "4",
+    "Population":  280,
+    "Value":  92000,
+    "defaultPaintName1":  "Matte Black"
+}

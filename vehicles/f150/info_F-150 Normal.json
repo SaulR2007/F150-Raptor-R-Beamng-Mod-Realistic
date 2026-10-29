@@ -1,0 +1,13 @@
+﻿{
+    "Config Type":  "Factory",
+    "Configuration":  "F-150 Normal",
+    "Description":  "Stock daily F-150. Naturally aspirated intake (no supercharger). Street drive modes only.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "NA",
+    "Performance Class":  "3",
+    "Population":  900,
+    "Value":  78000,
+    "defaultPaintName1":  "Pearl White"
+}

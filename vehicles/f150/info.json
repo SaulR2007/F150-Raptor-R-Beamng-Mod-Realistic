@@ -7,7 +7,7 @@
     "Name":  "F-150 Raptor",
     "Type":  "Truck",
     "defaultPaintName1":  "Sea Blue",
-    "default_pc":  "F-150 Raptor",
+    "default_pc":  "F-150 Normal",
     "paints":  {
                    "Aquamarine":  {
                                       "baseColor":  [

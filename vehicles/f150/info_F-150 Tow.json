@@ -1,0 +1,13 @@
+﻿{
+    "Config Type":  "Factory",
+    "Configuration":  "F-150 Tow",
+    "Description":  "Tow / haul focused. Naturally aspirated with Tow mode and hitch. No supercharger.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "NA",
+    "Performance Class":  "3",
+    "Population":  400,
+    "Value":  80000,
+    "defaultPaintName1":  "Carbon Gray"
+}

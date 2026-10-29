@@ -1,4 +1,4 @@
-{
+﻿{
     "format":  2,
     "licenseName":  "ROYALRENDERINGS",
     "mainPartName":  "f150",
@@ -6,40 +6,40 @@
     "model":  "f150",
     "paints":  [
                    {
+                       "clearcoat":  1,
+                       "clearcoatRoughness":  0.06,
                        "baseColor":  [
-                                         0.23,
                                          0.33,
-                                         0.46,
+                                         0.33,
+                                         0.33,
                                          1.2
                                      ],
-                       "clearcoat":  1,
-                       "clearcoatRoughness":  0.06,
-                       "metallic":  0,
-                       "roughness":  1
+                       "roughness":  0.6,
+                       "metallic":  0.4
                    },
                    {
+                       "clearcoat":  1,
+                       "clearcoatRoughness":  0.06,
                        "baseColor":  [
                                          0.12,
                                          0.12,
                                          0.12,
                                          1.2
                                      ],
-                       "clearcoat":  1,
-                       "clearcoatRoughness":  0.06,
-                       "metallic":  1,
-                       "roughness":  1
+                       "roughness":  1,
+                       "metallic":  1
                    },
                    {
+                       "clearcoat":  1,
+                       "clearcoatRoughness":  0.06,
                        "baseColor":  [
                                          0.65,
                                          0.65,
                                          0.65,
                                          1.2
                                      ],
-                       "clearcoat":  1,
-                       "clearcoatRoughness":  0.06,
-                       "metallic":  0.9,
-                       "roughness":  0.6
+                       "roughness":  0.6,
+                       "metallic":  0.9
                    }
                ],
     "parts":  {
@@ -63,12 +63,14 @@
                   "pickup_mod":  "",
                   "pickup_oilpan_v8":  "pickup_oilpan_v8_race",
                   "pickup_power_steering":  "",
+                  "pickup_receiver_attachment":  "pickup_receiver_ball",
                   "pickup_reversewarn":  "",
                   "pickup_steering_offroad":  "pickup_steering_offroad",
                   "pickup_suspension_F":  "sdd_trx2_IFS_offroad",
                   "pickup_suspension_R":  "sdd_trx2_suspension_R",
                   "pickup_swaybar_F_offroad":  "pickup_swaybar_F_offroad",
                   "pickup_swaybar_R":  "pickup_swaybar_R_offroad",
+                  "pickup_towhitch":  "pickup_towhitch",
                   "pickup_wheeldata_F":  "pickup_wheeldata_F",
                   "pickup_wheeldata_R":  "pickup_wheeldata_R",
                   "sdd_trx2_ABS":  "sdd_trx2_ABS_f150",
@@ -105,6 +107,7 @@
                   "sdd_trx2_doorpanel_FR":  "sdd_trx2_doorpanel_FR",
                   "sdd_trx2_doorpanel_RL":  "sdd_trx2_doorpanel_RL",
                   "sdd_trx2_doorpanel_RR":  "sdd_trx2_doorpanel_RR",
+                  "sdd_trx2_drivemodes":  "sdd_trx2_drivemodes_tow_only",
                   "sdd_trx2_driveshaft_F":  "sdd_trx2_driveshaft_F",
                   "sdd_trx2_driveshaft_R_crew":  "sdd_trx2_driveshaft_R_crew",
                   "sdd_trx2_exhaust":  "sdd_trx2_exhaust",
@@ -114,6 +117,7 @@
                   "sdd_trx2_fender_R":  "sdd_trx2_fender_R_raptor",
                   "sdd_trx2_frame":  "sdd_trx2_frame",
                   "sdd_trx2_gauges":  "sdd_trx2_gauges",
+                  "sdd_trx2_gooseneck":  "",
                   "sdd_trx2_grillebadge":  "sdd_trx2_grillebadge",
                   "sdd_trx2_header_v8":  "sdd_trx2_header_v8",
                   "sdd_trx2_headlight_L":  "sdd_trx2_headlight_L",
@@ -121,7 +125,7 @@
                   "sdd_trx2_hood":  "sdd_trx2_hood",
                   "sdd_trx2_innerfender_L":  "sdd_trx2_innerfender_L",
                   "sdd_trx2_innerfender_R":  "sdd_trx2_innerfender_R",
-                  "sdd_trx2_intake_v8":  "sdd_trx2_supercharger_v8_rr",
+                  "sdd_trx2_intake_v8":  "sdd_trx2_intake_v8_na",
                   "sdd_trx2_interior":  "sdd_trx2_interior",
                   "sdd_trx2_interior_accessory":  "",
                   "sdd_trx2_lettering_fender":  "",
@@ -154,7 +158,7 @@
                   "sdd_trx2_valance":  "sdd_trx2_valance",
                   "sdd_trx2_windshield":  "sdd_trx2_windshield",
                   "skin_glass":  "",
-                  "skin_interior":  "",
+                  "skin_interior":  "sdd_trx2_skin_interior_Lblack",
                   "soundscape_horn":  "soundscape_horn_3",
                   "tire_F_trx":  "sdd_trx2_tire_F",
                   "tire_R_trx":  "sdd_trx2_tire_R",
@@ -162,11 +166,7 @@
                   "wheel_F_6":  "sdd_trx2_wheel_F",
                   "wheel_R_6":  "sdd_trx2_wheel_R",
                   "sdd_trx2_ford_ui":  "sdd_trx2_ford_ui",
-                  "sdd_trx2_transmission":  "sdd_trx2_transmission_10A_f150",
-                  "pickup_receiver_attachment":  "pickup_receiver_ball",
-                  "sdd_trx2_gooseneck":  "sdd_trx2_gooseneck",
-                  "sdd_trx2_drivemodes":  "sdd_trx2_drivemodes_tow_only",
-                  "pickup_towhitch":  "pickup_towhitch"
+                  "sdd_trx2_transmission":  "sdd_trx2_transmission_10A_f150"
               },
     "vars":  {
                  "$brakestrength":  1,
@@ -174,12 +174,16 @@
                  "$caster_FR":  1,
                  "$damp_bump_F":  10000,
                  "$damp_bump_F_fast":  19000,
+                 "$damp_bump_R3":  4000,
                  "$damp_bump_R3_fast":  9000,
                  "$damp_rebound_F":  10000,
+                 "$damp_rebound_R3":  4000,
                  "$ffbstrength":  1,
                  "$finaldrive_F":  2.38,
                  "$finaldrive_R":  2.38,
                  "$fuel":  90,
+                 "$spring_F":  95500,
+                 "$spring_R3":  25000,
                  "$springheight_F":  -0.06,
                  "$springheight_R3":  -0.06,
                  "$steer_center_F":  0,
@@ -190,10 +194,6 @@
                  "$toe_FR":  0.999,
                  "$trackbar_R":  0,
                  "$trackoffset_F":  0.032,
-                 "$trackoffset_R":  0.032,
-                 "$spring_F":  105000,
-                 "$damp_bump_R3":  6000,
-                 "$damp_rebound_R3":  6000,
-                 "$spring_R3":  38000
+                 "$trackoffset_R":  0.032
              }
 }

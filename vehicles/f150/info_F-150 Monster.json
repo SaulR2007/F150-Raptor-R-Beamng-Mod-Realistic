@@ -1,0 +1,13 @@
+﻿{
+    "Config Type":  "Custom",
+    "Configuration":  "F-150 Monster",
+    "Description":  "Monster build. Dedicated Monster Supercharger (tune boost in jbeam later), unlocked 10-speed, stiffer suspension.",
+    "Drivetrain":  "4WD",
+    "Transmission":  "Automatic",
+    "Fuel Type":  "Gasoline",
+    "Induction Type":  "SC",
+    "Performance Class":  "5",
+    "Population":  80,
+    "Value":  115000,
+    "defaultPaintName1":  "Arsenic Green"
+}

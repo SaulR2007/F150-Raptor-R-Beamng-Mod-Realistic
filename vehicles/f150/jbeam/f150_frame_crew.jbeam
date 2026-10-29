@@ -1,7 +1,7 @@
 {"sdd_trx2_frame":
 {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Crew Frame",
         "value":3200,
     },
@@ -10,24 +10,23 @@
 
     "slots":[
         ["type", "default", "description"],
-        //DSE
-        ["sdd_trx2_DSE","sdd_trx2_DSE", "Driving & Safety Electronics"],
         //running gear
-        ["pickup_fueltank","pickup_fueltank","Fuel Tank", {"nodeOffset":{"x":0.0,"y":0.4,"z":0.17}}],
+        ["sdd_trx2_DSE","sdd_trx2_DSE", "Driving & Safety Electronics"],
+                ["pickup_fueltank","pickup_fueltank","Fuel Tank", {"nodeOffset":{"x":0.0,"y":0.8987,"z":0}}],
         ["pickup_engine","pickup_engine_v8_4.5","Engine"],
-        ["sdd_trx2_muffler_crew","sdd_trx2_muffler_crew","Muffler", {"nodeMove":{"x":0.0,"y":0.0,   "z":-0.05}}],
-        ["pickup_suspension_R","pickup_axle_R","Rear Suspension", {"nodeMove":{"x":0.0,"y":0.55,"z":0}}],
+        ["sdd_trx2_muffler_crew","sdd_trx2_muffler_crew","Muffler"],
+        ["pickup_suspension_R","pickup_axle_R","Rear Suspension", {"nodeMove":{"x":0.0,"y":0.68,"z":0}}],
         ["pickup_suspension_F","pickup_IFS","Front Suspension",{"nodeMove":{"x":0.0,"y":0.03,"z":0}}],
         ["sdd_trx2_driveshaft_R_crew","sdd_trx2_driveshaft_R_crew","Rear Driveshaft"],
         ////bodywork
-        ["sdd_trx2_radsupport", "sdd_trx2_radsupport", "Radiator Support", {"nodeMove":{"x":0.0,"y":0.0,   "z":-0.05}}],
-        ["sdd_trx2_bumper_F","sdd_trx2_bumper_F","Front Bumper",           {"nodeMove":{"x":0.0,"y":0.0,   "z":-0.05}}],
-        ["sdd_trx2_bumper_R","sdd_trx2_bumper_R","Rear Bumper",            {"nodeMove":{"x":0.0,"y":0.0,   "z":-0.05}}],
-        ["sdd_trx2_body","sdd_trx2_body","Body",                 {"nodeMove":{"x":0.0,"y":0.0,   "z":-0.05}}],
-        ["sdd_trx2_bed","sdd_trx2_bed","Bed",                              {"nodeMove":{"x":0.0,"y":0.0,   "z":-0.05}}],
+        ["sdd_trx2_radsupport", "sdd_trx2_radsupport", "Radiator Support", {"nodeOffset":{"x":0.0,"y":0.0,   "z":0}}],
+        ["sdd_trx2_bumper_F","sdd_trx2_bumper_F","Front Bumper",           {"nodeOffset":{"x":0.0,"y":0.0,   "z":0}}],
+        ["sdd_trx2_bumper_R","sdd_trx2_bumper_R","Rear Bumper",            {"nodeOffset":{"x":0.0,"y":0.0,"z":0}}],
+        ["sdd_trx2_body","sdd_trx2_body","Body",                 {"nodeOffset":{"x":0.0,"y":0.0,   "z":0}}],
+        ["sdd_trx2_bed","sdd_trx2_bed","Bed",                              {"nodeOffset":{"x":0.0,"y":0.0,"z":0}}],
         //misc
-        ["pickup_towhitch","","Tow Hitch", {"nodeOffset":{"x":0.0,"y":0.6,"z":0.1}}],
-		["sdd_trx2_gooseneck","","Gooseneck Hitch", {"nodeOffset":{"x":0.0,"y":0.3,"z":0.15}}],
+        ["pickup_towhitch","","Tow Hitch", {"nodeOffset":{"x":0.0,"y":0.7,"z":-0.1}}],
+		["sdd_trx2_gooseneck","","Gooseneck Hitch", {"nodeOffset":{"x":0.0,"y":0.3,"z":0}}],
         ["sdd_trx2_sparetire","sdd_trx2_sparetire_6l","Spare Tire", {"nodeOffset":{"x":0.0,"y":0.9487,"z":0}}],
         ["linelock", "", "Brake Line Lock"],
         ["pickup_reversewarn", "", "Reverse Warning Beeper"],
@@ -35,13 +34,13 @@
     "flexbodies":[
         ["mesh", "[group]:", "nonFlexMaterials"],
          //frame
-         ["sdd_trx2_frame", ["sdd_trx2_frame"],[], {"pos":{"x":0.0, "y":0.0, "z":-0.0}}],
-		
+         ["pickup_frame_ext", ["sdd_trx2_frame"],[], {"pos":{"x":0.0, "y":0.0, "z":-0.1}}],
+		  ["sdd_raptR_towhooks", ["sdd_trx2_frame"],[], {"pos":{"x":0.0, "y":0.0, "z":-0.0}}],
     ],
 
     "refNodes":[
         ["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"],
-        ["f5r", "f21r", "f5l", "f15r", "f1l", "f1r"],
+        ["f4r", "f5r", "f4l", "f14r", "f1l", "f1r"],
     ],
     "cameraChase":{
         "distance":5.7,
@@ -53,7 +52,7 @@
     "cameraExternal":{
         "distance":5.7,
         "distanceMin":2,
-        "offset":{"x":0.55, "y":0.6, "z":0.50},
+        "offset":{"x":0.55, "y":1.5, "z":0.50},
         "fov":65,
     },
     "camerasInternal":[
@@ -111,88 +110,88 @@
 
          //front
          {"nodeWeight":12.69},
-         ["f1r", -0.44000, -2.18138, 0.43422],
-         ["f1l", 0.44000, -2.18138, 0.43422],
-         ["f2r", -0.44000, -1.75981, 0.50998, {"group":"sdd_trx2_swaybar_F"}],
-         ["f2l", 0.44000, -1.75981, 0.50998, {"group":"sdd_trx2_swaybar_F"}],
-         ["f3r", -0.44000, -1.32880, 0.51995],
-         ["f3l", 0.44000, -1.32880, 0.51995],
+         ["f1r", -0.44000, -2.08000, 0.48000],
+         ["f1l", 0.44000, -2.08000, 0.48000],
+         ["f2r", -0.44000, -1.74000, 0.48000, {"group":"sdd_trx2_swaybar_F"}],
+         ["f2l", 0.44000, -1.74000, 0.48000, {"group":"sdd_trx2_swaybar_F"}],
+         ["f3r", -0.44000, -1.35000, 0.48000],
+         ["f3l", 0.44000, -1.35000, 0.48000],
 
-         ["f11r", -0.44000, -2.18138, 0.55608],
-         ["f11l", 0.44000, -2.18138, 0.55608],
-         ["f12r", -0.44000, -1.75981, 0.65998],
-         ["f12l", 0.44000, -1.75981, 0.65998],
-         ["f13r", -0.44000, -1.32880, 0.66995],
-         ["f13l", 0.44000, -1.32880, 0.66995],
+         ["f11r", -0.44000, -2.08000, 0.63000],
+         ["f11l", 0.44000, -2.08000, 0.63000],
+         ["f12r", -0.44000, -1.74000, 0.63000],
+         ["f12l", 0.44000, -1.74000, 0.63000],
+         ["f13r", -0.44000, -1.35000, 0.63000],
+         ["f13l", 0.44000, -1.35000, 0.63000],
 
          //mid
          {"selfCollision":true},
          {"nodeWeight":14.57},
-         ["f4r", -0.49117, -0.85000, 0.43999],
-         ["f4l", 0.49117, -0.85000, 0.43999],
-         ["f5r", -0.55000, -0.37893, 0.36000],
-         ["f5l", 0.55000, -0.37893, 0.36000],
-         ["f6r", -0.55000, 1.24781, 0.40993],
-         ["f6l", 0.55000, 1.24781, 0.40993],
+         ["f4r", -0.55000, -0.85000, 0.35000],
+         ["f4l", 0.55000, -0.85000, 0.35000],
+         ["f5r", -0.55000, -0.24000, 0.35000],
+         ["f5l", 0.55000, -0.24000, 0.35000],
+         ["f6r", -0.55000, 1.34570, 0.35000],
+         ["f6l", 0.55000, 1.34570, 0.35000],
          //crew
-         ["f21r", -0.55000, 0.20107, 0.36000],
-         ["f21l", 0.55000, 0.20107, 0.36000],
+         ["f21r", -0.55000, 0.34000, 0.35000],
+         ["f21l", 0.55000, 0.34000, 0.35000],
 
 
          {"selfCollision":false},
-         ["f14r", -0.49117, -0.85000, 0.59999],
-         ["f14l", 0.49117, -0.85000, 0.59999],
-         ["f15r", -0.55000, -0.37893, 0.52000],
-         ["f15l", 0.55000, -0.37893, 0.52000],
-         ["f16r", -0.55000, 1.24781, 0.56993],
-         ["f16l", 0.55000, 1.24781, 0.56993],
+         ["f14r", -0.55000, -0.85000, 0.51000],
+         ["f14l", 0.55000, -0.85000, 0.51000],
+         ["f15r", -0.55000, -0.24000, 0.51000],
+         ["f15l", 0.55000, -0.24000, 0.51000],
+         ["f16r", -0.55000, 1.34570, 0.51000],
+         ["f16l", 0.55000, 1.34570, 0.51000],
          //crew
-         ["f22r", -0.55000, 0.20107, 0.52000],
-         ["f22l", 0.55000, 0.20107, 0.52000],
+         ["f22r", -0.55000, 0.34000, 0.51000],
+         ["f22l", 0.55000, 0.34000, 0.51000],
 
          //rear
          {"selfCollision":true},
          {"nodeWeight":12.69},
-         ["f7r", -0.55000, 1.53215, 0.58036],
-         ["f7l", 0.55000, 1.53215, 0.58036],
-         ["f8r", -0.55000, 2.03315, 0.64998],
-         ["f8l", 0.55000, 2.03315, 0.64998],
-         ["f9r", -0.55000, 2.46949, 0.64998],
-         ["f9l", 0.55000, 2.46949, 0.64998],
-         ["f10r", -0.55000, 2.96049, 0.64998],
-         ["f10l", 0.55000, 2.96049, 0.64998],
+         ["f7r", -0.55000, 1.79570, 0.52000],
+         ["f7l", 0.55000, 1.79570, 0.52000],
+         ["f8r", -0.55000, 2.29670, 0.52000],
+         ["f8l", 0.55000, 2.29670, 0.52000],
+         ["f9r", -0.55000, 2.72267, 0.52000],
+         ["f9l", 0.55000, 2.72267, 0.52000],
+         ["f10r", -0.55000, 3.21367, 0.52000],
+         ["f10l", 0.55000, 3.21367, 0.52000],
 
          {"selfCollision":true},
-         ["f17r", -0.55000, 1.51215, 0.71036],
-         ["f17l", 0.55000, 1.51215, 0.71036],
-         ["f18r", -0.55000, 2.03315, 0.77998, {"group":"sdd_trx2_rearshocktop"}],
-         ["f18l", 0.55000, 2.03315, 0.77998, {"group":"sdd_trx2_rearshocktop"}],
-         ["f19r", -0.55000, 2.46949, 0.77998],
-         ["f19l", 0.55000, 2.46949, 0.77998],
+         ["f17r", -0.55000, 1.77570, 0.65000],
+         ["f17l", 0.55000, 1.77570, 0.65000],
+         ["f18r", -0.55000, 2.29670, 0.65000, {"group":"sdd_trx2_rearshocktop"}],
+         ["f18l", 0.55000, 2.29670, 0.65000, {"group":"sdd_trx2_rearshocktop"}],
+         ["f19r", -0.55000, 2.72267, 0.65000],
+         ["f19l", 0.55000, 2.72267, 0.65000],
          {"selfCollision":true},
-         ["f20r", -0.55000, 2.96049, 0.77998],
-         ["f20l", 0.55000, 2.96049, 0.77998],
+         ["f20r", -0.55000, 3.21367, 0.65000],
+         ["f20l", 0.55000, 3.21367, 0.65000],
 
          //--CROSSMEMBERS--
          {"nodeWeight":7.05},
          //1
-         ["f4", 0.00000, -0.85000, 0.43999],
-         ["f14", 0.00000, -0.85000, 0.54999, {"selfCollision":false}],
+         ["f4", 0.00000, -0.85000, 0.35000],
+         ["f14", 0.00000, -0.85000, 0.46000, {"selfCollision":false}],
          //2
-         ["f6", 0.00000, 1.24781, 0.49993],
-         ["f16", 0.00000, 1.24781, 0.56993, {"selfCollision":false}],
+         ["f6", 0.00000, 1.34570, 0.44000],
+         ["f16", 0.00000, 1.34570, 0.51000, {"selfCollision":false}],
          //ext
-         ["f21", 0.00000, 0.20107, 0.45000],
-         ["f22", 0.00000, 0.20107, 0.52000, {"selfCollision":false}],
+         ["f21", 0.00000, 0.34000, 0.44000],
+         ["f22", 0.00000, 0.34000, 0.51000, {"selfCollision":false}],
          //3
-         ["f7", 0.00000, 1.53215, 0.58036],
-         ["f17", 0.00000, 1.53215, 0.71036, {"selfCollision":false}],
+         ["f7", 0.00000, 1.79570, 0.52000],
+         ["f17", 0.00000, 1.79570, 0.65000, {"selfCollision":false}],
          //4
-         ["f9", 0.00000, 2.46949, 0.67998],
-         ["f19", 0.00000, 2.46949, 0.77998, {"selfCollision":false}],
+         ["f9", 0.00000, 2.72267, 0.55000],
+         ["f19", 0.00000, 2.72267, 0.65000, {"selfCollision":false}],
          //5
-         ["f10", 0.00000, 2.96049, 0.64998],
-         ["f20", 0.00000, 2.96049, 0.77998],
+         ["f10", 0.00000, 3.21367, 0.52000],
+         ["f20", 0.00000, 3.21367, 0.65000],
 
          //--FRONT RUNNING GEAR--
 
@@ -201,16 +200,16 @@
          {"selfCollision":true},
          {"group":"sdd_trx2_shocktop"},
          {"nodeWeight":7.52},
-         ["fs1r", -0.47300, -1.47880, 0.76995],
-         ["fs1l", 0.47300, -1.47880, 0.76995],
+         ["fs1r", -0.47300, -1.50000, 0.73000],
+         ["fs1l", 0.47300, -1.50000, 0.73000],
 
          //--REAR RUNNING GEAR
 
          //shock mount
          {"nodeWeight":7.52},
          {"group":"sdd_trx2_rearshocktop"}
-         ["rs1r", -0.43000, 1.78615, 0.77998],
-         ["rs1l", 0.43000, 1.78615, 0.77998],
+         ["rs1r", -0.43000, 2.04970, 0.65000],
+         ["rs1l", 0.43000, 2.04970, 0.65000],
 
          ////leaf mounts
          //{"collision":true},

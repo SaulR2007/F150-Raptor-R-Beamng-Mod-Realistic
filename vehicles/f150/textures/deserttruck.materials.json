@@ -1,0 +1,56 @@
+{
+  "toplvlcrawler": {
+    "name": "toplvlcrawler",
+    "mapTo": "toplvlcrawler",
+    "class": "Material",
+    "persistentId": "5d9f97c3-ef38-4dd2-9232-4460514fb65e",
+    "Stages": [
+      {
+        "colorMap": "vehicles/pickup/deserttruck/pickupcage_toplvlcrawler_d.color.png",
+        "normalMap": "vehicles/pickup/deserttruck/pickupcage_toplvlcrawler_n.normal.png",
+        "pixelSpecular": true,
+        "reflectivityMap": "vehicles/pickup/deserttruck/pickupcage_toplvlcrawler_r.color.png",
+        "specularMap": "vehicles/pickup/deserttruck/pickupcage_toplvlcrawler_s.color.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "None"
+  },
+  "utility_runningsignal_L": {
+    "name": "utility_runningsignal_L",
+    "mapTo": "utility_runningsignal_L",
+    "class": "Material",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true
+  },
+  "utility_runningsignal_R": {
+    "name": "utility_runningsignal_R",
+    "mapTo": "utility_runningsignal_R",
+    "class": "Material",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true
+  },
+  "utility_taillight_L": {
+    "name": "utility_taillight_L",
+    "mapTo": "utility_taillight_L",
+    "class": "Material",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true
+  },
+  "utility_taillight_R": {
+    "name": "utility_taillight_R",
+    "mapTo": "utility_taillight_R",
+    "class": "Material",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true
+  }
+}

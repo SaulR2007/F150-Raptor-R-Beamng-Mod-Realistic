@@ -1,0 +1,132 @@
+{
+  "sdd_raptR_leather2": {
+    "name": "sdd_raptR_leather2",
+    "mapTo": "sdd_raptR_leather2",
+    "class": "Material",
+    "persistentId": "01803ff2-36f7-40b9-916a-3d08ed34642f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.26612299699999997,
+          0.26612299699999997,
+          0.26612299699999997,
+          1
+        ],
+        "metallicFactor": 0.680999994,
+        "normalMap": "/vehicles/f150/textures/51fde164aab11863839bd05df184079f.png",
+        "normalMapStrength": 1.62,
+        "normalMapUseUV": 1,
+        "roughnessFactor": 0.442000002
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_matteblack": {
+    "name": "sdd_raptR_matteblack",
+    "mapTo": "sdd_raptR_matteblack",
+    "class": "Material",
+    "persistentId": "45823417-0ee9-4451-956c-a4eeb4c06ce1",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.452331007,
+          0.452331007,
+          0.452331007,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.629999995
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_roofliner": {
+    "name": "sdd_raptR_roofliner",
+    "mapTo": "sdd_raptR_roofliner",
+    "class": "Material",
+    "persistentId": "f8aa7d30-1d62-4316-9f52-ad11a292a52f",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/x3_xalcantara01.dds",
+        "metallicFactor": 0.412999988
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_stitch2": {
+    "name": "sdd_raptR_stitch2",
+    "mapTo": "sdd_raptR_stitch2",
+    "class": "Material",
+    "persistentId": "1b3dc3b1-7164-4ff3-8340-eeea6741e4a9",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/stitch_002.dds",
+        "diffuseColor": [
+          1,
+          0.463283986,
+          0.463283986,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "alphaRef": 31,
+    "alphaTest": true
+  }
+}

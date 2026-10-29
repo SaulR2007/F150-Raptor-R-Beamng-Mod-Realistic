@@ -92,8 +92,8 @@ local function openTrailCamera()
     return
   end
   local cam = extensions.core_camera
-  if cam and cam.setBySlotId then
-    cam.setBySlotId(0, 9)
+  if cam and cam.setByName then
+    cam.setByName(0, "onboard.trail", false)
   end
 end
 

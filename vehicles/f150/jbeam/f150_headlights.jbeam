@@ -1,14 +1,14 @@
 {
 "sdd_trx2_headlight_R": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Right Headlight",
         "value":220,
     },
     "slotType" : "sdd_trx2_headlight_R",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_headlight_R", ["sdd_trx2_fascia"]],
+         ["sdd_raptR_headlight_R", ["sdd_trx2_fascia"]],
     ],
     "props": [
         ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
@@ -25,10 +25,10 @@
         },
         //low beams angled right slightly to avoid blinding oncoming traffic
         ["lowbeam"    , "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":0.3},
-        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.0,"deformGroup":"headlightglass_R_break"}],
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_R_break"}],
         //high beams
         ["highbeam" ,         "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3, "z":0.3},
-        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.0,"deformGroup":"headlightglass_R_break"}],
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_R_break"}],
         ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -39,8 +39,8 @@
          {"selfCollision":true},
          {"group":"sdd_trx2_fascia"},
          {"nodeWeight":2.5},
-         ["fa1r", -0.58031, -2.28990, 1.22109],
-         ["fa2r", -0.56650, -2.27812, 0.89303],
+         ["fa1r", -0.59661, -2.23990, 1.03213],
+         ["fa2r", -0.58241, -2.24868, 0.70407],
          {"group":""},
     ],
     "beams": [
@@ -64,7 +64,7 @@
 },
 "sdd_trx2_headlight_L": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Left Headlight",
         "value":220,
     },
@@ -72,7 +72,7 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          
-         ["sdd_trx2_headlight_L", ["sdd_trx2_fascia"]],
+         ["sdd_raptR_headlight_L", ["sdd_trx2_fascia"]],
         
     ],
     "props": [
@@ -90,10 +90,10 @@
         },
         //low beams angled right slightly to avoid blinding oncoming traffic
         ["lowbeam"    , "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":-0.3},
-        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.0,"deformGroup":"headlightglass_L_break"}],
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_L_break"}],
         //high beams
         ["highbeam" ,         "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-20} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3 "z":-0.3},
-        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.0,"deformGroup":"headlightglass_L_break"}],
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_L_break"}],
         ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -104,8 +104,8 @@
          {"selfCollision":true},
          {"group":"sdd_trx2_fascia"},
          {"nodeWeight":2.5},
-        ["fa1l", 0.58031, -2.28990, 1.22109],
-          ["fa2l", 0.56650, -2.27812, 0.89303],
+         ["fa1l", 0.59661, -2.23990, 1.03213],
+         ["fa2l", 0.58241, -2.24868, 0.70407],
          {"group":""},
     ],
     "beams": [
@@ -127,16 +127,16 @@
           {"deformLimitExpansion":1.2},
     ],
 },
-"sdd_trx2_headlight_R_orange": {
+"sdd_trx2_headlight_R_alt": {
     "information":{
-        "authors":"The_Gamer6000",
-        "name":"Right Headlight (Orange DRL)",
+        "authors":"BeamNG",
+        "name":"Right Headlight (White DRL)",
         "value":220,
     },
     "slotType" : "sdd_trx2_headlight_R",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_headlight_R_orange", ["sdd_trx2_fascia"]],
+         ["sdd_raptR_headlight_R_w", ["sdd_trx2_fascia"]],
     ],
     "props": [
         ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
@@ -153,10 +153,10 @@
         },
         //low beams angled right slightly to avoid blinding oncoming traffic
         ["lowbeam"    , "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":0.3},
-        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.0,"deformGroup":"headlightglass_R_break"}],
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_R_break"}],
         //high beams
         ["highbeam" ,         "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3, "z":0.3},
-        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.0,"deformGroup":"headlightglass_R_break"}],
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_R_break"}],
         ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -167,8 +167,8 @@
          {"selfCollision":true},
          {"group":"sdd_trx2_fascia"},
          {"nodeWeight":2.5},
-         ["fa1r", -0.58031, -2.28990, 1.22109],
-         ["fa2r", -0.56650, -2.27812, 0.89303],
+         ["fa1r", -0.59661, -2.23990, 1.03213],
+         ["fa2r", -0.58241, -2.24868, 0.70407],
          {"group":""},
     ],
     "beams": [
@@ -190,17 +190,17 @@
           {"deformLimitExpansion":1.2},
     ],
 },
-"sdd_trx2_headlight_L_orange": {
+"sdd_trx2_headlight_L_alt": {
     "information":{
-        "authors":"The_Gamer6000",
-        "name":"Left Headlight (Orange DRL)",
+        "authors":"BeamNG",
+        "name":"Left Headlight (White DRL)",
         "value":220,
     },
     "slotType" : "sdd_trx2_headlight_L",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          
-         ["sdd_trx2_headlight_L_orange", ["sdd_trx2_fascia"]],
+         ["sdd_raptR_headlight_L_w", ["sdd_trx2_fascia"]],
         
     ],
     "props": [
@@ -218,10 +218,10 @@
         },
         //low beams angled right slightly to avoid blinding oncoming traffic
         ["lowbeam"    , "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":-0.3},
-        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.0,"deformGroup":"headlightglass_L_break"}],
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_L_break"}],
         //high beams
         ["highbeam" ,         "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-20} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3 "z":-0.3},
-        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.0,"deformGroup":"headlightglass_L_break"}],
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_L_break"}],
         ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -232,8 +232,264 @@
          {"selfCollision":true},
          {"group":"sdd_trx2_fascia"},
          {"nodeWeight":2.5},
-        ["fa1l", 0.58031, -2.28990, 1.22109],
-          ["fa2l", 0.56650, -2.27812, 0.89303],
+         ["fa1l", 0.59661, -2.23990, 1.03213],
+         ["fa2l", 0.58241, -2.24868, 0.70407],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT FASCIA--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":129869.6,"beamDamp":73.32},
+          {"beamDeform":4175,"beamStrength":"FLT_MAX"},
+          //headlight deform
+          {"deformLimitExpansion":""},
+          {"deformGroup":"headlightglass_L_break","deformationTriggerRatio":0.02},
+          {"optional":true}
+          ["fa2ll", "fa1l"],
+          ["fa2l", "fa1ll"],
+          {"optional":false}
+          {"deformGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"sdd_trx2_headlight_R_tri": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Headlight (Tri DRL)",
+        "value":220,
+    },
+    "slotType" : "sdd_trx2_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_headlight_R_t", ["sdd_trx2_fascia"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightColor":{"r":255, "g":255, "b":255, "a":1055},
+            "lightAttenuation":{"x":0, "y":1, "z":1},
+            "lightCastShadows":true,
+            "flareName":"vehicleHeadLightFlare",
+            "cookieName":"art/special/BNG_light_cookie_headlight.dds"
+            "texSize":512,
+            "shadowSoftness":0.5,
+        },
+        //low beams angled right slightly to avoid blinding oncoming traffic
+        ["lowbeam"    , "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":0.3},
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_R_break"}],
+        //high beams
+        ["highbeam" ,         "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3, "z":0.3},
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_R_break"}],
+        ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         //--FRONT FASCIA--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"sdd_trx2_fascia"},
+         {"nodeWeight":2.5},
+         ["fa1r", -0.59661, -2.23990, 1.03213],
+         ["fa2r", -0.58241, -2.24868, 0.70407],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT FASCIA--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":129869.6,"beamDamp":73.32},
+          {"beamDeform":4175,"beamStrength":"FLT_MAX"},
+          //headlight deform
+          {"deformLimitExpansion":""},
+          {"deformGroup":"headlightglass_R_break","deformationTriggerRatio":0.02},
+          {"optional":true}
+          ["fa2rr", "fa1r"],
+          ["fa2r", "fa1rr"],
+          {"optional":false}
+          {"deformGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"sdd_trx2_headlight_L_tri": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Headlight (Tri DRL)",
+        "value":220,
+    },
+    "slotType" : "sdd_trx2_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         
+         ["sdd_raptR_headlight_L_t", ["sdd_trx2_fascia"]],
+        
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightColor":{"r":255, "g":255, "b":255, "a":1055},
+            "lightAttenuation":{"x":0, "y":1, "z":1},
+            "lightCastShadows":true,
+            "flareName":"vehicleHeadLightFlare",
+            "cookieName":"art/special/BNG_light_cookie_headlight.dds"
+            "texSize":512,
+            "shadowSoftness":0.5,
+        },
+        //low beams angled right slightly to avoid blinding oncoming traffic
+        ["lowbeam"    , "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":-0.3},
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_L_break"}],
+        //high beams
+        ["highbeam" ,         "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-20} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3 "z":-0.3},
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_L_break"}],
+        ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         //--FRONT FASCIA--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"sdd_trx2_fascia"},
+         {"nodeWeight":2.5},
+         ["fa1l", 0.59661, -2.23990, 1.03213],
+         ["fa2l", 0.58241, -2.24868, 0.70407],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT FASCIA--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":129869.6,"beamDamp":73.32},
+          {"beamDeform":4175,"beamStrength":"FLT_MAX"},
+          //headlight deform
+          {"deformLimitExpansion":""},
+          {"deformGroup":"headlightglass_L_break","deformationTriggerRatio":0.02},
+          {"optional":true}
+          ["fa2ll", "fa1l"],
+          ["fa2l", "fa1ll"],
+          {"optional":false}
+          {"deformGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"sdd_trx2_headlight_R_rgb": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Headlight (RGB DRL)",
+        "value":220,
+    },
+    "slotType" : "sdd_trx2_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_headlight_R_rgb", ["sdd_trx2_fascia"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightColor":{"r":255, "g":255, "b":255, "a":1055},
+            "lightAttenuation":{"x":0, "y":1, "z":1},
+            "lightCastShadows":true,
+            "flareName":"vehicleHeadLightFlare",
+            "cookieName":"art/special/BNG_light_cookie_headlight.dds"
+            "texSize":512,
+            "shadowSoftness":0.5,
+        },
+        //low beams angled right slightly to avoid blinding oncoming traffic
+        ["lowbeam"    , "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":0.3},
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_R_break"}],
+        //high beams
+        ["highbeam" ,         "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3, "z":0.3},
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_R_break"}],
+        ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         //--FRONT FASCIA--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"sdd_trx2_fascia"},
+         {"nodeWeight":2.5},
+         ["fa1r", -0.59661, -2.23990, 1.03213],
+         ["fa2r", -0.58241, -2.24868, 0.70407],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT FASCIA--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":129869.6,"beamDamp":73.32},
+          {"beamDeform":4175,"beamStrength":"FLT_MAX"},
+          //headlight deform
+          {"deformLimitExpansion":""},
+          {"deformGroup":"headlightglass_R_break","deformationTriggerRatio":0.02},
+          {"optional":true}
+          ["fa2rr", "fa1r"],
+          ["fa2r", "fa1rr"],
+          {"optional":false}
+          {"deformGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"sdd_trx2_headlight_L_rgb": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Headlight (RGB DRL)",
+        "value":220,
+    },
+    "slotType" : "sdd_trx2_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         
+         ["sdd_raptR_headlight_L_rgb", ["sdd_trx2_fascia"]],
+        
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightColor":{"r":255, "g":255, "b":255, "a":1055},
+            "lightAttenuation":{"x":0, "y":1, "z":1},
+            "lightCastShadows":true,
+            "flareName":"vehicleHeadLightFlare",
+            "cookieName":"art/special/BNG_light_cookie_headlight.dds"
+            "texSize":512,
+            "shadowSoftness":0.5,
+        },
+        //low beams angled right slightly to avoid blinding oncoming traffic
+        ["lowbeam"    , "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":-0.3},
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_L_break"}],
+        //high beams
+        ["highbeam" ,         "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-20} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3 "z":-0.3},
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_L_break"}],
+        ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         //--FRONT FASCIA--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"sdd_trx2_fascia"},
+         {"nodeWeight":2.5},
+         ["fa1l", 0.59661, -2.23990, 1.03213],
+         ["fa2l", 0.58241, -2.24868, 0.70407],
          {"group":""},
     ],
     "beams": [

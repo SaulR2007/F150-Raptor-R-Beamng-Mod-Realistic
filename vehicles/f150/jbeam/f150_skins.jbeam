@@ -1,0 +1,74 @@
+{
+"sdd_trx2_skin_raptr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Raptor R",
+        "value":0
+    },
+    "slotType" : "paint_design",
+    "globalSkin" : "raptr"
+  },
+"sdd_trx2_skin_interior_Lblack": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Lariat Interior",
+        "value":100
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "Lblack"
+  },
+  "sdd_trx2_skin_interior_Lbrown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Brown Lariat Interior",
+        "value":100
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "Lbrown"
+  },
+   "sdd_trx2_skin_interior_Lwhite": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"White Lariat Interior",
+        "value":100
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "Lwhite"
+  },
+  "sdd_trx2_skin_interior_Lred": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Red Lariat Interior",
+        "value":100
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "Lred"
+  },
+   "sdd_trx2_skin_interior_Pblack": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Platinum Interior",
+        "value":100
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "Pblack"
+  },
+  "sdd_trx2_skin_interior_Pbrown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Brown Platinum Interior",
+        "value":100
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "Pbrown"
+  },
+  "sdd_trx2_skin_interior_raptR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Raptor R Interior",
+        "value":100
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "raptR"
+  },
+}

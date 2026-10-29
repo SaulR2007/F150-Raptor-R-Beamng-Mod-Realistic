@@ -1,0 +1,102 @@
+{
+  "sdd_raptR_color": {
+    "name": "sdd_raptR_color",
+    "mapTo": "sdd_raptR_color",
+    "class": "Material",
+    "persistentId": "d1fe331d-7bc1-48e2-a10d-a42c680db8d3",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/color.dds",
+        "metallicFactor": 0.890999973
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_sc_badge": {
+    "name": "sdd_raptR_sc_badge",
+    "mapTo": "sdd_raptR_sc_badge",
+    "class": "Material",
+    "persistentId": "7ade6b8b-3e6f-4e85-9799-af67cdb016c4",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/sdd_raptR_sclogo.png",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "roughnessFactor": 0.275000006
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_rapt_enginebadge": {
+    "name": "sdd_rapt_enginebadge",
+    "mapTo": "sdd_rapt_enginebadge",
+    "class": "Material",
+    "persistentId": "ecc979ce-6b08-4225-b9a3-388652e46ce6",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.200403005,
+          0.200403005,
+          0.200403005,
+          1
+        ],
+        "metallicFactor": 0.558000028,
+        "normalMap": "/vehicles/f150/textures/for_mustanggt500_20_symbols_embossed_nrml.dds",
+        "normalMapStrength": -1.09000003,
+        "roughnessFactor": 0.435000002
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 16,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  }
+}

@@ -1,7 +1,7 @@
 {
 "sdd_trx2_door_RR": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Right Door",
         "value":440,
     },
@@ -15,7 +15,7 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_door_RR", ["sdd_trx2_door_RR"]],
+         ["sdd_raptR_door_RR", ["sdd_trx2_door_RR"]],
          {"deformGroup":""},
     ],
     "controller": [
@@ -51,7 +51,7 @@
     ],
     "events":[
         ["id", "title", "desc"],
-        ["doorLatch_RR", "ui.inputActions.f150.doorLatch_R.title", "ui.inputActions.f150.doorLatch_R.description", {"onUp":"controller.getControllerSafe('doorRRCoupler').toggleGroup()"}],
+        ["doorLatch_RR", "ui.inputActions.sdd_raptR.doorLatch_R.title", "ui.inputActions.sdd_raptR.doorLatch_R.description", {"onUp":"controller.getControllerSafe('doorRRCoupler').toggleGroup()"}],
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.03
@@ -66,31 +66,31 @@
          {"group":"sdd_trx2_door_RR"},
          {"nodeWeight":1.786},
 
-         ["d15r", -0.89082, 0.24600, 1.36885],
-         ["d16r", -0.89082, 0.74115, 1.36885, {"selfCollision":false}],
-         ["d17r", -0.89082, 1.18655, 1.36885],
+         ["d15r", -0.89082, 0.37697, 1.19000],
+         ["d16r", -0.89082, 0.87212, 1.19000, {"selfCollision":false}],
+         ["d17r", -0.89082, 1.34474, 1.19000],
 
-         ["d20r", -0.96101, 1.18655, 0.96172],
-         ["d19r", -0.96101, 0.74115, 0.96172, {"selfCollision":false}],
-         ["d18r", -0.96101, 0.24600, 0.96172, {"selfCollision":false}],
+         ["d20r", -0.96101, 1.34474, 0.78287],
+         ["d19r", -0.96101, 0.87212, 0.78287, {"selfCollision":false}],
+         ["d18r", -0.96101, 0.37697, 0.78287, {"selfCollision":false}],
 
-         ["d23r", -0.92044, 1.18655, 0.52247],
-         ["d22r", -0.92044, 0.74115, 0.52247],
-         ["d21r", -0.92044, 0.24600, 0.52247],
+         ["d23r", -0.92044, 1.34474, 0.30384],
+         ["d22r", -0.92044, 0.87212, 0.30384],
+         ["d21r", -0.92044, 0.37697, 0.30384],
 
          {"nodeWeight":1.128},
-         ["d24r", -0.80219, 1.16131, 1.61103],
-         ["d25r", -0.69532, 1.14855, 1.87558],
-         ["d26r", -0.69532, 0.74923, 1.87558],
-         ["d27r", -0.69532, 0.26341, 1.87558],
-         ["d28r", -0.79286, 0.25107, 1.61103],
+         ["d24r", -0.80219, 1.31950, 1.43218],
+         ["d25r", -0.69532, 1.30674, 1.69673],
+         ["d26r", -0.69532, 0.88020, 1.69673],
+         ["d27r", -0.69532, 0.39438, 1.69673],
+         ["d28r", -0.79286, 0.38204, 1.43218],
 
          //rigidifier
          {"nodeWeight":1.88},
-         ["d29r", -0.70000, 0.77000, 1.00000, {"selfCollision":false, "collision":false}],
+         ["d29r", -0.68189, 0.81075, 1.00000, {"selfCollision":false, "collision":false}],
          //latch node
          {"group":""},
-         ["d29rr", -0.98379, 1.23630, 1.01885, {"selfCollision":false, "collision":false}],
+         ["d29rr", -0.98379, 1.36727, 0.84000, {"selfCollision":false, "collision":false}],
          {"group":""},
     ],
     "beams": [
@@ -247,7 +247,7 @@
 },
 "sdd_trx2_door_RL": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Left Door",
         "value":440,
     },
@@ -261,7 +261,7 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_door_RL", ["sdd_trx2_door_RL"]],
+         ["sdd_raptR_door_RL", ["sdd_trx2_door_RL"]],
          {"deformGroup":""},
     ],
     "controller": [
@@ -297,7 +297,7 @@
     ],
     "events":[
         ["id", "title", "desc"],
-        ["doorLatch_RL", "ui.inputActions.f150.doorLatch_L.title", "ui.inputActions.f150.doorLatch_L.description", {"onUp":"controller.getControllerSafe('doorRLCoupler').toggleGroup()"}],
+        ["doorLatch_RL", "ui.inputActions.sdd_raptR.doorLatch_L.title", "ui.inputActions.sdd_raptR.doorLatch_L.description", {"onUp":"controller.getControllerSafe('doorRLCoupler').toggleGroup()"}],
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.03
@@ -312,31 +312,31 @@
          {"group":"sdd_trx2_door_RL"},
          {"nodeWeight":1.786},
 
-         ["d15l", 0.89082, 0.24600, 1.36885],
-         ["d16l", 0.89082, 0.74115, 1.36885, {"selfCollision":false}],
-         ["d17l", 0.89082, 1.18655, 1.36885],
+         ["d15l", 0.89082, 0.37697, 1.19000],
+         ["d16l", 0.89082, 0.87212, 1.19000, {"selfCollision":false}],
+         ["d17l", 0.89082, 1.34474, 1.19000],
 
-         ["d20l", 0.96101, 1.18655, 0.96172],
-         ["d19l", 0.96101, 0.74115, 0.96172, {"selfCollision":false}],
-         ["d18l", 0.96101, 0.24600, 0.96172, {"selfCollision":false}],
+         ["d20l", 0.96101, 1.34474, 0.78287],
+         ["d19l", 0.96101, 0.87212, 0.78287, {"selfCollision":false}],
+         ["d18l", 0.96101, 0.37697, 0.78287, {"selfCollision":false}],
 
-         ["d23l", 0.92044, 1.18655, 0.52247],
-         ["d22l", 0.92044, 0.74115, 0.52247],
-         ["d21l", 0.92044, 0.24600, 0.52247],
+         ["d23l", 0.92044, 1.34474, 0.30384],
+         ["d22l", 0.92044, 0.87212, 0.30384],
+         ["d21l", 0.92044, 0.37697, 0.30384],
 
          {"nodeWeight":1.128},
-         ["d24l", 0.80219, 1.16131, 1.61103],
-         ["d25l", 0.69532, 1.14855, 1.87558],
-         ["d26l", 0.69532, 0.74923, 1.87558],
-         ["d27l", 0.69532, 0.26341, 1.87558],
-         ["d28l", 0.79286, 0.25107, 1.61103],
+         ["d24l", 0.80219, 1.31950, 1.43218],
+         ["d25l", 0.69532, 1.30674, 1.69673],
+         ["d26l", 0.69532, 0.88020, 1.69673],
+         ["d27l", 0.69532, 0.39438, 1.69673],
+         ["d28l", 0.79286, 0.38204, 1.43218],
 
          //rigidifier
          {"nodeWeight":1.88},
-         ["d29l", 0.70000, 0.77000, 1.00000, {"selfCollision":false, "collision":false}],
+         ["d29l", 0.68189, 0.81075, 1.00000, {"selfCollision":false, "collision":false}],
          //latch node
          {"group":""},
-         ["d29ll", 0.98379, 1.23630, 1.01885, {"selfCollision":false, "collision":false}],
+         ["d29ll", 0.98379, 1.36727, 0.84000, {"selfCollision":false, "collision":false}],
          {"group":""},
     ],
     "beams": [
@@ -493,7 +493,7 @@
 },
 "sdd_trx2_doordetent_RR": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Right Door Detent",
         "value":30,
     },
@@ -523,7 +523,7 @@
 }
 "sdd_trx2_doordetent_RL": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Left Door Detent",
         "value":30,
     },
@@ -553,14 +553,14 @@
 }
 "sdd_trx2_doorpanel_RR": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Right Door Panel",
         "value":140,
     },
     "slotType" : "sdd_trx2_doorpanel_RR",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_doorpanel_RR", ["sdd_trx2_door_RR"],[]],
+         ["sdd_raptR_doorpanel_RR", ["sdd_trx2_door_RR"],[]],
     ],
     "triggers":[
         ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
@@ -581,14 +581,14 @@
 },
 "sdd_trx2_doorpanel_RL": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Left Door Panel",
         "value":140,
     },
     "slotType" : "sdd_trx2_doorpanel_RL",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_doorpanel_RL", ["sdd_trx2_door_RL"],[]],
+         ["sdd_raptR_doorpanel_RL", ["sdd_trx2_door_RL"],[]],
     ],
     "triggers":[
         ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
@@ -605,6 +605,140 @@
          {"nodeWeight":5.64},
          ["d29l",0.7, 0.77, 1.0, {"group":""}],
          {"group":""},
+    ],
+},
+"sdd_trx2_doorpanel_RR_facelift": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Late Rear Right Door Panel",
+        "value":240,
+    },
+    "slotType" : "sdd_trx2_doorpanel_RR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_facelift_doorpanel_RR", ["sdd_trx2_door_RR"],[]],
+    ],
+    "triggers":[
+        ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["door_RR_int", "", "d17r","d16r","d20r", "box", {"x":0.16, "y":0.03, "z":0.07}, {"x":5, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.64, "y":0.06, "z":-0.13}],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":6.64},
+         ["d29r",-0.7, 0.77, 1.0, {"group":""}],
+         {"group":""},
+    ],
+},
+"sdd_trx2_doorpanel_RL_facelift": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Late Rear Left Door Panel",
+        "value":240,
+    },
+    "slotType" : "sdd_trx2_doorpanel_RL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_facelift_doorpanel_RL", ["sdd_trx2_door_RL"],[]],
+    ],
+    "triggers":[
+        ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["door_RL_int", "", "d17l","d16l","d20l", "box", {"x":0.16, "y":0.03, "z":0.07}, {"x":-5, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.64, "y":0.06, "z":0.1}],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":6.64},
+         ["d29l",0.7, 0.77, 1.0, {"group":""}],
+         {"group":""},
+    ],
+},
+"sdd_trx2_doorhandle_RR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Early Rear Right Door Handle (Black)",
+        "value":20,
+    },
+    "slotType" : "sdd_trx2_doorhandle_RR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_doorhandle_RR", ["sdd_trx2_door_RR"],[]{"pos":{"x":0,"y":0,"z":0}}],
+         {"deformGroup":""},
+    ],
+},
+"sdd_trx2_doorhandle_RL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Early Rear Left Door Handle (Black)",
+        "value":20,
+    },
+    "slotType" : "sdd_trx2_doorhandle_RL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_doorhandle_RL", ["sdd_trx2_door_RL"],[]{"pos":{"x":0,"y":0,"z":0}}],
+         {"deformGroup":""},
+    ],
+},
+"sdd_trx2_doorhandle_RR_facelift": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Late Rear Right Door Handle (Body Colored)",
+        "value":50,
+    },
+    "slotType" : "sdd_trx2_doorhandle_RR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_doorhandle_R_facelift", ["sdd_trx2_door_RR"],[]{"pos":{"x":0,"y":0.903,"z":0}}],
+         {"deformGroup":""},
+    ],
+},
+"sdd_trx2_doorhandle_RL_facelift": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Late Rear Left Door Handle (Body Colored)",
+        "value":50,
+    },
+    "slotType" : "sdd_trx2_doorhandle_RL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_doorhandle_L_facelift", ["sdd_trx2_door_RL"],[]{"pos":{"x":0,"y":0.903,"z":0}}],
+         {"deformGroup":""},
+    ],
+},
+"sdd_trx2_doorhandle_RR_facelift_alt": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Late Rear Right Door Handle (Black)",
+        "value":30,
+    },
+    "slotType" : "sdd_trx2_doorhandle_RR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_doorhandle_R_facelift_alt", ["sdd_trx2_door_RR"],[]{"pos":{"x":0,"y":0.903,"z":0}}],
+         {"deformGroup":""},
+    ],
+},
+"sdd_trx2_doorhandle_RL_facelift_alt": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Late Rear Left Door Handle (Black)",
+        "value":30,
+    },
+    "slotType" : "sdd_trx2_doorhandle_RL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_raptR_doorhandle_L_facelift_alt", ["sdd_trx2_door_RL"],[]{"pos":{"x":0,"y":0.903,"z":0}}],
+         {"deformGroup":""},
     ],
 },
 }

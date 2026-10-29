@@ -1,0 +1,111 @@
+{
+  "sdd_raptR_needles": {
+    "name": "sdd_raptR_needles",
+    "mapTo": "sdd_raptR_needles",
+    "class": "Material",
+    "persistentId": "a5f05458-9039-4b23-af44-8db30b9f6fe1",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/gaugesrapt.png",
+        "emissive": true
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      }
+    ]
+  },
+  "sdd_raptR_rearv": {
+    "name": "sdd_raptR_rearv",
+    "mapTo": "sdd_raptR_rearv",
+    "class": "Material",
+    "persistentId": "75418781-7eb0-496b-9ee1-b4cff13b54c4",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/DisplaysDFS_final.png",
+        "emissive": true
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      }
+    ],
+    "alphaRef": 152,
+    "alphaTest": true
+  },
+  "sdd_raptR_speed": {
+    "name": "sdd_raptR_speed",
+    "mapTo": "sdd_raptR_speed",
+    "class": "Material",
+    "persistentId": "fdb18e71-d6c4-40ce-91d3-3d96d78ce924",
+    "Stages": [
+      {
+        "colorMap": "@sdd_raptR_speed",
+        "emissive": true
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      }
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Add"
+  },
+  "sdd_raptR_tach": {
+    "name": "sdd_raptR_tach",
+    "mapTo": "sdd_raptR_tach",
+    "class": "Material",
+    "persistentId": "12e9e404-b529-4b2d-8cc5-19c313ef1777",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/f150/textures/sdd_raptR_tach.png",
+        "diffuseColor": [
+          1.96078396,
+          1.96078396,
+          1.96078396,
+          1
+        ],
+        "emissive": true,
+        "emissiveFactor": [
+          1.96078396,
+          1.96078396,
+          1.96078396
+        ],
+        "emissiveMap": "/vehicles/f150/textures/sdd_raptR_tach.png"
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "emissiveFactor": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "emissiveFactor": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "emissiveFactor": null
+      }
+    ],
+    "alphaRef": 255,
+    "alphaTest": true,
+    "translucentBlendOp": "None"
+  }
+}

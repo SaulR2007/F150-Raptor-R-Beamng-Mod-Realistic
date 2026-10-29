@@ -33,11 +33,20 @@ Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-st
 
    That folder should contain `vehicles/`, `lua/`, `ui/`, `art/`, `scripts/`, and this `README.md` directly — not nested inside another folder.
 
-3. Enable the mod in Mods if needed, then spawn **Ford F-150 Raptor**.
+3. **Download the mesh pack** from the latest [GitHub Release](https://github.com/SaulR2007/F150-Raptor-R-Beamng-Mod-Realistic/releases) (`F150RR-meshes.zip`). Extract it so these files exist:
+
+   ```
+   vehicles/f150/textures/RaptR.cached.dts
+   ```
+
+   (`RaptR.cached.dts` is ~129 MB, so it cannot live in the git repo. Without it the Raptor body meshes are missing.)
+
+4. Enable the mod in Mods if needed, then spawn **Ford F-150 Raptor**.
 
 ## Credits
 
 - **The_Gamer6000** — vehicle author (`info.json` / jbeam / fordControl)
 - **Diamondback** — Driving & Safety Electronics (DSE) jbeam (`f150_dse*.jbeam`)
 - **Redknee** — Hellcat engine/exhaust sound samples under `art/sound`
+- **Royal Renderings** — Raptor R crew-cab body, frame mesh, and materials (`RaptR.cached.dts`)
 - Ford names and marks belong to their respective owners; this is a fan mod for BeamNG.drive

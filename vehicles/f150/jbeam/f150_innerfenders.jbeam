@@ -2,7 +2,7 @@
 "sdd_trx2_innerfender_R":
 {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Front Right Inner Fender",
         "value":110,
     },
@@ -11,7 +11,7 @@
 
     "flexbodies":[
         ["mesh", "[group]:","nonFlexMaterials"],
-        ["sdd_trx2_innerfender_R", ["sdd_trx2_innerfender_FR"]],
+        ["sdd_raptR_innerfender_R", ["sdd_trx2_innerfender_FR"]],
     ],
 
     "nodes":[
@@ -23,11 +23,11 @@
          {"nodeWeight":2.444},
          //--right inner fender--
          {"group":"sdd_trx2_innerfender_FR"},
-         ["if1r", -0.74700, -0.94000, 0.40000],
-         ["if2r", -0.81900, -1.17000, 0.97000],
-         ["if3r", -0.78300, -1.76000, 0.97000],
-         ["if4r", -0.73800, -1.92000, 0.70000],
-         ["if5r", -0.36000, -1.47000, 0.80000],
+         ["if1r", -0.83, -0.94, 0.4],
+         ["if2r", -0.91, -1.17, 0.97],
+         ["if3r", -0.87, -1.76, 0.97],
+         ["if4r", -0.82, -1.92, 0.7],
+         ["if5r", -0.4, -1.47, 0.8],
          {"group":""},
         ],
     "beams":[
@@ -135,7 +135,7 @@
 "sdd_trx2_innerfender_L":
 {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Front Left Inner Fender",
         "value":110,
     },
@@ -144,7 +144,7 @@
 
     "flexbodies":[
         ["mesh", "[group]:","nonFlexMaterials"],
-        ["sdd_trx2_innerfender_L", ["sdd_trx2_innerfender_FL"]],
+        ["sdd_raptR_innerfender_L", ["sdd_trx2_innerfender_FL"]],
     ],
 
     "nodes":[
@@ -156,11 +156,11 @@
          {"nodeWeight":2.444},
          //--left inner fender--
          {"group":"sdd_trx2_innerfender_FL"},
-         ["if1l", 0.74700, -0.94000, 0.40000],
-         ["if2l", 0.81900, -1.17000, 0.97000],
-         ["if3l", 0.78300, -1.76000, 0.97000],
-         ["if4l", 0.73800, -1.92000, 0.70000],
-         ["if5l", 0.36000, -1.47000, 0.80000],
+         ["if1l", 0.83, -0.94, 0.4],
+         ["if2l", 0.91, -1.17, 0.97],
+         ["if3l", 0.87, -1.76, 0.97],
+         ["if4l", 0.82, -1.92, 0.7],
+         ["if5l", 0.4, -1.47, 0.8],
          {"group":""},
         ],
     "beams":[

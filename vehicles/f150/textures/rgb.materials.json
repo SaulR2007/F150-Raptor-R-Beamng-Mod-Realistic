@@ -1,0 +1,139 @@
+{
+  "sdd_raptR_rgb": {
+    "name": "sdd_raptR_rgb",
+    "mapTo": "sdd_raptR_rgb",
+    "class": "Material",
+    "persistentId": "a8becf36-f0c8-4e08-84a8-cc23d3fd329e",
+    "Stages": [
+      {
+        "animFlags": 1,
+        "colorMap": "/vehicles/f150/textures/rgb.png",
+        "emissive": true,
+        "emissiveFactor": [
+          3.92156911,
+          3.92156911,
+          3.92156911
+        ],
+        "emissiveMap": "/vehicles/f150/textures/rgb.png",
+        "scrollDir": [
+          0.463999987,
+          0.00400000019
+        ],
+        "scrollSpeed": 0.657000005
+      },
+      {
+        "animFlags": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "scrollDir": null,
+        "scrollSpeed": null
+      },
+      {
+        "animFlags": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "scrollDir": null,
+        "scrollSpeed": null
+      },
+      {
+        "animFlags": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "scrollDir": null,
+        "scrollSpeed": null
+      }
+    ]
+  },
+  "sdd_raptR_running_t": {
+    "name": "sdd_raptR_running_t",
+    "mapTo": "sdd_raptR_running_t",
+    "class": "Material",
+    "persistentId": "2442e9bf-79ac-4eac-bc6a-437d19f3a13e",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_bcolor.dds",
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "glow": null,
+        "glowFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "instanceDiffuse": null,
+        "instanceEmissive": true,
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "specular": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ]
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/vehicles/f150/textures/2024-raptor-r-f-150_W.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_metallic_uv3color.dds",
+        "colorPaletteMapUseUV": 1,
+        "emissive": true,
+        "emissiveFactor": [
+          3.92156911,
+          3.92156911,
+          3.92156911
+        ],
+        "emissiveMap": "/vehicles/f150/textures/2024-raptor-r-f-150_W.png",
+        "glow": true,
+        "glowFactor": null,
+        "instanceDiffuse": true,
+        "instanceEmissive": true,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds",
+        "specular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "emissive": true,
+        "emissiveFactor": null,
+        "glow": true,
+        "glowFactor": null,
+        "instanceDiffuse": null,
+        "instanceEmissive": null,
+        "specular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "glowFactor": null,
+        "instanceDiffuse": null,
+        "instanceEmissive": null,
+        "specular": null
+      }
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "subSurfacaae0": "0",
+    "version": 1.5
+  }
+}

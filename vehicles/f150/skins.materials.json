@@ -1,0 +1,657 @@
+{
+  "RRpbrPaintPrimary2.skin.raptr": {
+    "name": "RRpbrPaintPrimary2.skin.raptr",
+    "mapTo": "RRpbrPaintPrimary2.skin.raptr",
+    "class": "Material",
+    "persistentId": "84c530dc-1aea-487f-af3f-be7700dc5f2c",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "baseColorMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_bcolor.dds",
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_metallic_uv1color.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds",
+        "roughnessFactor": null
+      },
+      {
+        "baseColorMap": "/vehicles/f150/textures/sdd_raptR_skin_raptR_diff.png",
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": 1,
+        "opacityMap": "/vehicles/f150/textures/sdd_raptR_skin_raptR_op.png",
+        "roughnessFactor": 0.644999981
+      },
+      {
+        "clearCoatFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "activeLayers": 3,
+    "alphaRef": 0,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "sdd_raptR_carbon.skin_interior.Lbrown": {
+    "name": "sdd_raptR_carbon.skin_interior.Lbrown",
+    "mapTo": "sdd_raptR_carbon.skin_interior.Lbrown",
+    "class": "Material",
+    "persistentId": "32a38c5f-f2c9-40ee-bef0-1992ba6ff31f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.999989986,
+          1,
+          0.999989986,
+          1
+        ],
+        "metallicFactor": 1,
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "clearCoatRoughnessFactor": 0.474000007,
+        "colorPaletteMapUseUV": 1,
+        "metallicFactor": 0.268000007,
+        "metallicMapUseUV": 1,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "sdd_raptR_carbon.skin_interior.Lred": {
+    "name": "sdd_raptR_carbon.skin_interior.Lred",
+    "mapTo": "sdd_raptR_carbon.skin_interior.Lred",
+    "class": "Material",
+    "persistentId": "9d49fdc0-b7b3-4f44-bd9b-965f008b1fdc",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.999989986,
+          1,
+          0.999989986,
+          1
+        ],
+        "metallicFactor": 1,
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "clearCoatRoughnessFactor": 0.474000007,
+        "colorPaletteMapUseUV": 1,
+        "metallicFactor": 0.268000007,
+        "metallicMapUseUV": 1,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "sdd_raptR_carbon.skin_interior.Lwhite": {
+    "name": "sdd_raptR_carbon.skin_interior.Lwhite",
+    "mapTo": "sdd_raptR_carbon.skin_interior.Lwhite",
+    "class": "Material",
+    "persistentId": "889dce55-c95d-4be2-bab3-18d9fa795820",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.999989986,
+          1,
+          0.999989986,
+          1
+        ],
+        "metallicFactor": 1,
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "clearCoatRoughnessFactor": 0.474000007,
+        "colorPaletteMapUseUV": 1,
+        "metallicFactor": 0.268000007,
+        "metallicMapUseUV": 1,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "sdd_raptR_carbon.skin_interior.Pblack": {
+    "name": "sdd_raptR_carbon.skin_interior.Pblack",
+    "mapTo": "sdd_raptR_carbon.skin_interior.Pblack",
+    "class": "Material",
+    "persistentId": "7bc9c4d9-23c0-4337-8c64-845e5aa8dc75",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.999989986,
+          1,
+          0.999989986,
+          1
+        ],
+        "metallicFactor": 1,
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "clearCoatRoughnessFactor": 0.474000007,
+        "colorPaletteMapUseUV": 1,
+        "metallicFactor": 0.268000007,
+        "metallicMapUseUV": 1,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "sdd_raptR_carbon.skin_interior.Pbrown": {
+    "name": "sdd_raptR_carbon.skin_interior.Pbrown",
+    "mapTo": "sdd_raptR_carbon.skin_interior.Pbrown",
+    "class": "Material",
+    "persistentId": "8c5a855b-1ec1-4395-b2ff-f11364f1a891",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.999989986,
+          1,
+          0.999989986,
+          1
+        ],
+        "metallicFactor": 1,
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "clearCoatRoughnessFactor": 0.474000007,
+        "colorPaletteMapUseUV": 1,
+        "metallicFactor": 0.268000007,
+        "metallicMapUseUV": 1,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "sdd_raptR_leather2.skin_interior.Lbrown": {
+    "name": "sdd_raptR_leather2.skin_interior.Lbrown",
+    "mapTo": "sdd_raptR_leather2.skin_interior.Lbrown",
+    "class": "Material",
+    "persistentId": "ceaf367b-9a1e-48bd-bc31-ea7823ca175a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.485190988,
+          0.391835988,
+          0.256668001,
+          1
+        ],
+        "metallicFactor": 0.609000027,
+        "normalMap": "/vehicles/f150/textures/51fde164aab11863839bd05df184079f.png",
+        "normalMapStrength": 1.30999994,
+        "normalMapUseUV": 1,
+        "roughnessFactor": 0.542999983
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_leather2.skin_interior.Lred": {
+    "name": "sdd_raptR_leather2.skin_interior.Lred",
+    "mapTo": "sdd_raptR_leather2.skin_interior.Lred",
+    "class": "Material",
+    "persistentId": "9ca21df6-fede-46a4-8297-284d159d91e9",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.561864972,
+          0.25414899,
+          0.25414899,
+          1
+        ],
+        "metallicFactor": 0.609000027,
+        "normalMap": "/vehicles/f150/textures/51fde164aab11863839bd05df184079f.png",
+        "normalMapStrength": 1.30999994,
+        "normalMapUseUV": 1,
+        "roughnessFactor": 0.542999983
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_leather2.skin_interior.Lwhite": {
+    "name": "sdd_raptR_leather2.skin_interior.Lwhite",
+    "mapTo": "sdd_raptR_leather2.skin_interior.Lwhite",
+    "class": "Material",
+    "persistentId": "51c232b5-a44f-4879-85bb-17fffe2cd742",
+    "Stages": [
+      {
+        "metallicFactor": 0.609000027,
+        "normalMap": "/vehicles/f150/textures/51fde164aab11863839bd05df184079f.png",
+        "normalMapStrength": 1.30999994,
+        "normalMapUseUV": 1,
+        "roughnessFactor": 0.542999983
+      },
+      {
+        "normalMapStrength": null
+      },
+      {
+        "normalMapStrength": null
+      },
+      {
+        "normalMapStrength": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_leather2.skin_interior.Pblack": {
+    "name": "sdd_raptR_leather2.skin_interior.Pblack",
+    "mapTo": "sdd_raptR_leather2.skin_interior.Pblack",
+    "class": "Material",
+    "persistentId": "b57fb0bf-9a8d-42ee-92ee-63578455a281",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.331844002,
+          0.331844002,
+          0.331844002,
+          1
+        ],
+        "metallicFactor": 0.391000003,
+        "normalMap": "/vehicles/f150/textures/black_perforated_plastic_41_42_normal-708x708.jpg",
+        "roughnessFactor": 0.550999999
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_leather2.skin_interior.Pbrown": {
+    "name": "sdd_raptR_leather2.skin_interior.Pbrown",
+    "mapTo": "sdd_raptR_leather2.skin_interior.Pbrown",
+    "class": "Material",
+    "persistentId": "e41d7f89-d8cc-41e3-8682-b78cb7ebe6a2",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.485190988,
+          0.391835988,
+          0.256668001,
+          1
+        ],
+        "metallicFactor": 0.333000004,
+        "normalMap": "/vehicles/f150/textures/black_perforated_plastic_41_42_normal-708x708.jpg",
+        "roughnessFactor": 0.486000001
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_leather2.skin_interior.raptR": {
+    "name": "sdd_raptR_leather2.skin_interior.raptR",
+    "mapTo": "sdd_raptR_leather2.skin_interior.raptR",
+    "class": "Material",
+    "persistentId": "4f0b992d-328b-4569-9b23-8b957a351609",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.282552987,
+          0.282552987,
+          0.282552987,
+          1
+        ],
+        "metallicFactor": 0.449000001,
+        "normalMap": "/vehicles/f150/textures/black_perforated_plastic_41_42_normal-708x708.jpg",
+        "normalMapUseUV": 1,
+        "roughnessFactor": 0.745999992
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapUseUV": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_stitch.skin_interior.raptR": {
+    "name": "sdd_raptR_stitch.skin_interior.raptR",
+    "mapTo": "sdd_raptR_stitch.skin_interior.raptR",
+    "class": "Material",
+    "persistentId": "5abbf28b-a6fb-46bb-8158-86123aa8ba34",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.633062005,
+          0.355695009,
+          0.355695009,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/stitch_001_glos_3cea4956-7b5f-4faa-b1cf-e4a82af87a8e.dds",
+        "metallicFactor": 0.629999995,
+        "opacityMap": "/vehicles/f150/textures/stitch_001_glos_3cea4956-7b5f-4faa-b1cf-e4a82af87a8e.dds",
+        "roughnessFactor": 0.703000009
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 8,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_suede.skin_interior.Lbrown": {
+    "name": "sdd_raptR_suede.skin_interior.Lbrown",
+    "mapTo": "sdd_raptR_suede.skin_interior.Lbrown",
+    "class": "Material",
+    "persistentId": "df707f41-2cd0-4d9e-ba07-67d21892e3dd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.485190988,
+          0.391835988,
+          0.256668001,
+          1
+        ],
+        "metallicFactor": 0.275000006,
+        "normalMap": "/vehicles/f150/textures/suedenormal.png",
+        "roughnessFactor": 0.609000027
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_suede.skin_interior.Lred": {
+    "name": "sdd_raptR_suede.skin_interior.Lred",
+    "mapTo": "sdd_raptR_suede.skin_interior.Lred",
+    "class": "Material",
+    "persistentId": "8130edc3-d06b-46be-8f72-a4ed67e69871",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.561864972,
+          0.25414899,
+          0.25414899,
+          1
+        ],
+        "metallicFactor": 0.224999994,
+        "normalMap": "/vehicles/f150/textures/suedenormal.png",
+        "roughnessFactor": 0.629999995
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_suede.skin_interior.Lwhite": {
+    "name": "sdd_raptR_suede.skin_interior.Lwhite",
+    "mapTo": "sdd_raptR_suede.skin_interior.Lwhite",
+    "class": "Material",
+    "persistentId": "63a2771b-e449-4d90-8298-8654a74111d9",
+    "Stages": [
+      {
+        "normalMap": "/vehicles/f150/textures/suedenormal.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_suede.skin_interior.Pbrown": {
+    "name": "sdd_raptR_suede.skin_interior.Pbrown",
+    "mapTo": "sdd_raptR_suede.skin_interior.Pbrown",
+    "class": "Material",
+    "persistentId": "fc22f8b8-52ec-46fc-b80c-4ef6e89184dd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.485190988,
+          0.391835988,
+          0.256668001,
+          1
+        ],
+        "metallicFactor": 0.289999992,
+        "normalMap": "/vehicles/f150/textures/suedenormal.png",
+        "roughnessFactor": 0.493000001
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  }
+}

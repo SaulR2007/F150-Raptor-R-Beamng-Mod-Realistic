@@ -1,8 +1,8 @@
 {
 "sdd_trx2_bumper_R": {
     "information":{
-        "authors":"The_Gamer6000",
-        "name":"Rear Bumper",
+        "authors":"BeamNG",
+        "name":"Raptor Rear Bumper",
         "value":500,
     },
     "slotType" : "sdd_trx2_bumper_R",
@@ -12,7 +12,30 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_bumper_R", ["sdd_trx2_bumper_R"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}}],
+         ["sdd_raptR_bumper_R", ["sdd_trx2_bumper_R"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}}],
+    ],
+    "camerasInternal":[
+        ["type", "x", "y", "z", "fov", "id1:", "id2:", "id3:", "id4:", "id5:", "id6:", "idRef:", "idBack:", "idUp:"],
+        {"nodeWeight":2.35},
+        {"selfCollision":false},
+        {"collision":false},
+        {"beamSpring":78960,"beamDamp":611},
+        //Selectable camera named "reverse cam". x,y,z and the last three node ids move and aim this view.
+        ["reverse cam", 0.0, 3.50, 0.85, 90, "rb1","rb2","rb1r","rb2r","rb1l","rb2l", "rb2","rb4","rb1", {"beamDeform":5001000,"beamStrength":"FLT_MAX", "canRotate": false}],
+    ],
+    "controller": [
+        ["fileName"],
+        //Screen picture. camNodes: idRef is the mount, idX and idY set the aim (normal of that triangle).
+        //posOffset is meters in vehicle space: negative y moves the camera further behind the truck.
+        //rotOffset nudges the aim. fov is the lens.
+        ["f150_reverse_cam", {
+            "texTargetName":"@f150_reverse_cam",
+            "camNodes":{"idRef":"rb1", "idX":"rb1l", "idY":"rb2"},
+            "res":[640, 360],
+            "clip":[0.1, 150],
+            "fov":90,
+            "posOffset":{"x":0, "y":-0.08, "z":0.04}
+        }],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -23,31 +46,31 @@
          {"nodeWeight":1.222},
          {"frictionCoef":0.5},
          {"group":"sdd_trx2_bumper_R"},
-         ["rb1rr", -0.86002, 3.19857, 0.79977],
-         ["rb1r", -0.42066, 3.19857, 0.79977],
-         ["rb1", 0.00000, 3.19857, 0.79977],
-         ["rb1l", 0.42066, 3.19857, 0.79977],
-         ["rb1ll", 0.86002, 3.19857, 0.79977],
+         ["rb1rr", -0.86002, 3.33808, 0.56068],
+         ["rb1r", -0.42066, 3.33808, 0.56068],
+         ["rb1", 0.00000, 3.33808, 0.56068],
+         ["rb1l", 0.42066, 3.33808, 0.56068],
+         ["rb1ll", 0.86002, 3.33808, 0.56068],
 
-         ["rb2rr", -0.83802, 3.09731, 0.58979],
-         ["rb2r", -0.41131, 3.20554, 0.58985],
-         ["rb2", 0.00000, 3.20554, 0.58985],
-         ["rb2l", 0.41131, 3.20554, 0.58985],
-         ["rb2ll", 0.84132, 3.11532, 0.58979],
+         ["rb2rr", -0.84132, 3.25483, 0.37068],
+         ["rb2r", -0.41131, 3.34505, 0.32080],
+         ["rb2", 0.00000, 3.34505, 0.32080],
+         ["rb2l", 0.41131, 3.34505, 0.32080],
+         ["rb2ll", 0.84132, 3.25483, 0.37068],
 
-         ["rb3rr", -0.89389, 3.03127, 0.81977],
-         ["rb3r", -0.41901, 3.03127, 0.81977],
-         ["rb3", 0.00000, 3.03127, 0.81977],
-         ["rb3l", 0.41901, 3.03127, 0.81977],
-         ["rb3ll", 0.89389, 3.03127, 0.81977],
+         ["rb3rr", -0.89741, 3.18879, 0.58068],
+         ["rb3r", -0.42066, 3.18879, 0.58068],
+         ["rb3", 0.00000, 3.18879, 0.58068],
+         ["rb3l", 0.42066, 3.18879, 0.58068],
+         ["rb3ll", 0.89741, 3.18879, 0.58068],
 
-         ["rb4rr", -0.87527, 3.02141, 0.58979],
-         ["rb4ll", 0.87527, 3.02019, 0.58979],
+         ["rb4rr", -0.87872, 3.17893, 0.37068],
+         ["rb4ll", 0.87872, 3.17771, 0.37068],
 
          {"group":""},
          {"collision":false},
          {"selfCollision":false},
-         ["rb4", 0.00000, 3.03898, 0.60985],
+         ["rb4", 0.00000, 3.19650, 0.34080],
     ],
     "beams": [
           ["id1:", "id2:"],

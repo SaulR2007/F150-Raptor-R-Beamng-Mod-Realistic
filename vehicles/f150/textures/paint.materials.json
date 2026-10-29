@@ -179,4 +179,39 @@
     "materialTag1": "vehicle",
     "version": 1.5
   }
+,
+  "RRpbrPaintPrimary2": {
+    "name": "RRpbrPaintPrimary2",
+    "mapTo": "RRpbrPaintPrimary2",
+    "class": "Material",
+    "persistentId": "7b33b57c-23dd-444b-aa13-3e3011bc3207",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "baseColorMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_bcolor.dds",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_mdata.dds",
+        "normalMap": "vehicles/common/RRpbrPaint/RR_Paint_PBR_n.dds",
+        "roughnessMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_rdata.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_aodata.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_ccdata.dds",
+        "colorPaletteMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_metallic_uv1color.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "opacityMap": "/vehicles/common/RRpbrPaint/RR_Paint_PBR_skin_odata.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+	"doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
 }

@@ -41,5 +41,46 @@
     ],
     "dynamicCubemap": true,
     "version": 1.5
+  },
+  "f150_reverse_cam": {
+    "name": "f150_reverse_cam",
+    "mapTo": "f150_reverse_cam",
+    "class": "Material",
+    "persistentId": "c4a1e8b2-7d3f-4a16-9c55-1f0b6e2a8d47",
+    "Stages": [
+      {
+        "baseColorFactor": [0.02, 0.02, 0.02, 1],
+        "emissive": true,
+        "emissiveFactor": [1, 1, 1],
+        "emissiveMap": "@f150_reverse_cam",
+        "metallicFactor": 0,
+        "roughnessFactor": 0.4
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
   }
 }

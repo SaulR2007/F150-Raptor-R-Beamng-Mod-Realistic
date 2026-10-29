@@ -1,0 +1,37 @@
+{
+  "sdd_raptR_shock": {
+    "name": "sdd_raptR_shock",
+    "mapTo": "sdd_raptR_shock",
+    "class": "Material",
+    "persistentId": "870724c2-2282-4323-973f-26561bf2ccfc",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/raptor-rear-final.png",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "roughnessFactor": 0.377000004
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  }
+}

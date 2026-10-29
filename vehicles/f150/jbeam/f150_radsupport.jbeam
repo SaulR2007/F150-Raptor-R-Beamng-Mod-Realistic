@@ -2,8 +2,8 @@
 "sdd_trx2_radsupport":
 {
     "information":{
-        "authors":"The_Gamer6000",
-        "name":"Radiator Support",
+        "authors":"BeamNG",
+        "name":"Raptor Radiator Support",
         "value":380,
     },
 
@@ -11,16 +11,16 @@
 
     "slots":[
         ["type","default","description"],
-        ["sdd_trx2_radiator","sdd_trx2_radiator","Radiator"],
+        ["sdd_trx2_radiator","sdd_trx2_radiator_oil_f150","Radiator"],
         ["sdd_trx2_fascia","sdd_trx2_fascia","Front Fascia"],
         ["sdd_trx2_valance","sdd_trx2_valance","Front Valance"],
     ],
 
     "flexbodies":[
         ["mesh","[group]:","nonFlexMaterials"],
-        ["sdd_trx2_radsupport",["sdd_trx2_radsupport"]],
-        ["sdd_trx2_engbay",["sdd_trx2_body","sdd_trx2_radsupport"]],
-		 ["sdd_trx2_innerfenders",["sdd_trx2_body","sdd_trx2_radsupport"]],
+        ["sdd_raptR_radsupport",["sdd_trx2_radsupport"]],
+        ["sdd_raptR_engbay",["sdd_trx2_body","sdd_trx2_radsupport"]],
+		 ["sdd_raptR_innerfenders",["sdd_trx2_body","sdd_trx2_radsupport"]],
     ],
 
     "nodes":[

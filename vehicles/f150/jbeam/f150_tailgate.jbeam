@@ -1,14 +1,14 @@
 {
 "sdd_trx2_tailgate": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Tailgate",
         "value":500,
     },
     "slotType" : "sdd_trx2_tailgate",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_tailgate", ["sdd_trx2_tailgate"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}}],
+         ["sdd_raptR_tailgate", ["sdd_trx2_tailgate"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}}],
     ],
     // tdev - this is the latest format - 14th of March 2021
     // AiTorror was here
@@ -19,8 +19,8 @@
     "tailgateCoupler":{
         "couplerNodes":[
             ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
-            ["ibd5ll",  "tlc1l",     20000,                     0.15,                  0.005,                      0.2,                 0.1,                   "tailgatelatch_L", {"forceCid1":"t3", "forceCid2":"t1"}]
-            ["ibd5rr",  "tlc1r",     20000,                     0.15,                  0.005,                      0.2,                 0.1,                   "tailgatelatch_R", {"forceCid1":"t3", "forceCid2":"t1"}]
+            ["ibd5ll",  "tlc1l",     20000,                     0.015,                  0.005,                      0.2,                 0.1,                   "tailgatelatch_L", {"forceCid1":"t3", "forceCid2":"t1"}]
+            ["ibd5rr",  "tlc1r",     20000,                     0.015,                  0.005,                      0.2,                 0.1,                   "tailgatelatch_R", {"forceCid1":"t3", "forceCid2":"t1"}]
         ]
         "groupType": "autoCoupling",
         "attachSoundVolume":1,
@@ -36,20 +36,16 @@
     }
     "triggers":[
         ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
-        ["tailgate", "tailgate", "t1","t1r","t2", "box", {"x":0.15, "y":0.08, "z":0.08}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.075, "y":0.08, "z":0.01}, {"deformGroup":"sdd_trx2_tailgate_R"}],
-        ["tailgate2", "tailgate", "t1","t1r","t2", "box", {"x":0.15, "y":0.08, "z":0.08}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.075, "y":0.08, "z":-0.08}, {"deformGroup":"sdd_trx2_tailgate_R"}],
-
+        ["tailgate", "", "t1","t1r","t2", "box", {"x":0.15, "y":0.08, "z":0.08}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.075, "y":0.18, "z":-0.07}, {"deformGroup":"sdd_trx2_tailgate_R"}],
     ],
     "triggerEventLinks":[
         ["triggerId:triggers", "action", "targetEventId:events"],
         ["tailgate", "action0", "tailgateLatch"]
-        ["tailgate2", "action0", "tailgateLatch"]
-
     ],
     "events":[
         ["id", "title", "desc"],
         //Gets overwritten by bed cover and camper shell
-        ["tailgateLatch", "ui.inputActions.f150.tailgateLatch.title", "ui.inputActions.f150.tailgateLatch.description", {"onUp":"controller.getControllerSafe('tailgateCoupler').toggleGroup()"}],
+        ["tailgateLatch", "ui.inputActions.sdd_raptR.tailgateLatch.title", "ui.inputActions.sdd_raptR.tailgateLatch.description", {"onUp":"controller.getControllerSafe('tailgateCoupler').toggleGroup()"}],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -60,32 +56,32 @@
          {"selfCollision":true},
          {"group":["sdd_trx2_tailgate","sdd_trx2_tailgate_standard"]},
          {"nodeWeight":3.0},
-         ["t1rr", -0.75527, 3.08771, 1.44858],
+         ["t1rr", -0.75527, 3.25108, 1.20250],
          {"nodeWeight":1.0},
-         ["t1r", -0.38685, 3.07771, 1.44858],
-         ["t1", 0.00000, 3.07771, 1.44858,{"selfCollision":false}],
-         ["t1l", 0.38685, 3.07771, 1.44858],
+         ["t1r", -0.38685, 3.24108, 1.20250],
+         ["t1", 0.00000, 3.24108, 1.20250,{"selfCollision":false}],
+         ["t1l", 0.38685, 3.24108, 1.20250],
          {"nodeWeight":3.0},
-         ["t1ll", 0.75527, 3.07771, 1.44858],
+         ["t1ll", 0.75527, 3.24108, 1.20250],
 
-         ["t2rr", -0.75527, 3.07771, 0.84962],
-         ["t2r", -0.38685, 3.07771, 0.84962],
-         ["t2", 0.00000, 3.07771, 0.84962],
-         ["t2l", 0.38685, 3.07771, 0.84962],
-         ["t2ll", 0.75527, 3.07771, 0.84962],
+         ["t2rr", -0.75527, 3.24108, 0.60354],
+         ["t2r", -0.38685, 3.24108, 0.60354],
+         ["t2", 0.00000, 3.24108, 0.60354],
+         ["t2l", 0.38685, 3.24108, 0.60354],
+         ["t2ll", 0.75527, 3.24108, 0.60354],
         //latch nodes
          {"collision":false},
          {"selfCollision":false},
          {"group":""},
          {"nodeWeight":1.15},
-         ["tlc1r", -0.80929, 3.04797, 1.38860],
-         ["tlc1l", 0.80929, 3.04797, 1.38860],
+         ["tlc1r", -0.77830, 3.24108, 1.20250],
+         ["tlc1l", 0.77830, 3.24108, 1.20250],
          //rigidifier
          {"selfCollision":false},
          {"collision":false},
          {"group":""},
          {"nodeWeight":1.0},
-         ["t3", 0.00000, 2.77771, 1.24371],
+         ["t3", 0.00000, 2.94108, 0.99763],
     ],
     "beams": [
           ["id1:", "id2:"],

@@ -2,16 +2,16 @@
 {
 "sdd_trx2_body": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Crew Cab",
         "value":10500,
     },
     "slotType" : "sdd_trx2_body",
     "slots": [
         ["type", "default", "description"],
-        ["skin_interior","sdd_trx2_skin_interior", "Interior Color", {"coreSlot":true}],
+        ["skin_interior","sdd_trx2_skin_interior_raptR", "Interior Color", {"coreSlot":true}],
         ["sdd_trx2_interior","sdd_trx2_interior","Dashboard", {"coreSlot":true}],
-        ["sdd_trx2_badges","sdd_trx2_badges","Badges"],
+        ["sdd_trx2_trim_crew","","Trim"],
         ["gps","","Navigation Unit", {"nodeMove":{"x":0.15,"y":-0.70,"z":1.33}}],
         //bodywork
         ["sdd_trx2_rollcage_crew","","Roll Cage"],
@@ -27,43 +27,32 @@
         ["sdd_trx2_spotlight_R","", "Right Spotlight"],
         ["sdd_trx2_snorkel","", "Snorkel"],
 		 ["sdd_trx2_lightbar","", "Lightbar"],
-        ["sdd_trx2_fender_R","sdd_trx2_fender_R","Front Right Fender"],
-        ["sdd_trx2_fender_L","sdd_trx2_fender_L","Front Left Fender"],
-		["sdd_trx2_police","sdd_trx2_police","Police Equipment"],
-		["sdd_trx2_policelights","sdd_trx2_policelights","Police Lights"],
+        ["sdd_trx2_fender_R","sdd_trx2_fender_R_raptor","Front Right Fender"],
+        ["sdd_trx2_fender_L","sdd_trx2_fender_L_raptor","Front Left Fender"],
+        ["sdd_trx2_badges","sdd_trx2_badges","Badges"],
+        ["sdd_trx2_police","","Police Equipment"],
+        ["sdd_trx2_policelights","","Police Lights"],
         ["sdd_trx2_hood","sdd_trx2_hood","Hood"],
         ["sdd_trx2_lightbar","","Light Bar"],
         ["sdd_trx2_seat_F","sdd_trx2_seat_F","Front Seats"],
-        ["sdd_trx2_seat_R","sdd_trx2_seat_R","Rear Seats", {"nodeMove":{"x":0.0, "y":0.0, "z":0.0}}],
-        ["sdd_trx2_lettering_fender","sdd_trx2_lettering_d15","Fender Lettering"],
+        ["sdd_trx2_seat_R","sdd_trx2_seat_R","Rear Seats", {"nodeMove":{"x":0.0, "y":0.28, "z":0.0}}],
+        ["sdd_trx2_lettering_fender","","Fender Lettering"],
         ["soundscape_horn", "soundscape_horn_3", "Horn"],
+        ["sdd_trx2_chmsl","","Center High Mounted Stop Light", {"nodeOffset":{"x":0.0,"y":0.8987,"z":0}}],
 
-    ],
-
-
-
-    "camerasInternal":[
-        ["type", "x", "y", "z", "fov", "id1:", "id2:", "id3:", "id4:", "id5:", "id6:"],
-        {"selfCollision":false},
-        //trail cam
-        ["trail", 0.0, -2.55, 0.95, 70, "va1","va2","va1r","va2r","va1l","va2l", {"beamDeform":5001000,"beamStrength":"FLT_MAX", "canRotate": false, "offset": {"x": 0.45, "y": 0, "z": 0.05}}],
-    ],
-
-
-
-	"mirrors": [
-        ["mesh", "idRef:", "id1:", "id2:"],
-        ["pickup_mirror","rf1","rfc1r","rf2",{"refBaseTranslation":{"x":0.0,"y":-0.090,"z":-0.140},"baseRotationGlobal":{"x":0,"y":0,"z":19}}],
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          //bodywork
-         ["sdd_trx2_body", ["sdd_trx2_body"]],
-		   ["sdd_trx2_chmsl", ["sdd_trx2_body"]],
-		  ["sdd_trx2_underbody", ["sdd_trx2_body"]],
-		 ["sdd_trx2_underbody", ["sdd_trx2_body"]],
-         ["sdd_trx2_interior", ["sdd_trx2_body"]],
+         ["sdd_raptR_body", ["sdd_trx2_body"]],
+		  ["sdd_raptR_underbody", ["sdd_trx2_body"]],
+		 ["sdd_raptR_underbody", ["sdd_trx2_body"]],
+         ["sdd_raptR_interior", ["sdd_trx2_body"]],
      ],
+	  "mirrors": [
+        ["mesh", "idRef:", "id1:", "id2:"],
+        ["pickup_intmirror","rf1","rfc1r","rf2",{"refBaseTranslation":{"x":0.0,"y":-0.090,"z":-0.140},"baseRotationGlobal":{"x":0,"y":0,"z":19}}],
+    ],
     "sounds": {
         "cabinFilterCoef": 0.12
     },
@@ -77,56 +66,56 @@
          //floor
          {"nodeWeight":3.478},
          {"group":["sdd_trx2_body","sdd_trx2_dash","sdd_trx2_floor"]},
-         ["b1rrr", -0.84535, -1.01497, 0.57886],
-         ["b1rr", -0.84870, -1.01097, 0.47886],
+         ["b1rrr", -0.84535, -0.88400, 0.40001],
+         ["b1rr", -0.84870, -0.88000, 0.30001],
          {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
-         ["b1r", -0.35000, -1.01097, 0.63886],
-         ["b1l", 0.35000, -1.01097, 0.63886],
+         ["b1r", -0.35000, -0.88000, 0.46001],
+         ["b1l", 0.35000, -0.88000, 0.46001],
          {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
-         ["b1ll", 0.84870, -1.01097, 0.47886],
-         ["b1lll", 0.84535, -1.01497, 0.57886],
+         ["b1ll", 0.84870, -0.88000, 0.30001],
+         ["b1lll", 0.84535, -0.88400, 0.40001],
          {"group":["sdd_trx2_body","sdd_trx2_floor"]},
 
-         ["b2rrr", -0.88000, -0.37097, 0.57886],
-         ["b2rr", -0.88000, -0.37097, 0.47886],
+         ["b2rrr", -0.88000, -0.24000, 0.40001],
+         ["b2rr", -0.88000, -0.24000, 0.30001],
          {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
-         ["b2r", -0.35000, -0.37097, 0.63886],
-         ["b2l", 0.35000, -0.37097, 0.63886],
+         ["b2r", -0.35000, -0.24000, 0.46001],
+         ["b2l", 0.35000, -0.24000, 0.46001],
          {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
-         ["b2ll", 0.88000, -0.37097, 0.47886],
-         ["b2lll", 0.88000, -0.37097, 0.57886],
+         ["b2ll", 0.88000, -0.24000, 0.30001],
+         ["b2lll", 0.88000, -0.24000, 0.40001],
 
-         ["b3rrr", -0.88000, 0.31876, 0.57886],
-         ["b3rr", -0.88000, 0.31876, 0.47886],
+         ["b3rrr", -0.88000, 0.44973, 0.40001],
+         ["b3rr", -0.88000, 0.44973, 0.30001],
          {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
-         ["b3r", -0.35000, 0.31876, 0.63886],
-         ["b3l", 0.35000, 0.31876, 0.63886],
+         ["b3r", -0.35000, 0.44973, 0.46001],
+         ["b3l", 0.35000, 0.44973, 0.46001],
          {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
-         ["b3ll", 0.88000, 0.31876, 0.47886],
-         ["b3lll", 0.88000, 0.31876, 0.57886],
+         ["b3ll", 0.88000, 0.44973, 0.30001],
+         ["b3lll", 0.88000, 0.44973, 0.40001],
 
          //ext
-         ["b4rrr", -0.92038, 1.23630, 0.57886],
-         ["b4rr", -0.89925, 1.27491, 0.47886],
+         ["b4rrr", -0.92038, 1.36727, 0.40001],
+         ["b4rr", -0.89925, 1.40588, 0.30001],
          {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
-         ["b4r", -0.35766, 1.30393, 0.63716],
-         ["b4l", 0.35766, 1.30393, 0.63716],
+         ["b4r", -0.35766, 1.43490, 0.45831],
+         ["b4l", 0.35766, 1.43490, 0.45831],
          {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
-         ["b4ll", 0.89925, 1.27491, 0.47886],
-         ["b4lll", 0.92038, 1.23630, 0.57886],
+         ["b4ll", 0.89925, 1.40588, 0.30001],
+         ["b4lll", 0.92038, 1.36727, 0.40001],
 
          //firewall
          {"nodeWeight":4.418},
          {"group":["sdd_trx2_body", "sdd_trx2_dash"]},
-         ["b5rr", -0.89000, -1.03097, 1.01885, {"group":["sdd_trx2_body","sdd_trx2_dash","sdd_trx2_snorkel"]}],
-         ["b5r", -0.35000, -1.18097, 1.01885],
-         ["b5l", 0.35000, -1.18097, 1.01885],
-         ["b5ll", 0.89000, -1.03097, 1.01885],
+         ["b5rr", -0.89000, -0.90000, 0.84000, {"group":["sdd_trx2_body","sdd_trx2_dash","sdd_trx2_snorkel"]}],
+         ["b5r", -0.35000, -1.05000, 0.84000],
+         ["b5l", 0.35000, -1.05000, 0.84000],
+         ["b5ll", 0.89000, -0.90000, 0.84000],
          //weight added by glass
-         ["b6rr", -0.88000, -1.00731, 1.39866, {"group":["sdd_trx2_body","sdd_trx2_dash","gps","sdd_trx2_snorkel"]}],
-         ["b6r", -0.35000, -1.20193, 1.41866, {"group":["sdd_trx2_body","sdd_trx2_dash","gps"]}],
-         ["b6l", 0.35000, -1.20193, 1.41866, {"group":["sdd_trx2_body","sdd_trx2_dash","gps"]}],
-         ["b6ll", 0.88000, -1.00731, 1.39866, {"group":["sdd_trx2_body","sdd_trx2_dash","gps"]}],
+         ["b6rr", -0.88000, -0.87634, 1.21981, {"group":["sdd_trx2_body","sdd_trx2_dash","gps","sdd_trx2_snorkel"]}],
+         ["b6r", -0.35000, -1.07096, 1.23981, {"group":["sdd_trx2_body","sdd_trx2_dash","gps"]}],
+         ["b6l", 0.35000, -1.07096, 1.23981, {"group":["sdd_trx2_body","sdd_trx2_dash","gps"]}],
+         ["b6ll", 0.88000, -0.87634, 1.21981, {"group":["sdd_trx2_body","sdd_trx2_dash","gps"]}],
          {"group":"sdd_trx2_body"},
 
          //--BODYWORK--
@@ -134,99 +123,99 @@
          //roof
           {"nodeWeight":2.2},
          //weight added by glass
-         ["rf1r", -0.66721, -0.38135, 1.86602, {"group":["sdd_trx2_body","gps"]}],
-         ["rf1", -0.00585, -0.51131, 1.90078, {"group":["sdd_trx2_body","gps"]}],
-         ["rf1l", 0.66721, -0.38135, 1.86602, {"group":["sdd_trx2_body","gps"]}],
+         ["rf1r", -0.66721, -0.25038, 1.68717, {"group":["sdd_trx2_body","gps"]}],
+         ["rf1", -0.00585, -0.38034, 1.72193, {"group":["sdd_trx2_body","gps"]}],
+         ["rf1l", 0.66721, -0.25038, 1.68717, {"group":["sdd_trx2_body","gps"]}],
 
-         ["rf2r", -0.66228, 0.27876, 1.93183],
-         ["rf2", 0.00000, 0.27876, 1.96183],
-         ["rf2l", 0.66228, 0.27876, 1.93183],
+         ["rf2r", -0.66228, 0.40973, 1.75298],
+         ["rf2", 0.00000, 0.40973, 1.78298],
+         ["rf2l", 0.66228, 0.40973, 1.75298],
 
          //crew
-         ["rf3r", -0.66228, 0.75619, 1.94759],
-         ["rf3", 0.00000, 0.75619, 1.97759],
-         ["rf3l", 0.66228, 0.75619, 1.94759],
+         ["rf3r", -0.66228, 0.88716, 1.76874],
+         ["rf3", 0.00000, 0.88716, 1.79874],
+         ["rf3l", 0.66228, 0.88716, 1.76874],
 
          //weight added by glass
-         ["rf4r", -0.67112, 1.26975, 1.92417],
-         ["rf4", 0.00000, 1.26975, 1.95417],
-         ["rf4l", 0.67112, 1.26975, 1.92417],
+         ["rf4r", -0.67112, 1.38037, 1.74532],
+         ["rf4", 0.00000, 1.38037, 1.77532],
+         ["rf4l", 0.67112, 1.38037, 1.74532],
 
-         ["rf4rr", -0.67112, 1.21595, 1.92417],
-         ["rf4ll", 0.67112, 1.21595, 1.92417],
+         ["rf4rr", -0.67112, 1.36727, 1.74532],
+         ["rf4ll", 0.67112, 1.36727, 1.74532],
 
-         ["rfrg", 0.00000, 0.37876, 1.67885, {"nodeWeight":1.88,"group":""}],
+         ["rfrg", 0.00000, 0.50973, 1.50000, {"nodeWeight":1.88,"group":""}],
          //added widthwise resolution - mostly standalone structure to help with mod compatibility
          {"nodeWeight":1.3},
-         ["rfc1r", -0.35181, -0.49631, 1.88578],
-         ["rfc1l", 0.34012, -0.49631, 1.88578],
+         ["rfc1r", -0.35181, -0.36534, 1.70693],
+         ["rfc1l", 0.34012, -0.36534, 1.70693],
 
-         ["rfc2r", -0.33312, 0.27876, 1.94683],
-         ["rfc2l", 0.33312, 0.27876, 1.94683],
+         ["rfc2r", -0.33312, 0.40973, 1.76798],
+         ["rfc2l", 0.33312, 0.40973, 1.76798],
 
-         ["rfc3r", -0.33312, 0.75619, 1.96259],
-         ["rfc3l", 0.33312, 0.75619, 1.96259],
+         ["rfc3r", -0.33312, 0.88716, 1.78374],
+         ["rfc3l", 0.33312, 0.88716, 1.78374],
 
-         ["rfc4r", -0.33756, 1.26975, 1.93917],
-         ["rfc4l", 0.33756, 1.26975, 1.93917],
+         ["rfc4r", -0.33756, 1.38037, 1.76032],
+         ["rfc4l", 0.33756, 1.38037, 1.76032],
          //a pillar
          {"nodeWeight":1.41},
          //weight added by glass
-         ["p1r", -0.63000, -0.75097, 1.65885, {"group":["sdd_trx2_body","gps"]}],
-         ["p1l", 0.63000, -0.75097, 1.65885, {"group":["sdd_trx2_body","gps"]}],
-         ["p2r", -0.78000, -0.73097, 1.65885, {"group":["sdd_trx2_body","gps"]}],
-         ["p2l", 0.78000, -0.73097, 1.65885, {"group":["sdd_trx2_body","gps"]}],
+         ["p1r", -0.63000, -0.62000, 1.48000, {"group":["sdd_trx2_body","gps"]}],
+         ["p1l", 0.63000, -0.62000, 1.48000, {"group":["sdd_trx2_body","gps"]}],
+         ["p2r", -0.78000, -0.60000, 1.48000, {"group":["sdd_trx2_body","gps"]}],
+         ["p2l", 0.78000, -0.60000, 1.48000, {"group":["sdd_trx2_body","gps"]}],
 
-         ["p2rr", -0.71000, -0.60097, 1.59885, {"group":""}],
-         ["p2ll", 0.71000, -0.60097, 1.59885, {"group":""}],
+         ["p2rr", -0.71000, -0.47000, 1.42000, {"group":""}],
+         ["p2ll", 0.71000, -0.47000, 1.42000, {"group":""}],
 
          //--CREW CAB REAR--
 
          //b pillar
          {"nodeWeight":1.692},
-         ["p3r", -0.86985, 0.17876, 0.97885],
-         ["p3l", 0.86985, 0.17876, 0.97885],
-         ["p4r", -0.86985, 0.37876, 0.97885],
-         ["p4l", 0.86985, 0.37876, 0.97885],
+         ["p3r", -0.86985, 0.30973, 0.80000],
+         ["p3l", 0.86985, 0.30973, 0.80000],
+         ["p4r", -0.86985, 0.50973, 0.80000],
+         ["p4l", 0.86985, 0.50973, 0.80000],
 
-         ["p5r", -0.86000, 0.17876, 1.36885],
-         ["p5l", 0.86000, 0.17876, 1.36885],
-         ["p6r", -0.86000, 0.37876, 1.36885],
-         ["p6l", 0.86000, 0.37876, 1.36885],
+         ["p5r", -0.86000, 0.30973, 1.19000],
+         ["p5l", 0.86000, 0.30973, 1.19000],
+         ["p6r", -0.86000, 0.50973, 1.19000],
+         ["p6l", 0.86000, 0.50973, 1.19000],
 
-         ["p7r", -0.76922, 0.17876, 1.63885],
-         ["p7l", 0.76922, 0.17876, 1.63885],
-         ["p8r", -0.76922, 0.37876, 1.63885],
-         ["p8l", 0.76922, 0.37876, 1.63885],
+         ["p7r", -0.76922, 0.30973, 1.46000],
+         ["p7l", 0.76922, 0.30973, 1.46000],
+         ["p8r", -0.76922, 0.50973, 1.46000],
+         ["p8l", 0.76922, 0.50973, 1.46000],
          //latch nodes
          {"group":""},
-         ["rb7rrr", -0.88742, 0.22876, 1.01885],
-         ["rb7lll", 0.88742, 0.22876, 1.01885],
+         ["rb7rrr", -0.88742, 0.35973, 0.84000],
+         ["rb7lll", 0.88742, 0.35973, 0.84000],
          {"group":"sdd_trx2_body"},
 
          //c pillars
          //weight added by glass
          //weight added by glass
          {"nodeWeight":1.88},
-         ["cp3rr", -0.82000, 1.23630, 1.65885],
-         ["cp3r", -0.82000, 1.31697, 1.65885],
-         ["cp3l", 0.82000, 1.31697, 1.65885],
-         ["cp3ll", 0.82000, 1.23630, 1.65885],
+         ["cp3rr", -0.82000, 1.36727, 1.48000],
+         ["cp3r", -0.82000, 1.44794, 1.48000],
+         ["cp3l", 0.82000, 1.44794, 1.48000],
+         ["cp3ll", 0.82000, 1.36727, 1.48000],
 
          //cab wall
          {"nodeWeight":2.35},
-         ["cb7rrr", -0.98379, 1.23630, 1.01885],
-         ["cb7rr", -0.96691, 1.35562, 1.01885],
-         ["cb7ll", 0.96691, 1.35562, 1.01885],
-         ["cb7lll", 0.98379, 1.23630, 1.01885],
+         ["cb7rrr", -0.98379, 1.36727, 0.84000],
+         ["cb7rr", -0.96691, 1.48659, 0.84000],
+         ["cb7ll", 0.96691, 1.48659, 0.84000],
+         ["cb7lll", 0.98379, 1.36727, 0.84000],
 
          //weight added by glass
-         ["cb8rrr", -0.90000, 1.23630, 1.37885],
-         ["cb8rr", -0.90000, 1.35562, 1.37885],
-         ["cb8r", -0.35000, 1.35562, 1.37885],
-         ["cb8l", 0.35000, 1.35562, 1.37885],
-         ["cb8ll", 0.91000, 1.35562, 1.37885],
-         ["cb8lll", 0.91000, 1.23630, 1.37885],
+         ["cb8rrr", -0.90000, 1.36727, 1.20000],
+         ["cb8rr", -0.90000, 1.48659, 1.20000],
+         ["cb8r", -0.35000, 1.48659, 1.20000],
+         ["cb8l", 0.35000, 1.48659, 1.20000],
+         ["cb8ll", 0.91000, 1.48659, 1.20000],
+         ["cb8lll", 0.91000, 1.36727, 1.20000],
 
 
          {"group":""},

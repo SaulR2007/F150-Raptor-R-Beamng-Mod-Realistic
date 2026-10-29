@@ -1,0 +1,212 @@
+{
+  "sdd_raptR_drl_w": {
+    "name": "sdd_raptR_drl_w",
+    "mapTo": "sdd_raptR_drl_w",
+    "class": "Material",
+    "persistentId": "30692a8a-f57a-4c69-9a5c-bfa3b259cf4b",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/2024-raptor-r-f-150_W.png",
+        "emissiveFactor": [
+          3.92156911,
+          3.92156911,
+          3.92156911
+        ],
+        "emissiveMap": "/vehicles/f150/textures/2024-raptor-r-f-150_W.png"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_lights_on": {
+    "name": "sdd_raptR_lights_on",
+    "mapTo": "sdd_raptR_lights_on",
+    "class": "Material",
+    "persistentId": "aa6452dd-ab39-44c3-9fbc-5995c5ee5cc2",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/vehiclelights128.dds",
+        "emissiveFactor": [
+          7.84313822,
+          7.84313822,
+          11.7647066
+        ],
+        "emissiveMap": "/vehicles/f150/textures/vehiclelights128.dds"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_lights_on_intense": {
+    "name": "sdd_raptR_lights_on_intense",
+    "mapTo": "sdd_raptR_lights_on_intense",
+    "class": "Material",
+    "persistentId": "389ac29b-24f5-4a2c-ba97-60d7d48e4489",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/vehiclelights128.dds",
+        "emissiveFactor": [
+          11.7647066,
+          11.7647066,
+          19.6078434
+        ],
+        "emissiveMap": "/vehicles/f150/textures/vehiclelights128.dds"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "sdd_raptR_orangeglow": {
+    "name": "sdd_raptR_orangeglow",
+    "mapTo": "sdd_raptR_orangeglow",
+    "class": "Material",
+    "persistentId": "3d3396f3-e888-4bca-a1f1-d7ebd33d4b73",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.569531024,
+          0.151113003,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/2024-raptor-r-f-150.jpg",
+        "emissiveFactor": [
+          3.81960797,
+          0.870588005,
+          0
+        ],
+        "emissiveMap": "/vehicles/f150/textures/2024-raptor-r-f-150.jpg"
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "sdd_raptR_slights_on": {
+    "name": "sdd_raptR_slights_on",
+    "mapTo": "sdd_raptR_slights_on",
+    "class": "Material",
+    "persistentId": "a9dd406e-c3f4-4708-b9a5-e076dfaf637b",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/vehiclelights128.dds",
+        "emissiveFactor": [
+          10.1764708,
+          2.4000001,
+          0
+        ],
+        "emissiveMap": "/vehicles/f150/textures/vehiclelights128.dds"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_raptR_tlights_on": {
+    "name": "sdd_raptR_tlights_on",
+    "mapTo": "sdd_raptR_tlights_on",
+    "class": "Material",
+    "persistentId": "6aed1f63-b8b1-49dd-a9f8-3220025ba2c9",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/f150/textures/vehiclelights128.dds",
+        "emissiveFactor": [
+          11.5019617,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/f150/textures/vehiclelights128.dds"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "sdd_raptR_tlights_on_intense": {
+    "name": "sdd_raptR_tlights_on_intense",
+    "mapTo": "sdd_raptR_tlights_on_intense",
+    "class": "Material",
+    "persistentId": "9e432b5c-6938-421a-9609-85b288956c89",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "baseColorMap": "/vehicles/f150/textures/vehiclelights128.dds",
+        "emissiveFactor": [
+          15.7882366,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/f150/textures/vehiclelights128.dds"
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

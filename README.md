@@ -42,7 +42,7 @@ Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-st
      vehicles/f150/textures/RaptR.cached.dts
      ```
 
-   Body / door / interior flexbodies reference `sdd_raptR_*` meshes from that pack. Without `RaptR.cached.dts` the truck spawns with a broken/missing body.
+   Body / door / interior flexbodies reference `sdd_raptR_*` meshes from that pack. Chassis / suspension / tire / wheel meshes still use in-repo `vehicles/f150/textures/trx2.cached.dts`. Without `RaptR.cached.dts` the truck spawns with a broken/missing body.
 
 4. Enable the mod in Mods if needed, then spawn **Ford F-150 Raptor** and add the Custom **Ford Control** UI App.
 

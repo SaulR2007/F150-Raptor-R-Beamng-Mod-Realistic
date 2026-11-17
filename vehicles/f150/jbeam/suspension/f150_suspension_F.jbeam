@@ -42,11 +42,11 @@
          {"collision":true},
          {"selfCollision":true},
          //--FRONT INDEPENDENT SUSPENSION--
-         //top of shock/spring
+         //top of shock/spring (raised +0.06 for Raptor ride height)
          {"group":"pickup_shocktop"},
          {"nodeWeight":7.52},
-         ["fs1r", -0.51, -1.5, 0.78],
-         ["fs1l", 0.51, -1.5, 0.78],
+         ["fs1r", -0.51, -1.5, 0.84],
+         ["fs1l", 0.51, -1.5, 0.84],
          {"group":""},
          {"selfCollision":false},
          //redefine frame node positions for upper mounts
@@ -390,7 +390,7 @@
 
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$springheight_F",     "range", "+m",    "Suspension", 0,     -0.1,  0.1,  "Spring Height",     "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Front"}],
+        ["$springheight_F",     "range", "+m",    "Suspension", 0.03,  -0.1,  0.12, "Spring Height",     "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Front"}],
         ["$spring_F",           "range", "N/m",   "Suspension", 115000, 50000, 200000, "Spring Rate",    "Spring stiffness", {"stepDis":500,"subCategory":"Front"}],
         ["$damp_bump_F",        "range", "N/m/s", "Suspension", 10000,  500,   15000,  "Bump Damping",    "Damper rate in slow compression", {"stepDis":100, "subCategory":"Front"}],
         ["$damp_bump_F_fast",   "range", "N/m/s", "Suspension", 19000,  500,   25000,  "Fast Bump Damping","Damper rate in fast compression", {"stepDis":100, "subCategory":"Front"}],
@@ -444,8 +444,8 @@
     // === Springs moved to hydros and controlled by activeFrontSpring ===
     "hydros": [
           ["id1:", "id2:"],
-          // Base rest length doubled (0.418 m node spacing -> 0.836 m). Drive modes still add springLengthCoef on top.
-          {"beamPrecompression":2, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Base rest length ~2.2x node spacing, plus $springheight_F for static ride height (not drive modes).
+          {"beamPrecompression":"$=2.2+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_F","beamDamp":0},
 

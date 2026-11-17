@@ -1,7 +1,7 @@
 {"sdd_trx2_frame":
 {
     "information":{
-        "authors":"BeamNG",
+        "authors":"The_Gamer6000",
         "name":"Crew Frame",
         "value":3200,
     },
@@ -13,7 +13,7 @@
         //running gear
         ["sdd_trx2_DSE","sdd_trx2_DSE", "Driving & Safety Electronics"],
                 ["pickup_fueltank","pickup_fueltank","Fuel Tank", {"nodeOffset":{"x":0.0,"y":0.8987,"z":0}}],
-        ["pickup_engine","pickup_engine_v8_4.5","Engine"],
+        ["pickup_engine","sdd_trx2_engine_v8_5.2","Engine"],
         ["sdd_trx2_muffler_crew","sdd_trx2_muffler_crew","Muffler"],
         ["pickup_suspension_R","pickup_axle_R","Rear Suspension", {"nodeMove":{"x":0.0,"y":0.68,"z":0}}],
         ["pickup_suspension_F","pickup_IFS","Front Suspension",{"nodeMove":{"x":0.0,"y":0.03,"z":0}}],
@@ -27,7 +27,7 @@
         //misc
         ["pickup_towhitch","","Tow Hitch", {"nodeOffset":{"x":0.0,"y":0.7,"z":-0.1}}],
 		["sdd_trx2_gooseneck","","Gooseneck Hitch", {"nodeOffset":{"x":0.0,"y":0.3,"z":0}}],
-        ["sdd_trx2_sparetire","sdd_trx2_sparetire_6l","Spare Tire", {"nodeOffset":{"x":0.0,"y":0.9487,"z":0}}],
+        ["sdd_trx2_sparetire","", "Spare Tire", {"nodeOffset":{"x":0.0,"y":0.9487,"z":0}}],
         ["linelock", "", "Brake Line Lock"],
         ["pickup_reversewarn", "", "Reverse Warning Beeper"],
     ],

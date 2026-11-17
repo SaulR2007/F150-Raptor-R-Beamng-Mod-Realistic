@@ -6,12 +6,12 @@ Unpack / clone this repo as folder **`F150RR`**.
 
 ## About
 
-Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-style **Trail Control** UI (`fordControl`), and **AdvanceTrac / DSE** drive modes. Powertrain is a supercharged 6.2L V8 with 10-speed SelectShift (limited and unlocked configs).
+Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-style **Trail Control** UI (`fordControl`), and **AdvanceTrac / DSE** drive modes. Stock Raptor configs use the F150 RR supercharger with the 10-speed SelectShift; Normal / Street-style configs stay naturally aspirated.
 
 ## Features
 
-- **18 configs** under `vehicles/f150/`: Raptor, Raptor Unlocked / Black / Code Orange, Baja (+ Unlocked), Rock Crawl, Sand Runner, Off-Road Pack, Street, Sport Unlocked, Stealth, Police, Family Tow, Gooseneck Tow, Heavy Haul Unlocked, Trailer Loading, Work White
-- Drive-mode packs via DSE: Normal / Sport / Slippery, Off-Road / Sand / Baja / Rock Crawl, Tow/Haul
+- **10 configs** under `vehicles/f150/`: Normal, Blacked Out, Raptor, Blacked Out Raptor, Monster, Monster Blacked Out, Baja, Sport, Tow, Police
+- Drive-mode packs via DSE (street / SC Raptor / Baja / Tow packs)
 - In-game **fordControl** app — 4x4 pad, lockers, trail camera, Trail Control
 - Custom suspension, differentials, wheels/tires, and cabin screen assets
 - Hellcat-based engine/exhaust sound bank (`art/sound`)
@@ -33,13 +33,16 @@ Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-st
 
    That folder should contain `vehicles/`, `lua/`, `ui/`, `art/`, `scripts/`, and this `README.md` directly — not nested inside another folder.
 
-3. **Download the mesh pack** from the latest [GitHub Release](https://github.com/SaulR2007/F150-Raptor-R-Beamng-Mod-Realistic/releases) (`F150RR-meshes.zip`). Extract it so these files exist:
+3. **Install the mesh zip** (too large for normal git pushes; ignored as `F150RR-meshes.zip` / `*.cached.dts`):
 
-   ```
-   vehicles/f150/textures/RaptR.cached.dts
-   ```
+   - Download **`F150RR-meshes.zip`** from the repo [GitHub Releases](https://github.com/SaulR2007/F150-Raptor-R-Beamng-Mod-Realistic/releases) (or use your local copy).
+   - Extract it into the mod so this file exists:
 
-   (`RaptR.cached.dts` is ~129 MB, so it cannot live in the git repo. Without it the Raptor body meshes are missing.)
+     ```
+     vehicles/f150/textures/RaptR.cached.dts
+     ```
+
+   Body / door / interior flexbodies reference `sdd_raptR_*` meshes from that pack. Without `RaptR.cached.dts` the truck spawns with a broken/missing body.
 
 4. Enable the mod in Mods if needed, then spawn **Ford F-150 Raptor**.
 

@@ -110,8 +110,9 @@
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-         ["rs2r", -0.56450, 1.48756, 0.76951],
-         ["rs2l", 0.56450, 1.48756, 0.76951],
+         // frame spring/shock towers raised +0.06 for Raptor ride height
+         ["rs2r", -0.56450, 1.48756, 0.82951],
+         ["rs2l", 0.56450, 1.48756, 0.82951],
 
           
 
@@ -481,7 +482,7 @@
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$springheight_R3", "range", "+m", "Suspension", 0, -0.1, 0.08, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
+        ["$springheight_R3", "range", "+m", "Suspension", 0.03, -0.1, 0.12, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
         ["$spring_R3", "range", "N/m", "Suspension", 30000, 10000, 90000, "Spring Rate", "Spring stiffness", {"stepDis":500, "subCategory":"Rear"}]
         ["$damp_bump_R3", "range", "N/m/s", "Suspension", 4000, 500, 10000, "Bump Damping", "Damper rate in slow compression", {"stepDis":100, "subCategory":"Rear"}]
         ["$damp_bump_R3_fast", "range", "N/m/s", "Suspension", 9000, 500, 15000, "Fast Bump Damping", "Damper rate in fast compression", {"stepDis":100, "subCategory":"Rear"}]
@@ -494,13 +495,13 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         //shock mount
+         //shock mount (raised +0.06 for Raptor ride height)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-           ["rs2r", -0.63000, 1.56808, 0.65978],
-         ["rs2l", 0.63000, 1.56808, 0.65978],
+           ["rs2r", -0.63000, 1.56808, 0.71978],
+         ["rs2l", 0.63000, 1.56808, 0.71978],
 
          //upper link mount
          {"selfCollision":false},
@@ -520,8 +521,8 @@
     "hydros": [
           ["id1:", "id2:"],
           // rear springs as hydros
-          // Base rest length doubled (0.221 m node spacing -> 0.443 m). Drive modes still add springLengthCoef on top.
-          {"beamPrecompression":2, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Base rest length ~2.35x node spacing, plus $springheight_R3 for static ride height (not drive modes).
+          {"beamPrecompression":"$=2.35+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_R3","beamDamp":0},
 
@@ -572,7 +573,7 @@
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$springheight_R3", "range", "+m", "Suspension", 0, -0.1, 0.08, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
+        ["$springheight_R3", "range", "+m", "Suspension", 0.03, -0.1, 0.12, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
         ["$spring_R3", "range", "N/m", "Suspension", 30000, 10000, 90000, "Spring Rate", "Spring stiffness", {"stepDis":500, "subCategory":"Rear"}]
         ["$damp_bump_R3", "range", "N/m/s", "Suspension", 4000, 500, 10000, "Bump Damping", "Damper rate in slow compression", {"stepDis":100, "subCategory":"Rear"}]
         ["$damp_bump_R3_fast", "range", "N/m/s", "Suspension", 9000, 500, 15000, "Fast Bump Damping", "Damper rate in fast compression", {"stepDis":100, "subCategory":"Rear"}]

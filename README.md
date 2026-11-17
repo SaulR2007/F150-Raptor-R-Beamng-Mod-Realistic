@@ -33,10 +33,10 @@ Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-st
 
    That folder should contain `vehicles/`, `lua/`, `ui/`, `art/`, `scripts/`, and this `README.md` directly — not nested inside another folder.
 
-3. **Install the mesh zip** (too large for normal git pushes; ignored as `F150RR-meshes.zip` / `*.cached.dts`):
+3. **Install the mesh zip** (too large for normal git pushes and auto extraction):
 
-   - Download **`F150RR-meshes.zip`** from the repo [GitHub Releases](https://github.com/SaulR2007/F150-Raptor-R-Beamng-Mod-Realistic/releases) (or use your local copy).
-   - Extract it into the mod so this file exists:
+   - Open **`F150RR-meshes.zip`** in the F150RR Main Folder
+   - Extract the **`Vehicles`** folder into the main F150RR Folder so this file exists:
 
      ```
      vehicles/f150/textures/RaptR.cached.dts
@@ -44,7 +44,7 @@ Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-st
 
    Body / door / interior flexbodies reference `sdd_raptR_*` meshes from that pack. Without `RaptR.cached.dts` the truck spawns with a broken/missing body.
 
-4. Enable the mod in Mods if needed, then spawn **Ford F-150 Raptor**.
+4. Enable the mod in Mods if needed, then spawn **Ford F-150 Raptor** and add the Custom **Ford Control** UI App.
 
 ## Credits
 

@@ -314,10 +314,10 @@
           {"beamPrecompression":1, "beamType":"|BOUNDED","beamLongBound":1,"beamShortBound":1},
           {"beamSpring":0,"beamDamp":0,"beamDeform":24500,"beamStrength":245000},
           {"beamLimitSpring":2001000,"beamLimitDamp":1000},
-          ["ax4r","f18r", {"longBoundRange":0.35,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["ax4l","f18l", {"longBoundRange":0.35,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["ax3r","f18r", {"longBoundRange":0.35,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["ax3l","f18l", {"longBoundRange":0.35,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["ax4r","f18r", {"longBoundRange":0.70,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["ax4l","f18l", {"longBoundRange":0.70,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["ax3r","f18r", {"longBoundRange":0.70,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["ax3l","f18l", {"longBoundRange":0.70,"shortBoundRange":0.06,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
 
           //dampers
           {"beamSpring":0,"beamDamp":1128},
@@ -513,14 +513,15 @@
           //bumpstops
           {"beamSpring":0,"beamDamp":0},
           {"beamLimitSpring":251000,"beamLimitDamp":10000},
-          ["axshr","rs2r", {"longBoundRange":0.35,"shortBoundRange":0.04,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["axshl","rs2l", {"longBoundRange":0.35,"shortBoundRange":0.04,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["axshr","rs2r", {"longBoundRange":0.70,"shortBoundRange":0.04,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["axshl","rs2l", {"longBoundRange":0.70,"shortBoundRange":0.04,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
     ],
     "hydros": [
           ["id1:", "id2:"],
           // rear springs as hydros
-          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Base rest length doubled (0.221 m node spacing -> 0.443 m). Drive modes still add springLengthCoef on top.
+          {"beamPrecompression":2, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_R3","beamDamp":0},
 

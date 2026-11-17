@@ -1,7 +1,7 @@
 {
 "sdd_trx2_taillight_R": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Right Taillight",
         "value":150,
     },
@@ -9,7 +9,7 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
        
-         ["sdd_trx2_taillight_R", ["sdd_trx2_taillight_R"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}, "deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.5}],
+         ["sdd_raptR_taillight_R", ["sdd_trx2_taillight_R"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}, "deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.5}],
     ],
     "props": [
         ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
@@ -26,7 +26,7 @@
             "shadowSoftness":0.5,
         },
         //reverse lights
-        ["reverse" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.1, "z":-0.015},"flareScale":0.0,"lightBrightness":0.06,"deformGroup":"taillight_R_break"}],
+        ["reverse" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.1, "z":-0.015},"flareScale":0.05,"lightBrightness":0.06,"deformGroup":"taillight_R_break"}],
         //taillights
         {
             "lightInnerAngle":0,
@@ -36,9 +36,9 @@
             "lightCastShadows":false,
             "flareName":"vehicleBrakeLightFlare",
         },
-        ["brake" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.4, "z":-0.015},"flareScale":0.0,"lightBrightness":0.07,"deformGroup":"taillight_R_break"}],
-        ["signal_R" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":-0.015},"flareScale":0.0,"lightBrightness":0.03,"deformGroup":"taillight_R_break"}],
-        ["lowhighbeam" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":-0.015},"flareScale":0.0,"lightBrightness":0.02,"lightRange":8,"deformGroup":"taillight_R_break"}],
+        ["brake" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.4, "z":-0.015},"flareScale":0.04,"lightBrightness":0.07,"deformGroup":"taillight_R_break"}],
+        ["signal_R" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":-0.015},"flareScale":0.03,"lightBrightness":0.03,"deformGroup":"taillight_R_break"}],
+        ["lowhighbeam" ,         "SPOTLIGHT"        , "tl2r", "tl4r", "tl1r", {"x":0, "y":-30, "z":-40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":-0.015},"flareScale":0.02,"lightBrightness":0.02,"lightRange":8,"deformGroup":"taillight_R_break"}],
      ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -50,13 +50,13 @@
          {"frictionCoef":0.5},
          {"nodeWeight":0.376},
          {"group":"sdd_trx2_taillight_R"},
-         ["tl1r", -0.89741, 2.97079, 1.31565],
-         ["tl2r", -0.89741, 2.97079, 1.01107],
-         ["tl3r", -0.79458, 3.12867, 1.31565],
-         ["tl4r", -0.79458, 3.12867, 1.01107],
+         ["tl1r", -0.89741, 3.10861, 1.01360],
+         ["tl2r", -0.89741, 3.10861, 0.70902],
+         ["tl3r", -0.79458, 3.26649, 1.01360],
+         ["tl4r", -0.79458, 3.26649, 0.70902],
          {"selfCollision":false},
          {"nodeWeight":0.376},
-         ["tl5r", -0.85067, 2.98582, 1.13993],
+         ["tl5r", -0.85067, 3.12364, 0.83788],
          {"group":""},
     ],
 
@@ -150,7 +150,7 @@
 },
 "sdd_trx2_taillight_L": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Left Taillight",
         "value":150,
     },
@@ -158,7 +158,7 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
         
-         ["sdd_trx2_taillight_L", ["sdd_trx2_taillight_L"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}, "deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.5}],
+         ["sdd_raptR_taillight_L", ["sdd_trx2_taillight_L"],[],{"pos":{"x":0.0, "y":-0.0, "z":0.0}, "deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.5}],
 
     ],
     "props": [
@@ -176,7 +176,7 @@
             "shadowSoftness":0.5,
         },
         //reverse lights
-        ["reverse" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.01, "z":0.015},"flareScale":0.0,"lightBrightness":0.06,"deformGroup":"taillight_L_break"}],
+        ["reverse" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.01, "z":0.015},"flareScale":0.05,"lightBrightness":0.06,"deformGroup":"taillight_L_break"}],
         //taillights
         {
             "lightInnerAngle":0,
@@ -186,9 +186,9 @@
             "lightCastShadows":false,
             "flareName":"vehicleBrakeLightFlare",
         },
-        ["brake" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.5, "z":0.015},"flareScale":0.0,"lightBrightness":0.07,"deformGroup":"taillight_L_break"}],
-        ["signal_L" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":0.015},"flareScale":0.0,"lightBrightness":0.04,"deformGroup":"taillight_L_break"}],
-        ["lowhighbeam" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":0.015},"flareScale":0.0,"lightBrightness":0.02,"lightRange":8,"deformGroup":"taillight_L_break"}],
+        ["brake" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.5, "z":0.015},"flareScale":0.04,"lightBrightness":0.07,"deformGroup":"taillight_L_break"}],
+        ["signal_L" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":0.015},"flareScale":0.03,"lightBrightness":0.04,"deformGroup":"taillight_L_break"}],
+        ["lowhighbeam" ,         "SPOTLIGHT"        , "tl2l", "tl4l", "tl1l", {"x":180, "y":-30, "z":40} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.40, "y":0.6, "z":0.015},"flareScale":0.02,"lightBrightness":0.02,"lightRange":8,"deformGroup":"taillight_L_break"}],
      ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -200,13 +200,13 @@
          {"frictionCoef":0.5},
          {"nodeWeight":0.376},
          {"group":"sdd_trx2_taillight_L"},
-         ["tl1l", 0.89741, 2.97079, 1.31565],
-         ["tl2l", 0.89741, 2.97079, 1.01107],
-         ["tl3l", 0.79458, 3.12867, 1.31565],
-         ["tl4l", 0.79458, 3.12867, 1.01107],
+         ["tl1l", 0.89741, 3.10861, 1.01360],
+         ["tl2l", 0.89741, 3.10861, 0.70902],
+         ["tl3l", 0.79458, 3.26649, 1.01360],
+         ["tl4l", 0.79458, 3.26649, 0.70902],
          {"selfCollision":false},
          {"nodeWeight":0.376},
-         ["tl5l", 0.85067, 2.98582, 1.13993],
+         ["tl5l", 0.85067, 3.12364, 0.83788],
          {"group":""},
     ],
 

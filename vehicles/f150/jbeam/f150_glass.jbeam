@@ -1,7 +1,7 @@
 {
 "sdd_trx2_windshield": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Windshield",
         "value":350,
     },
@@ -10,15 +10,15 @@
          ["mesh", "[group]:", "nonFlexMaterials"],
          //glass
          {"deformGroup":"windshield_break", "deformMaterialBase":"bastion_glass", "deformMaterialDamaged":"bastion_windshield_dmg"},
-         ["sdd_trx2_windshield", ["sdd_trx2_windshield"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>impact_glass_windscreen_01", "deformVolume":0.7}],
+         ["sdd_raptR_windshield", ["sdd_trx2_windshield"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>impact_glass_windscreen_01", "deformVolume":0.7}],
          {"deformGroup":"windshield_break", "deformMaterialBase":"bastion_glass_int", "deformMaterialDamaged":"bastion_glass_int"},
-         ["sdd_trx2_windshield_int", ["sdd_trx2_windshield"]],
+         ["sdd_raptR_windshield_int", ["sdd_trx2_windshield"]],
 
          {"deformGroup":"windshield_break", "deformMaterialBase":"glass_invisible", "deformMaterialDamaged":"glass_mirror"},
-         ["sdd_trx2_windshield_dmg", ["sdd_trx2_windshield"]],
+         ["sdd_raptR_windshield_dmg", ["sdd_trx2_windshield"]],
 
          {"deformGroup":""},
-         ["sdd_trx2_wipers", ["sdd_trx2_body"]],
+         ["sdd_raptR_wipers", ["sdd_trx2_body"]],
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.12
@@ -31,7 +31,7 @@
          {"nodeMaterial":"|NM_GLASS"},
          {"nodeWeight":1.88},
          {"group":["sdd_trx2_windshield","gps"]},
-         ["wi1", 0.00000, -0.76336, 1.70494],
+         ["wi1", 0.00000, -0.72264, 1.51909],
          {"group":""},
          {"nodeMaterial":"|NM_METAL"},
 
@@ -40,26 +40,26 @@
          //roof
          {"group":"sdd_trx2_body"},
          {"nodeWeight":2.8},
-         ["rf1r", -0.70527, -0.32108, 1.85944, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["rf1", 0.00000, -0.44943, 1.88493, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["rf1l", 0.70527, -0.32108, 1.85944, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["rf1r", -0.70527, -0.28036, 1.67359, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["rf1", 0.00000, -0.40871, 1.69908, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["rf1l", 0.70527, -0.28036, 1.67359, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
          {"nodeWeight":1.5},
-         ["rfc1r", -0.35000, -0.43443, 1.86993, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["rfc1l", 0.35000, -0.43443, 1.86993, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["rfc1r", -0.35000, -0.39371, 1.68408, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["rfc1l", 0.35000, -0.39371, 1.68408, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
 
          //a-pillar
          {"nodeWeight":2.256},
-         ["p1r", -0.63000, -0.68828, 1.67085, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["p1l", 0.63000, -0.68828, 1.67085, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["p2r", -0.78000, -0.64072, 1.66585, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["p2l", 0.78000, -0.64072, 1.66585, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["p1r", -0.63000, -0.64756, 1.48500, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["p1l", 0.63000, -0.64756, 1.48500, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["p2r", -0.78000, -0.60000, 1.48000, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["p2l", 0.78000, -0.60000, 1.48000, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
 
          //firewall
          {"nodeWeight":5.828},
-         ["b6rr", -0.88000, -0.91072, 1.38585, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps","sdd_trx2_snorkel"]}],
-         ["b6r", -0.35000, -1.08540, 1.45487, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["b6l", 0.35000, -1.08540, 1.45487, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
-         ["b6ll", 0.88000, -0.91072, 1.38585, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["b6rr", -0.88000, -0.87000, 1.20000, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps","sdd_trx2_snorkel"]}],
+         ["b6r", -0.35000, -1.04468, 1.26902, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["b6l", 0.35000, -1.04468, 1.26902, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
+         ["b6ll", 0.88000, -0.87000, 1.20000, {"group":["sdd_trx2_body","sdd_trx2_windshield","gps"]}],
          {"group":""},
     ],
     "beams": [
@@ -118,7 +118,7 @@
 },
 "sdd_trx2_backlight_crew": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Backlight",
         "value":150,
     },
@@ -128,15 +128,43 @@
          //glass
 
          {"deformGroup":"backlight_break", "deformMaterialBase":"bastion_glass", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_backlight", ["sdd_trx2_body"], [], {"pos":{"x":0,"y":0.0,"z":0,"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound9", "deformVolume":0.8}}],
+         ["sdd_raptR_backlight", ["sdd_trx2_body"], [], {"pos":{"x":0,"y":0.0,"z":0,"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound9", "deformVolume":0.8}}],
          {"deformGroup":"backlight_break", "deformMaterialBase":"bastion_glass_int", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_backlight_int", ["sdd_trx2_body"], [], {"pos":{"x":0,"y":0.9,"z":0}}],
+         ["sdd_raptR_backlight_int", ["sdd_trx2_body"], [], {"pos":{"x":0,"y":0.9,"z":0}}],
          {"deformGroup":""},
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.12
     },
-   
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //backlight
+
+         {"group":"sdd_trx2_body"},
+
+         //-ROOF--
+         {"nodeWeight":3.478},
+         ["rf4r", -0.67112, 1.38037, 1.74532],
+         ["rf4", 0.00000, 1.38037, 1.77532],
+         ["rf4l", 0.67112, 1.38037, 1.74532],
+
+         //--PILLARS--
+         {"nodeWeight":2.82},
+        ["cp3r", -0.82000, 1.44794, 1.48000],
+         ["cp3l", 0.82000, 1.44794, 1.48000],
+
+         //--CAB--
+         {"nodeWeight":3.008},
+         ["cb8rr", -0.90000, 1.48659, 1.20000],
+         ["cb8r", -0.35000, 1.48659, 1.20000],
+         ["cb8l", 0.35000, 1.48659, 1.20000],
+         ["cb8ll", 0.91000, 1.48659, 1.20000],
+         {"group":""},
+    ],
     "beams": [
           ["id1:", "id2:"],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
@@ -185,7 +213,7 @@
 },
 "sdd_trx2_doorglass_FR": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Right Door Glass",
         "value":50,
     },
@@ -193,20 +221,34 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          {"deformGroup":"doorglass_FR_break", "deformMaterialBase":"bastion_glass", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_FR", ["sdd_trx2_door_FR"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound7", "deformVolume":0.7}],
+         ["sdd_raptR_doorglass_FR", ["sdd_trx2_door_FR"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound7", "deformVolume":0.7}],
          {"deformGroup":"doorglass_FR_break", "deformMaterialBase":"bastion_glass_int", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_R_int", ["sdd_trx2_door_FR"]],
+         ["sdd_raptR_doorglass_R_int", ["sdd_trx2_door_FR"]],
          {"deformGroup":""},
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.04
     },
- 
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--DOOR--
+         {"collision":true},
+         {"selfCollision":true},
+         {"nodeWeight":3.384},
+         {"group":"sdd_trx2_door_FR"},
+         ["d10r", -0.83476, -0.68143, 1.36413],
+         ["d11r", -0.72827, -0.21022, 1.63224],
+         ["d12r", -0.71034, 0.37742, 1.67049],
+         ["d13r", -0.83764, 0.36873, 1.39175],
+         {"group":""},
+    ],
     "beams": [
           ["id1:", "id2:"],
           {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
           //brittle glass beams
-          {"beamSpring":1093230,"beamDamp":244.4},
+          {"beamSpring":2093230,"beamDamp":244.4},
           {"beamDeform":9800,"beamStrength":9100},
           {"disableMeshBreaking":true,"disableTriangleBreaking":true},
           {"breakGroup":"doorglass_FR"},
@@ -228,7 +270,7 @@
 },
 "sdd_trx2_doorglass_FL": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Left Door Glass",
         "value":50,
     },
@@ -236,20 +278,34 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          {"deformGroup":"doorglass_FL_break", "deformMaterialBase":"bastion_glass", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_FL", ["sdd_trx2_door_FL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound8", "deformVolume":0.7}],
+         ["sdd_raptR_doorglass_FL", ["sdd_trx2_door_FL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound8", "deformVolume":0.7}],
          {"deformGroup":"doorglass_FL_break", "deformMaterialBase":"bastion_glass_int", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_L_int", ["sdd_trx2_door_FL"]],
+         ["sdd_raptR_doorglass_L_int", ["sdd_trx2_door_FL"]],
          {"deformGroup":""},
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.04
     },
-    
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--DOOR--
+         {"collision":true},
+         {"selfCollision":true},
+         {"nodeWeight":3.384},
+         {"group":"sdd_trx2_door_FL"},
+         ["d10l", 0.82476, -0.68143, 1.36413],
+         ["d11l", 0.72827, -0.21022, 1.63224],
+         ["d12l", 0.71034, 0.37742, 1.67049],
+         ["d13l", 0.82764, 0.36873, 1.39175],
+         {"group":""},
+    ],
     "beams": [
           ["id1:", "id2:"],
           {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
           //brittle glass beams
-          {"beamSpring":1093230,"beamDamp":244.4},
+          {"beamSpring":2093230,"beamDamp":244.4},
           {"beamDeform":9800,"beamStrength":9100},
           {"disableMeshBreaking":true,"disableTriangleBreaking":true},
           {"breakGroup":"doorglass_FL"},
@@ -271,7 +327,7 @@
 },
 "sdd_trx2_doorglass_RR": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Right Door Glass",
         "value":50,
     },
@@ -279,21 +335,36 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          {"deformGroup":"doorglass_RR_break", "deformMaterialBase":"bastion_glass", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_RR", ["sdd_trx2_door_RR"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
+         ["sdd_raptR_doorglass_RR", ["sdd_trx2_door_RR"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
          {"deformGroup":"doorglass_RR_break", "deformMaterialBase":"bastion_glass_int", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_RR_crew_int", ["sdd_trx2_door_RR"]],
+         ["sdd_raptR_doorglass_RR_crew_int", ["sdd_trx2_door_RR"]],
          {"deformGroup":""},
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.04
     },
-   
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         //--DOOR--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"sdd_trx2_door_RR"},
+         {"nodeWeight":1.88},
+       ["d24r", -0.80219, 1.31950, 1.43218],
+         ["d25r", -0.69532, 1.30674, 1.69673],
+         ["d26r", -0.69532, 0.88020, 1.69673],
+         ["d27r", -0.69532, 0.39438, 1.69673],
+         ["d28r", -0.79286, 0.38204, 1.43218],
+         {"group":""},
+    ],
     "beams": [
           ["id1:", "id2:"],
           {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
 
           //brittle glass beams
-          {"beamSpring":1093230,"beamDamp":244.4},
+          {"beamSpring":2093230,"beamDamp":244.4},
           {"beamDeform":9800,"beamStrength":9100},
           {"disableMeshBreaking":true,"disableTriangleBreaking":true},
           {"deformGroup":"doorglass_RR_break", "deformationTriggerRatio":0.02},
@@ -311,7 +382,7 @@
 },
 "sdd_trx2_doorglass_RL": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear Left Door Glass",
         "value":50,
     },
@@ -319,20 +390,35 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          {"deformGroup":"doorglass_RL_break", "deformMaterialBase":"bastion_glass", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_RL", ["sdd_trx2_door_RL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound6", "deformVolume":0.7}],
+         ["sdd_raptR_doorglass_RL", ["sdd_trx2_door_RL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound6", "deformVolume":0.7}],
          {"deformGroup":"doorglass_RL_break", "deformMaterialBase":"bastion_glass_int", "deformMaterialDamaged":"bastion_glass_dmg"},
-         ["sdd_trx2_doorglass_RL_crew_int", ["sdd_trx2_door_RL"]],
+         ["sdd_raptR_doorglass_RL_crew_int", ["sdd_trx2_door_RL"]],
          {"deformGroup":""},
     ],
     "sounds": {
         "$+cabinFilterCoef": 0.04
     },
-    
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         //--DOOR--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"sdd_trx2_door_RL"},
+         {"nodeWeight":1.88},
+         ["d24l", 0.80219, 1.31950, 1.43218],
+         ["d25l", 0.69532, 1.30674, 1.69673],
+         ["d26l", 0.69532, 0.88020, 1.69673],
+         ["d27l", 0.69532, 0.39438, 1.69673],
+         ["d28l", 0.79286, 0.38204, 1.43218],
+         {"group":""},
+    ],
     "beams": [
           ["id1:", "id2:"],
           {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
           //brittle glass beams
-          {"beamSpring":1093230,"beamDamp":244.4},
+          {"beamSpring":2093230,"beamDamp":244.4},
           {"beamDeform":9800,"beamStrength":9100},
           {"disableMeshBreaking":true,"disableTriangleBreaking":true},
           {"deformGroup":"doorglass_RL_break", "deformationTriggerRatio":0.02},

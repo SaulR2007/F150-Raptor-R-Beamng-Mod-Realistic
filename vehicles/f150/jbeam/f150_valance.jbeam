@@ -1,14 +1,23 @@
 {
 "sdd_trx2_valance": {
     "information":{
-        "authors":"The_Gamer6000",
-        "name":"Front Valance",
+        "authors":"BeamNG",
+        "name":"Raptor Front Valance",
         "value":260,
     },
     "slotType" : "sdd_trx2_valance",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_valance", ["sdd_trx2_valance"]],
+         ["sdd_raptR_valance", ["sdd_trx2_valance"]],
+    ],
+    "camerasInternal":[
+        ["type", "x", "y", "z", "fov", "id1:", "id2:", "id3:", "id4:", "id5:", "id6:"],
+        {"nodeWeight":2.35},
+        {"selfCollision":false},
+        {"collision":false},
+        {"beamSpring":78960,"beamDamp":611},
+        //trail cam — move x, y, z (and offset) to reposition. Shows in the camera list as "trail".
+        ["trail", 0.0, -2.55, 0.95, 70, "va1","va2","va1r","va2r","va1l","va2l", {"beamDeform":5001000,"beamStrength":"FLT_MAX", "canRotate": false, "offset": {"x": 0.45, "y": 0, "z": 0.05}}],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -19,22 +28,22 @@
          {"selfCollision":true},
          {"group":"sdd_trx2_valance"},
          {"nodeWeight":1.504},
-         ["va1rr", -0.94348, -1.99605, 0.95352],
-         ["va1r", -0.60139, -2.28071, 0.93058],
-         ["va1", 0.00000, -2.38223, 0.93058],
-         ["va1l", 0.60139, -2.28071, 0.93058],
-         ["va1ll", 0.94348, -1.99605, 0.95352],
+         ["va1rr", -0.94348, -1.99605, 0.74738],
+         ["va1r", -0.60139, -2.28071, 0.72444],
+         ["va1", 0.00000, -2.34121, 0.72444],
+         ["va1l", 0.60139, -2.28071, 0.72444],
+         ["va1ll", 0.94348, -1.99605, 0.74738],
 
-         ["va2rr", -0.92857, -1.99605, 0.83885, {"selfCollision":false}],
-         ["va2r", -0.60139, -2.28071, 0.83885],
-         ["va2", 0.00000, -2.38223, 0.83885],
-         ["va2l", 0.60139, -2.28071, 0.83885],
-         ["va2ll", 0.92857, -1.99605, 0.83885, {"selfCollision":false}],
+         ["va2rr", -0.92857, -1.99605, 0.63271, {"selfCollision":false}],
+         ["va2r", -0.60139, -2.28071, 0.63271],
+         ["va2", 0.00000, -2.34121, 0.63271],
+         ["va2l", 0.60139, -2.28071, 0.63271],
+         ["va2ll", 0.92857, -1.99605, 0.63271, {"selfCollision":false}],
 
          {"collision":false},
          {"selfCollision":false},
-         ["va3r", -0.49160, -2.03086, 0.91338],
-         ["va3l", 0.49160, -2.03086, 0.91338],
+         ["va3r", -0.49160, -2.03086, 0.70724],
+         ["va3l", 0.49160, -2.03086, 0.70724],
          {"group":""},
     ],
     "beams": [

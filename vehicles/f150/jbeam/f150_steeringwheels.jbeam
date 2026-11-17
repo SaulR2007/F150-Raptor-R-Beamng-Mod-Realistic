@@ -1,7 +1,7 @@
 {
 "sdd_trx2_steer": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Steering Wheel",
         "value":250,
     },
@@ -9,7 +9,20 @@
     "props": [
         ["func",     "mesh",         "idRef:","idX:","idY:", "baseRotation",           "rotation",            "translation",         "min", "max", "offset", "multiplier"],
         //steering wheel
-        ["steering", "sdd_trx2_steer", "int_strw","dshl","dsh",       {"x":-90 "y":-90, "z":00}, {"x":0, "y":1, "z":0}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+        ["steering", "sdd_raptR_steer", "int_strw","dshl","dsh",       {"x":-90 "y":-90, "z":00}, {"x":0, "y":1, "z":0}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"sdd_trx2_steer_alt": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Raptor Steering Wheel",
+        "value":250,
+    },
+    "slotType" : "sdd_trx2_steer",
+    "props": [
+        ["func",     "mesh",         "idRef:","idX:","idY:", "baseRotation",           "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "sdd_raptR_steer_alt", "int_strw","dshl","dsh",       {"x":-90 "y":-90, "z":00}, {"x":0, "y":1, "z":0}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
      ],
 },
 }

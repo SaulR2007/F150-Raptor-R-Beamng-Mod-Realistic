@@ -311,10 +311,10 @@
           {"beamDeform":21000,"beamStrength":210000},
           {"beamSpring":0,"beamDamp":0},
           {"beamLimitSpring":501000,"beamLimitDamp":1000},
-          ["fh3r","f13r", {"longBoundRange":0.28,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3l","f13l", {"longBoundRange":0.28,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3r","f12r", {"longBoundRange":0.28,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3l","f12l", {"longBoundRange":0.28,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","f13r", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","f13l", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","f12r", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","f12l", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           {"deformLimitExpansion":1.2},
     ],
@@ -433,18 +433,19 @@
           ["fh3l","fs1l", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.5,"beamDampFast":"$damp_bump_F_fast","beamDampReboundFast":"$damp_rebound_F","dampCutoffHz":500}],
           ["fh3r","fs1r", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.5,"beamDampFast":"$damp_bump_F_fast","beamDampReboundFast":"$damp_rebound_F","dampCutoffHz":500}],
 
-          //bumpstop (unchanged)
+          //bumpstop
           {"beamSpring":0, "beamDamp":0},
           {"beamLimitSpring":401000,"beamLimitDamp":10000},
-          ["fh3l","fs1l", {"longBoundRange":0.22,"shortBoundRange":-0.06,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3r","fs1r", {"longBoundRange":0.22,"shortBoundRange":-0.06,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","fs1l", {"longBoundRange":0.55,"shortBoundRange":-0.06,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","fs1r", {"longBoundRange":0.55,"shortBoundRange":-0.06,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":0.5}
     ],
 
     // === Springs moved to hydros and controlled by activeFrontSpring ===
     "hydros": [
           ["id1:", "id2:"],
-          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Base rest length doubled (0.418 m node spacing -> 0.836 m). Drive modes still add springLengthCoef on top.
+          {"beamPrecompression":2, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_F","beamDamp":0},
 

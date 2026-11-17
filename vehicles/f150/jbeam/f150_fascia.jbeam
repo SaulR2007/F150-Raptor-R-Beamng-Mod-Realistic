@@ -1,8 +1,8 @@
 {
 "sdd_trx2_fascia": {
     "information":{
-        "authors":"The_Gamer6000",
-        "name":"Front Fascia",
+        "authors":"BeamNG",
+        "name":"Raptor Front Grille",
         "value":530,
     },
     "slotType" : "sdd_trx2_fascia",
@@ -15,8 +15,7 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_fascia", ["sdd_trx2_fascia"]],
-		 ["sdd_trx2_grille", ["sdd_trx2_fascia"]],
+         ["sdd_raptR_grille", ["sdd_trx2_fascia"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -27,23 +26,23 @@
          {"selfCollision":true},
          {"group":"sdd_trx2_fascia"},
          {"nodeWeight":1.504},
-         ["fa1rr", -0.91814, -1.98007, 1.22109],
-         ["fa1ll", 0.91814, -1.98007, 1.22109],
-         ["fa1r", -0.58031, -2.28990, 1.22109],
-         ["fa1", 0.00000, -2.36863, 1.22109],
-         ["fa1l", 0.58031, -2.28990, 1.22109],
+         ["fa1rr", -0.88094, -2.00286, 1.03213],
+         ["fa1ll", 0.88094, -2.00286, 1.03213],
+         ["fa1r", -0.59661, -2.23990, 1.03213],
+         ["fa1", 0.00000, -2.30484, 1.03213],
+         ["fa1l", 0.59661, -2.23990, 1.03213],
 
-         ["fa2rr", -0.92846, -1.99072, 0.99327],
-         ["fa2r", -0.56650, -2.27812, 0.89303],
-         ["fa2", 0.00000, -2.35685, 0.89303],
-         ["fa2l", 0.56650, -2.27812, 0.89303],
-         ["fa2ll", 0.92846, -1.99072, 0.99327],
+         ["fa2rr", -0.89084, -2.01164, 0.72669],
+         ["fa2r", -0.58241, -2.24868, 0.70407],
+         ["fa2", 0.00000, -2.31362, 0.70407],
+         ["fa2l", 0.58241, -2.24868, 0.70407],
+         ["fa2ll", 0.89084, -2.01164, 0.72669],
 
          {"collision":false},
          {"selfCollision":false},
          {"group":""},
-         ["fa3r", -0.44149, -1.96136, 1.06272],
-         ["fa3l", 0.44149, -1.96136, 1.06272],
+         ["fa3r", -0.45389, -1.96893, 0.87376],
+         ["fa3l", 0.45389, -1.96893, 0.87376],
          {"group":""},
     ],
     "beams": [
@@ -211,14 +210,14 @@
 },
 "sdd_trx2_grillebadge": {
     "information":{
-        "authors":"The_Gamer6000",
-        "name":"Grille Badge",
+        "authors":"BeamNG",
+        "name":"Raptor R Grille Badge",
         "value":530,
     },
     "slotType" : "sdd_trx2_grillebadge",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_grille_badge", ["sdd_trx2_fascia"]],
+         ["sdd_raptR_grille_badge", ["sdd_trx2_fascia"]],
     ],
 },
 }

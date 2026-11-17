@@ -1,26 +1,26 @@
 {
 "sdd_trx2_licenseplate_F": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Front License Plate",
         "value":0,
     },
     "slotType" : "sdd_trx2_licenseplate_F",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["licenseplate", ["sdd_trx2_bumper_F"],[],{"pos":{"x":0.0, "y":-2.39, "z":0.65}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+         ["licenseplate", ["sdd_trx2_bumper_F"],[],{"pos":{"x":0.0, "y":-2.36, "z":0.5127}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
 },
 "sdd_trx2_licenseplate_R": {
     "information":{
-        "authors":"The_Gamer6000",
+        "authors":"BeamNG",
         "name":"Rear License Plate",
         "value":0,
     },
     "slotType" : "sdd_trx2_licenseplate_R",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["licenseplate", ["sdd_trx2_bumper_R"],[],{"pos":{"x":0.0, "y":3.08, "z":0.75}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+         ["licenseplate", ["sdd_trx2_bumper_R"],[],{"pos":{"x":0.0, "y":3.22, "z":0.48}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
     ],
 },
 }

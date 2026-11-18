@@ -16,7 +16,7 @@
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$camber_FR", "range", "", "Wheel Alignment", 0.945, 0.91, 1.04, "Camber Adjust", "Adjusts the wheel camber angle", {"subCategory":"Front"}],
+        ["$camber_FR", "range", "", "Wheel Alignment", 1.0, 0.91, 1.04, "Camber Adjust", "Adjusts the wheel camber angle (1.0 ≈ upright)", {"subCategory":"Front"}],
         ["$caster_FR", "range", "", "Wheel Alignment", 1, 1.015, 0.985, "Caster Adjust", "Adjusts forward rake of the steering axis", {"subCategory":"Front"}],
         ["$trackoffset_F", "range", "+m", "Wheels", 0.0, -0.02, 0.05, "Wheel Offset", "Spacing of the wheel from the hub", {"stepDis":0.001,"subCategory":"Front"}],
     ],
@@ -42,12 +42,12 @@
          {"collision":true},
          {"selfCollision":true},
          //--FRONT INDEPENDENT SUSPENSION--
-         // Larger coilover span: hubs/shock bottoms dropped further vs frame
-         // so the truck sits higher and has real compression travel before bumpstops.
+         // Upright knuckles + real travel: widen upper BJ (fh2), keep hubs below
+         // frame for clearance, raise shock tops for coilover span. Camber default 1.0.
          {"group":"pickup_shocktop"},
          {"nodeWeight":7.52},
-         ["fs1r", -0.51, -1.5, 0.86],
-         ["fs1l", 0.51, -1.5, 0.86],
+         ["fs1r", -0.51, -1.5, 0.92],
+         ["fs1l", 0.51, -1.5, 0.92],
          {"group":""},
          {"selfCollision":false},
          //redefine frame node positions for upper mounts
@@ -66,42 +66,42 @@
          ["fx2r", -0.21, -1.26, 0.3],
          ["fx2l", 0.21, -1.26, 0.3],
          {"selfCollision":false},
-         //lower arm shock mount (unsprung — enlarged drop)
+         //lower arm shock mount (unsprung — below frame, not over-dropped)
          {"group":"pickup_shockbottom"},
          {"nodeWeight":4.23},
-         ["fh7r", -0.60, -1.50, 0.172],
-         ["fh7l", 0.60, -1.50, 0.172],
+         ["fh7r", -0.60, -1.50, 0.232],
+         ["fh7l", 0.60, -1.50, 0.232],
          //shock hinge anti-pop
          {"group":""},
          {"collision":false},
-         ["fh8r", -0.57, -1.50, 0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
-         ["fh8l", 0.57, -1.50, 0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8r", -0.57, -1.50, 0.10, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8l", 0.57, -1.50, 0.10, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
          {"nodeWeight":8.46},
          {"collision":true},
          {"selfCollision":true},
          {"group":["pickup_hub_F","pickup_lowerarm_F"]},
-         ["fh3r", -0.77, -1.48, 0.12],
-         ["fh3l", 0.77, -1.48, 0.12],
+         ["fh3r", -0.77, -1.48, 0.18],
+         ["fh3l", 0.77, -1.48, 0.18],
          {"nodeWeight":6.58},
-         //upper arm outer (moves with hub)
+         //upper arm outer — widened vs lower BJ so knuckle sits upright (was ~−10° lean)
          {"group":["pickup_hub_F","pickup_upperarm_F"]},
          {"selfCollision":false},
-         ["fh2r", -0.7, -1.41, 0.535],
-         ["fh2l", 0.7, -1.41, 0.535],
+         ["fh2r", -0.79, -1.41, 0.595],
+         ["fh2l", 0.79, -1.41, 0.595],
          {"selfCollision":true},
          //hub
          {"nodeWeight":6.58},
          {"group":["pickup_hub_F","pickup_hub1_F"]},
-         ["fh5r", -0.70, -1.303, 0.24],
-         ["fh5l", 0.70, -1.303, 0.24],
+         ["fh5r", -0.70, -1.303, 0.30],
+         ["fh5l", 0.70, -1.303, 0.30],
          {"nodeWeight":5.17},
          {"group":["pickup_hub_F","pickup_hub4_F"]},
-         ["fh1r", -0.84, -1.64, 0.28],
-         ["fh1l", 0.84, -1.64, 0.28],
+         ["fh1r", -0.84, -1.64, 0.34],
+         ["fh1l", 0.84, -1.64, 0.34],
          {"group":["pickup_hub_F","pickup_hub5_F"]},
          {"nodeWeight":3.29},
-         ["fh4r", -0.81, -1.31, 0.27],
-         ["fh4l", 0.81, -1.31, 0.27],
+         ["fh4r", -0.81, -1.31, 0.33],
+         ["fh4l", 0.81, -1.31, 0.33],
          //steering rack (frame-side — unchanged)
          {"nodeWeight":7.52},
          {"collision":true},
@@ -312,10 +312,10 @@
           {"beamDeform":21000,"beamStrength":210000},
           {"beamSpring":0,"beamDamp":0},
           {"beamLimitSpring":501000,"beamLimitDamp":1000},
-          ["fh3r","f13r", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3l","f13l", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3r","f12r", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3l","f12l", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","f13r", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","f13l", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","f12r", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","f12l", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           {"deformLimitExpansion":1.2},
     ],
@@ -434,19 +434,19 @@
           ["fh3l","fs1l", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.5,"beamDampFast":"$damp_bump_F_fast","beamDampReboundFast":"$damp_rebound_F","dampCutoffHz":500}],
           ["fh3r","fs1r", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.5,"beamDampFast":"$damp_bump_F_fast","beamDampReboundFast":"$damp_rebound_F","dampCutoffHz":500}],
 
-          //bumpstop — need real compression room (old shortBoundRange:-0.06 sat on the stop)
+          //bumpstop — compression room before arch-pack / camber collapse
           {"beamSpring":0, "beamDamp":0},
           {"beamLimitSpring":401000,"beamLimitDamp":10000},
-          ["fh3l","fs1l", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3r","fs1r", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","fs1l", {"longBoundRange":0.80,"shortBoundRange":0.22,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","fs1r", {"longBoundRange":0.80,"shortBoundRange":0.22,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":0.5}
     ],
 
     // === Springs moved to hydros and controlled by activeFrontSpring ===
     "hydros": [
           ["id1:", "id2:"],
-          // Rest length ≈ design coilover span; $springheight_F is a small fraction, NOT a 2.x multiplier.
-          {"beamPrecompression":"$=1+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Modest rest-length stretch (not 2.x); geometry + this holds ride without slam or overextend.
+          {"beamPrecompression":"$=1.12+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_F","beamDamp":0},
 

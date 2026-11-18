@@ -58,8 +58,8 @@
          //DrowsySam was here
 
          //--REAR LIVE AXLE SUSPENSION--
-         // Axle dropped further so it sits under the frame (not inside it);
-         // spring/shock towers kept below the bed floor to stop bed poke-through.
+         // Extend rear further: axle dropped more; towers well under bed floor (Z≪0.75)
+         // so valves/springs stay clear of the bed.
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
          {"nodeWeight":14.288},
@@ -67,53 +67,53 @@
          {"group":"pickup_axle_R"},
          {"selfCollision":false},
          //can be overwritten by Off-Road leaf spring
-         ["ax2r", -0.66000, 1.49000, 0.42000],
-         ["ax2l", 0.66000, 1.49000, 0.42000],
+         ["ax2r", -0.66000, 1.49000, 0.36000],
+         ["ax2l", 0.66000, 1.49000, 0.36000],
          {"selfCollision":true},
-         ["ax3r", -0.74000, 1.25000, 0.10000],
-         ["ax3l", 0.74000, 1.25000, 0.10000],
-         ["ax4r", -0.74000, 1.66000, 0.10000],
-         ["ax4l", 0.74000, 1.66000, 0.10000],
-         ["ax1", 0.00000, 1.60000, 0.07000, {"nodeWeight":14.1}],
-         ["ax3", 0.00000, 1.13000, 0.16000, {"nodeWeight":14.1,"selfCollision":false}],
-         ["ax2", 0.00000, 1.54000, 0.37000, {"nodeWeight":9.4,"selfCollision":false}],
+         ["ax3r", -0.74000, 1.25000, 0.04000],
+         ["ax3l", 0.74000, 1.25000, 0.04000],
+         ["ax4r", -0.74000, 1.66000, 0.04000],
+         ["ax4l", 0.74000, 1.66000, 0.04000],
+         ["ax1", 0.00000, 1.60000, 0.01000, {"nodeWeight":14.1}],
+         ["ax3", 0.00000, 1.13000, 0.10000, {"nodeWeight":14.1,"selfCollision":false}],
+         ["ax2", 0.00000, 1.54000, 0.31000, {"nodeWeight":9.4,"selfCollision":false}],
 
          //upper link mount (axle side)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23000, 1.60000, 0.33000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23000, 1.60000, 0.27000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
 
          //trackbar mount (axle side)
          {"nodeWeight":4.7},
-         ["axsr2", -0.53200, 1.59500, 0.23000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
+         ["axsr2", -0.53200, 1.59500, 0.17000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
 
          //shock/lower link mounting nodes
          {"nodeWeight":9.4},
          {"group":["pickup_axle_R","pickup_rearspringbottom", "pickup_lowerlinks_R"]}
-         ["axshr", -0.56966, 1.49440, 0.20004],
-         ["axshl", 0.56966, 1.49440, 0.20004],
+         ["axshr", -0.56966, 1.49440, 0.14004],
+         ["axshl", 0.56966, 1.49440, 0.14004],
  {"group":["pickup_axle_R","pickup_rearshockbottom"]}
-			["axshrrr", -0.64333, 1.40132, -0.05000],
-            ["axshlll", 0.64333, 1.40132, -0.05000],
+			["axshrrr", -0.64333, 1.40132, -0.11000],
+            ["axshlll", 0.64333, 1.40132, -0.11000],
 			
 			 {"group":["pickup_axle_R","pickup_lowerlinks_R"]}
-			["axshrrr2", -0.49932, 1.31370, 0.09015],
-            ["axshlll2", 0.49932, 1.31370, 0.09015],
+			["axshrrr2", -0.49932, 1.31370, 0.03015],
+            ["axshlll2", 0.49932, 1.31370, 0.03015],
  {"group":["pickup_axle_R","pickup_lowerlinks_RR"]}
-            ["axshrrr3", -0.49932, 1.30195, 0.22723],
-            ["axshlll3", 0.49932, 1.30195, 0.22723],
+            ["axshrrr3", -0.49932, 1.30195, 0.16723],
+            ["axshlll3", 0.49932, 1.30195, 0.16723],
 			
 			
 
          //--REAR RUNNING GEAR
 
-         // spring tower on frame — below bed (was 0.83 and poking through bed floor)
+         // spring tower on frame — well below bed floor (0.75)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-         ["rs2r", -0.56450, 1.48756, 0.70000],
-         ["rs2l", 0.56450, 1.48756, 0.70000],
+         ["rs2r", -0.56450, 1.48756, 0.58000],
+         ["rs2l", 0.56450, 1.48756, 0.58000],
 
           
 
@@ -477,8 +477,9 @@
     
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_springtop_F", ["pickup_frame", "pickup_rearshocktop"]],
-		  ["sdd_trx2_springtop_F", ["sdd_trx2_frame", "sdd_trx2_rearshocktop"]],
+         // Valve/reservoir canisters — lower mesh so they stay under the bed floor
+         ["sdd_trx2_springtop_F", ["pickup_frame", "pickup_rearshocktop"], [], {"pos":{"x":0,"y":0,"z":-0.12}}],
+		  ["sdd_trx2_springtop_F", ["sdd_trx2_frame", "sdd_trx2_rearshocktop"], [], {"pos":{"x":0,"y":0,"z":-0.12}}],
          ["sdd_trx2_springs_R", ["pickup_rearshocktop", "pickup_rearspringbottom"], [],{"pos":{"x":0,"y":0,"z":0}}],
     ],
     "variables": [
@@ -496,33 +497,33 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         // spring tower (frame side — below bed)
+         // spring tower (frame side — well below bed)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-           ["rs2r", -0.63000, 1.56808, 0.66000],
-         ["rs2l", 0.63000, 1.56808, 0.66000],
+           ["rs2r", -0.63000, 1.56808, 0.55000],
+         ["rs2l", 0.63000, 1.56808, 0.55000],
 
          //upper link mount (axle side, matches dropped axle)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23, 1.6, 0.33, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23, 1.6, 0.27, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
          {"group":""},
     ],
     "beams": [
           ["id1:", "id2:"],
-          //bumpstops — more compression room before the axle packs into the frame
+          //bumpstops — extended compression room (rear travel further enlarged)
           {"beamSpring":0,"beamDamp":0},
           {"beamLimitSpring":251000,"beamLimitDamp":10000},
-          ["axshr","rs2r", {"longBoundRange":0.85,"shortBoundRange":0.20,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["axshl","rs2l", {"longBoundRange":0.85,"shortBoundRange":0.20,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["axshr","rs2r", {"longBoundRange":0.95,"shortBoundRange":0.24,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["axshl","rs2l", {"longBoundRange":0.95,"shortBoundRange":0.24,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
     ],
     "hydros": [
           ["id1:", "id2:"],
-          // Rest length ≈ design spring span; $springheight_R3 is a small fraction (not 2.x).
-          {"beamPrecompression":"$=1+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Modest rest-length stretch; geometry sets main rear ride / travel.
+          {"beamPrecompression":"$=1.12+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_R3","beamDamp":0},
 
@@ -568,7 +569,8 @@
     "slotType" : "sdd_trx2_shock_R",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-		  ["sdd_trx2_shocktop_R", ["sdd_trx2_frame"]],
+		  // Dual-valve reservoirs — drop mesh under bed
+		  ["sdd_trx2_shocktop_R", ["sdd_trx2_frame"], [], {"pos":{"x":0,"y":0,"z":-0.14}}],
          ["sdd_trx2_shocks_R", ["pickup_rearshocktop", "pickup_rearshockbottom"], [],{"pos":{"x":0,"y":0,"z":0}}],
     ],
     "variables": [
@@ -586,13 +588,13 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         // shock tops on frame — below bed (was ~0.78 and poking through bed)
+         // shock tops on frame — well below bed floor
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearspringtop"}
-           ["rss2r", -0.59055, 1.11680, 0.68000],
-         ["rss2l", 0.59055, 1.11680, 0.68000],
+           ["rss2r", -0.59055, 1.11680, 0.55000],
+         ["rss2l", 0.59055, 1.11680, 0.55000],
 
     ],
     "beams": [

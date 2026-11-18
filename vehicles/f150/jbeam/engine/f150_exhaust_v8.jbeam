@@ -8,7 +8,7 @@
     "slotType" : "sdd_trx2_exhaust",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sdd_trx2_exhaust_v8", ["pickup_exhaust"]],
+         ["sdd_trx2_exhaust_v8", ["pickup_exhaust"], [], {"pos":{"x":0,"y":0,"z":-0.04}}],
     ],
     "mainEngine":{
         "torqueModExhaust":[
@@ -38,17 +38,18 @@
          {"nodeMaterial":"|NM_METAL"},
          {"nodeWeight":1.88},
          {"group":"pickup_exhaust"},
-         ["ex1r", -0.25000, -0.46000, 0.53998, {"selfCollision":false}],
-         ["ex1l", 0.25000, -0.46000, 0.53998, {"selfCollision":false}],
-         ["ex1rr", -0.32000, -0.60000, 0.53998, {"selfCollision":false}],
-         ["ex1ll", 0.32000, -0.60000, 0.53998, {"selfCollision":false}],
-         ["ex2r", -0.39000, -0.15000, 0.46998],
-         ["ex2l", 0.39000, -0.15000, 0.46998],
-         ["ex3r", -0.26000, 0.50000, 0.45998, {"selfCollision":false, "afterFireAudioCoef":1.0, "afterFireVisualCoef":1.0, "afterFireVolumeCoef":0.8, "afterFireMufflingCoef":0.7, "exhaustAudioMufflingCoef":0.7, "exhaustAudioGainChange":-3}],
-         ["ex4r", -0.10000, 0.20000, 0.42998],
+         // Dropped under bed/cabin floor (was poking through bed with muffler)
+         ["ex1r", -0.25000, -0.46000, 0.41998, {"selfCollision":false}],
+         ["ex1l", 0.25000, -0.46000, 0.41998, {"selfCollision":false}],
+         ["ex1rr", -0.32000, -0.60000, 0.41998, {"selfCollision":false}],
+         ["ex1ll", 0.32000, -0.60000, 0.41998, {"selfCollision":false}],
+         ["ex2r", -0.39000, -0.15000, 0.34998],
+         ["ex2l", 0.39000, -0.15000, 0.34998],
+         ["ex3r", -0.26000, 0.50000, 0.33998, {"selfCollision":false, "afterFireAudioCoef":1.0, "afterFireVisualCoef":1.0, "afterFireVolumeCoef":0.8, "afterFireMufflingCoef":0.7, "exhaustAudioMufflingCoef":0.7, "exhaustAudioGainChange":-3}],
+         ["ex4r", -0.10000, 0.20000, 0.30998],
          //rigidifier
-         ["ex5r", -0.22000, -0.13000, 0.58998, {"selfCollision":false}],
-         ["ex5l", 0.22000, -0.13000, 0.58998, {"selfCollision":false}],
+         ["ex5r", -0.22000, -0.13000, 0.46998, {"selfCollision":false}],
+         ["ex5l", 0.22000, -0.13000, 0.46998, {"selfCollision":false}],
     ],
     "beams":[
           ["id1:", "id2:"],

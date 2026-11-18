@@ -42,7 +42,8 @@
          {"collision":true},
          {"selfCollision":true},
          //--FRONT INDEPENDENT SUSPENSION--
-         //top of shock/spring (raised +0.06 for Raptor ride height)
+         // Frame-side shock tops / arm mounts stay high; hub/axle side dropped
+         // -0.08 m Z so wheels sit lower vs frame (more underbody clearance).
          {"group":"pickup_shocktop"},
          {"nodeWeight":7.52},
          ["fs1r", -0.51, -1.5, 0.84],
@@ -56,7 +57,7 @@
          ["f12l", 0.415, -1.74, 0.64],
          ["f13r", -0.415, -1.35, 0.64],
          ["f13l", 0.415, -1.35, 0.64],
-         //LIFT KIT
+         //LIFT KIT — frame-side lower arm mounts (held; hub dropped instead)
          {"nodeWeight":13.63},
          {"selfCollision":true},
          {"group":"pickup_lowermounts"},
@@ -65,43 +66,43 @@
          ["fx2r", -0.21, -1.26, 0.3],
          ["fx2l", 0.21, -1.26, 0.3],
          {"selfCollision":false},
-         //lower arm shock mount
+         //lower arm shock mount (unsprung, -0.08 Z)
          {"group":"pickup_shockbottom"},
          {"nodeWeight":4.23},
-         ["fh7r", -0.60, -1.50, 0.372],
-         ["fh7l", 0.60, -1.50, 0.372],
+         ["fh7r", -0.60, -1.50, 0.292],
+         ["fh7l", 0.60, -1.50, 0.292],
          //shock hinge anti-pop
          {"group":""},
          {"collision":false},
-         ["fh8r", -0.57, -1.50, 0.24, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
-         ["fh8l", 0.57, -1.50, 0.24, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8r", -0.57, -1.50, 0.16, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8l", 0.57, -1.50, 0.16, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
          {"nodeWeight":8.46},
          {"collision":true},
          {"selfCollision":true},
          {"group":["pickup_hub_F","pickup_lowerarm_F"]},
-         ["fh3r", -0.77, -1.48, 0.32],
-         ["fh3l", 0.77, -1.48, 0.32],
+         ["fh3r", -0.77, -1.48, 0.24],
+         ["fh3l", 0.77, -1.48, 0.24],
          {"nodeWeight":6.58},
-         //upper arm
+         //upper arm outer (moves with hub)
          {"group":["pickup_hub_F","pickup_upperarm_F"]},
          {"selfCollision":false},
-         ["fh2r", -0.7, -1.41, 0.735],
-         ["fh2l", 0.7, -1.41, 0.735],
+         ["fh2r", -0.7, -1.41, 0.655],
+         ["fh2l", 0.7, -1.41, 0.655],
          {"selfCollision":true},
          //hub
          {"nodeWeight":6.58},
          {"group":["pickup_hub_F","pickup_hub1_F"]},
-         ["fh5r", -0.70, -1.303, 0.44],
-         ["fh5l", 0.70, -1.303, 0.44],
+         ["fh5r", -0.70, -1.303, 0.36],
+         ["fh5l", 0.70, -1.303, 0.36],
          {"nodeWeight":5.17},
          {"group":["pickup_hub_F","pickup_hub4_F"]},
-         ["fh1r", -0.84, -1.64, 0.48],
-         ["fh1l", 0.84, -1.64, 0.48],
+         ["fh1r", -0.84, -1.64, 0.40],
+         ["fh1l", 0.84, -1.64, 0.40],
          {"group":["pickup_hub_F","pickup_hub5_F"]},
          {"nodeWeight":3.29},
-         ["fh4r", -0.81, -1.31, 0.47],
-         ["fh4l", 0.81, -1.31, 0.47],
-         //steering rack
+         ["fh4r", -0.81, -1.31, 0.39],
+         ["fh4l", 0.81, -1.31, 0.39],
+         //steering rack (frame-side — unchanged)
          {"nodeWeight":7.52},
          {"collision":true},
          {"selfCollision":false},
@@ -444,7 +445,7 @@
     // === Springs moved to hydros and controlled by activeFrontSpring ===
     "hydros": [
           ["id1:", "id2:"],
-          // Base rest length ~2.2x node spacing, plus $springheight_F for static ride height (not drive modes).
+          // Hub geometry sets ride vs frame; $springheight_F remains a fine-tune only.
           {"beamPrecompression":"$=2.2+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_F","beamDamp":0},

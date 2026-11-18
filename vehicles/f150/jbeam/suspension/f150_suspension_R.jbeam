@@ -58,6 +58,7 @@
          //DrowsySam was here
 
          //--REAR LIVE AXLE SUSPENSION--
+         // Axle / shock bottoms dropped -0.08 m Z vs frame mounts for clearance.
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
          {"nodeWeight":14.288},
@@ -65,67 +66,66 @@
          {"group":"pickup_axle_R"},
          {"selfCollision":false},
          //can be overwritten by Off-Road leaf spring
-         ["ax2r", -0.66000, 1.49000, 0.65000],
-         ["ax2l", 0.66000, 1.49000, 0.65000],
+         ["ax2r", -0.66000, 1.49000, 0.57000],
+         ["ax2l", 0.66000, 1.49000, 0.57000],
          {"selfCollision":true},
-         ["ax3r", -0.74000, 1.25000, 0.33000],
-         ["ax3l", 0.74000, 1.25000, 0.33000],
-         ["ax4r", -0.74000, 1.66000, 0.33000],
-         ["ax4l", 0.74000, 1.66000, 0.33000],
-         ["ax1", 0.00000, 1.60000, 0.30000, {"nodeWeight":14.1}],
-         ["ax3", 0.00000, 1.13000, 0.39000, {"nodeWeight":14.1,"selfCollision":false}],
-         ["ax2", 0.00000, 1.54000, 0.60000, {"nodeWeight":9.4,"selfCollision":false}],
+         ["ax3r", -0.74000, 1.25000, 0.25000],
+         ["ax3l", 0.74000, 1.25000, 0.25000],
+         ["ax4r", -0.74000, 1.66000, 0.25000],
+         ["ax4l", 0.74000, 1.66000, 0.25000],
+         ["ax1", 0.00000, 1.60000, 0.22000, {"nodeWeight":14.1}],
+         ["ax3", 0.00000, 1.13000, 0.31000, {"nodeWeight":14.1,"selfCollision":false}],
+         ["ax2", 0.00000, 1.54000, 0.52000, {"nodeWeight":9.4,"selfCollision":false}],
 
-         //upper link mount
+         //upper link mount (axle side)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23000, 1.60000, 0.56000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23000, 1.60000, 0.48000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
 
-         //trackbar mount
+         //trackbar mount (axle side)
          {"nodeWeight":4.7},
-         ["axsr2", -0.53200, 1.59500, 0.46000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
+         ["axsr2", -0.53200, 1.59500, 0.38000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
 
          //shock/lower link mounting nodes
          {"nodeWeight":9.4},
          {"group":["pickup_axle_R","pickup_rearspringbottom", "pickup_lowerlinks_R"]}
-         ["axshr", -0.56966, 1.49440, 0.46004],
-         ["axshl", 0.56966, 1.49440, 0.46004],
+         ["axshr", -0.56966, 1.49440, 0.38004],
+         ["axshl", 0.56966, 1.49440, 0.38004],
  {"group":["pickup_axle_R","pickup_rearshockbottom"]}
-			["axshrrr", -0.64333, 1.40132, 0.18000],
-            ["axshlll", 0.64333, 1.40132, 0.18000],
+			["axshrrr", -0.64333, 1.40132, 0.10000],
+            ["axshlll", 0.64333, 1.40132, 0.10000],
 			
 			 {"group":["pickup_axle_R","pickup_lowerlinks_R"]}
-			["axshrrr2", -0.49932, 1.31370, 0.32015],
-            ["axshlll2", 0.49932, 1.31370, 0.32015],
+			["axshrrr2", -0.49932, 1.31370, 0.24015],
+            ["axshlll2", 0.49932, 1.31370, 0.24015],
  {"group":["pickup_axle_R","pickup_lowerlinks_RR"]}
-            ["axshrrr3", -0.49932, 1.30195, 0.45723],
-            ["axshlll3", 0.49932, 1.30195, 0.45723],
+            ["axshrrr3", -0.49932, 1.30195, 0.37723],
+            ["axshlll3", 0.49932, 1.30195, 0.37723],
 			
 			
 
          //--REAR RUNNING GEAR
 
-         //shock mount
+         //shock mount (frame tower — kept high relative to dropped axle)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-         // frame spring/shock towers raised +0.06 for Raptor ride height
          ["rs2r", -0.56450, 1.48756, 0.82951],
          ["rs2l", 0.56450, 1.48756, 0.82951],
 
           
 
 
-         //upper link mount
+         //upper link mount (frame side — unchanged)
          {"nodeWeight":6.58},
          ["rx2r", -0.23000, 1.13000, 0.50000, {"group":"pickup_upperlink_R"}],
 
-         //trackbar mount
+         //trackbar mount (frame side — unchanged)
          {"nodeWeight":4.7},
          ["rx2l", 0.50600, 1.63600, 0.40000, {"group":"pickup_trackbar_R"}],
 
-         //lower link mounts
+         //lower link mounts (frame side — unchanged)
          {"nodeWeight":9.4},
          {"group":["pickup_lowerlinks_R", "pickup_trackbar_R"]}
          ["rx1r", -0.48666, 0.51233, 0.39000],
@@ -495,7 +495,7 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         //shock mount (raised +0.06 for Raptor ride height)
+         // spring tower (frame side — kept; axle bottoms dropped in parent part)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
@@ -503,10 +503,10 @@
            ["rs2r", -0.63000, 1.56808, 0.71978],
          ["rs2l", 0.63000, 1.56808, 0.71978],
 
-         //upper link mount
+         //upper link mount (axle side, matches dropped axle -0.08 Z)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23, 1.6, 0.57, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23, 1.6, 0.49, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
          {"group":""},
     ],
     "beams": [
@@ -520,8 +520,7 @@
     ],
     "hydros": [
           ["id1:", "id2:"],
-          // rear springs as hydros
-          // Base rest length ~2.35x node spacing, plus $springheight_R3 for static ride height (not drive modes).
+          // rear springs as hydros (geometry sets axle vs frame; springheight remains fine-tune only)
           {"beamPrecompression":"$=2.35+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_R3","beamDamp":0},

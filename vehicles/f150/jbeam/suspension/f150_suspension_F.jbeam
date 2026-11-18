@@ -42,12 +42,12 @@
          {"collision":true},
          {"selfCollision":true},
          //--FRONT INDEPENDENT SUSPENSION--
-         // Frame-side shock tops / arm mounts stay high; hub/axle side dropped
-         // -0.08 m Z so wheels sit lower vs frame (more underbody clearance).
+         // Larger coilover span: hubs/shock bottoms dropped further vs frame
+         // so the truck sits higher and has real compression travel before bumpstops.
          {"group":"pickup_shocktop"},
          {"nodeWeight":7.52},
-         ["fs1r", -0.51, -1.5, 0.84],
-         ["fs1l", 0.51, -1.5, 0.84],
+         ["fs1r", -0.51, -1.5, 0.86],
+         ["fs1l", 0.51, -1.5, 0.86],
          {"group":""},
          {"selfCollision":false},
          //redefine frame node positions for upper mounts
@@ -57,7 +57,7 @@
          ["f12l", 0.415, -1.74, 0.64],
          ["f13r", -0.415, -1.35, 0.64],
          ["f13l", 0.415, -1.35, 0.64],
-         //LIFT KIT — frame-side lower arm mounts (held; hub dropped instead)
+         //LIFT KIT — frame-side lower arm mounts
          {"nodeWeight":13.63},
          {"selfCollision":true},
          {"group":"pickup_lowermounts"},
@@ -66,42 +66,42 @@
          ["fx2r", -0.21, -1.26, 0.3],
          ["fx2l", 0.21, -1.26, 0.3],
          {"selfCollision":false},
-         //lower arm shock mount (unsprung, -0.08 Z)
+         //lower arm shock mount (unsprung — enlarged drop)
          {"group":"pickup_shockbottom"},
          {"nodeWeight":4.23},
-         ["fh7r", -0.60, -1.50, 0.292],
-         ["fh7l", 0.60, -1.50, 0.292],
+         ["fh7r", -0.60, -1.50, 0.172],
+         ["fh7l", 0.60, -1.50, 0.172],
          //shock hinge anti-pop
          {"group":""},
          {"collision":false},
-         ["fh8r", -0.57, -1.50, 0.16, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
-         ["fh8l", 0.57, -1.50, 0.16, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8r", -0.57, -1.50, 0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8l", 0.57, -1.50, 0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
          {"nodeWeight":8.46},
          {"collision":true},
          {"selfCollision":true},
          {"group":["pickup_hub_F","pickup_lowerarm_F"]},
-         ["fh3r", -0.77, -1.48, 0.24],
-         ["fh3l", 0.77, -1.48, 0.24],
+         ["fh3r", -0.77, -1.48, 0.12],
+         ["fh3l", 0.77, -1.48, 0.12],
          {"nodeWeight":6.58},
          //upper arm outer (moves with hub)
          {"group":["pickup_hub_F","pickup_upperarm_F"]},
          {"selfCollision":false},
-         ["fh2r", -0.7, -1.41, 0.655],
-         ["fh2l", 0.7, -1.41, 0.655],
+         ["fh2r", -0.7, -1.41, 0.535],
+         ["fh2l", 0.7, -1.41, 0.535],
          {"selfCollision":true},
          //hub
          {"nodeWeight":6.58},
          {"group":["pickup_hub_F","pickup_hub1_F"]},
-         ["fh5r", -0.70, -1.303, 0.36],
-         ["fh5l", 0.70, -1.303, 0.36],
+         ["fh5r", -0.70, -1.303, 0.24],
+         ["fh5l", 0.70, -1.303, 0.24],
          {"nodeWeight":5.17},
          {"group":["pickup_hub_F","pickup_hub4_F"]},
-         ["fh1r", -0.84, -1.64, 0.40],
-         ["fh1l", 0.84, -1.64, 0.40],
+         ["fh1r", -0.84, -1.64, 0.28],
+         ["fh1l", 0.84, -1.64, 0.28],
          {"group":["pickup_hub_F","pickup_hub5_F"]},
          {"nodeWeight":3.29},
-         ["fh4r", -0.81, -1.31, 0.39],
-         ["fh4l", 0.81, -1.31, 0.39],
+         ["fh4r", -0.81, -1.31, 0.27],
+         ["fh4l", 0.81, -1.31, 0.27],
          //steering rack (frame-side — unchanged)
          {"nodeWeight":7.52},
          {"collision":true},
@@ -312,10 +312,10 @@
           {"beamDeform":21000,"beamStrength":210000},
           {"beamSpring":0,"beamDamp":0},
           {"beamLimitSpring":501000,"beamLimitDamp":1000},
-          ["fh3r","f13r", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3l","f13l", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3r","f12r", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3l","f12l", {"longBoundRange":0.45,"shortBoundRange":0.04,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","f13r", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","f13l", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","f12r", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","f12l", {"longBoundRange":0.60,"shortBoundRange":0.14,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           {"deformLimitExpansion":1.2},
     ],
@@ -391,7 +391,7 @@
 
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$springheight_F",     "range", "+m",    "Suspension", 0.03,  -0.1,  0.12, "Spring Height",     "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Front"}],
+        ["$springheight_F",     "range", "",      "Suspension", 0,     -0.12, 0.15, "Spring Height",     "Fine-tune rest length (fraction of coilover span; geometry sets main ride height)", {"stepDis":0.005, "subCategory":"Front"}],
         ["$spring_F",           "range", "N/m",   "Suspension", 115000, 50000, 200000, "Spring Rate",    "Spring stiffness", {"stepDis":500,"subCategory":"Front"}],
         ["$damp_bump_F",        "range", "N/m/s", "Suspension", 10000,  500,   15000,  "Bump Damping",    "Damper rate in slow compression", {"stepDis":100, "subCategory":"Front"}],
         ["$damp_bump_F_fast",   "range", "N/m/s", "Suspension", 19000,  500,   25000,  "Fast Bump Damping","Damper rate in fast compression", {"stepDis":100, "subCategory":"Front"}],
@@ -434,19 +434,19 @@
           ["fh3l","fs1l", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.5,"beamDampFast":"$damp_bump_F_fast","beamDampReboundFast":"$damp_rebound_F","dampCutoffHz":500}],
           ["fh3r","fs1r", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.5,"beamDampFast":"$damp_bump_F_fast","beamDampReboundFast":"$damp_rebound_F","dampCutoffHz":500}],
 
-          //bumpstop
+          //bumpstop — need real compression room (old shortBoundRange:-0.06 sat on the stop)
           {"beamSpring":0, "beamDamp":0},
           {"beamLimitSpring":401000,"beamLimitDamp":10000},
-          ["fh3l","fs1l", {"longBoundRange":0.55,"shortBoundRange":-0.06,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["fh3r","fs1r", {"longBoundRange":0.55,"shortBoundRange":-0.06,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3l","fs1l", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh3r","fs1r", {"longBoundRange":0.70,"shortBoundRange":0.18,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":0.5}
     ],
 
     // === Springs moved to hydros and controlled by activeFrontSpring ===
     "hydros": [
           ["id1:", "id2:"],
-          // Hub geometry sets ride vs frame; $springheight_F remains a fine-tune only.
-          {"beamPrecompression":"$=2.2+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Rest length ≈ design coilover span; $springheight_F is a small fraction, NOT a 2.x multiplier.
+          {"beamPrecompression":"$=1+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_F","beamDamp":0},
 

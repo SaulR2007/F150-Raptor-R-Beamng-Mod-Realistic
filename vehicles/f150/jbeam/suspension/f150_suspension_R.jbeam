@@ -58,7 +58,8 @@
          //DrowsySam was here
 
          //--REAR LIVE AXLE SUSPENSION--
-         // Axle / shock bottoms dropped -0.08 m Z vs frame mounts for clearance.
+         // Axle dropped further so it sits under the frame (not inside it);
+         // spring/shock towers kept below the bed floor to stop bed poke-through.
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
          {"nodeWeight":14.288},
@@ -66,53 +67,53 @@
          {"group":"pickup_axle_R"},
          {"selfCollision":false},
          //can be overwritten by Off-Road leaf spring
-         ["ax2r", -0.66000, 1.49000, 0.57000],
-         ["ax2l", 0.66000, 1.49000, 0.57000],
+         ["ax2r", -0.66000, 1.49000, 0.42000],
+         ["ax2l", 0.66000, 1.49000, 0.42000],
          {"selfCollision":true},
-         ["ax3r", -0.74000, 1.25000, 0.25000],
-         ["ax3l", 0.74000, 1.25000, 0.25000],
-         ["ax4r", -0.74000, 1.66000, 0.25000],
-         ["ax4l", 0.74000, 1.66000, 0.25000],
-         ["ax1", 0.00000, 1.60000, 0.22000, {"nodeWeight":14.1}],
-         ["ax3", 0.00000, 1.13000, 0.31000, {"nodeWeight":14.1,"selfCollision":false}],
-         ["ax2", 0.00000, 1.54000, 0.52000, {"nodeWeight":9.4,"selfCollision":false}],
+         ["ax3r", -0.74000, 1.25000, 0.10000],
+         ["ax3l", 0.74000, 1.25000, 0.10000],
+         ["ax4r", -0.74000, 1.66000, 0.10000],
+         ["ax4l", 0.74000, 1.66000, 0.10000],
+         ["ax1", 0.00000, 1.60000, 0.07000, {"nodeWeight":14.1}],
+         ["ax3", 0.00000, 1.13000, 0.16000, {"nodeWeight":14.1,"selfCollision":false}],
+         ["ax2", 0.00000, 1.54000, 0.37000, {"nodeWeight":9.4,"selfCollision":false}],
 
          //upper link mount (axle side)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23000, 1.60000, 0.48000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23000, 1.60000, 0.33000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
 
          //trackbar mount (axle side)
          {"nodeWeight":4.7},
-         ["axsr2", -0.53200, 1.59500, 0.38000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
+         ["axsr2", -0.53200, 1.59500, 0.23000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
 
          //shock/lower link mounting nodes
          {"nodeWeight":9.4},
          {"group":["pickup_axle_R","pickup_rearspringbottom", "pickup_lowerlinks_R"]}
-         ["axshr", -0.56966, 1.49440, 0.38004],
-         ["axshl", 0.56966, 1.49440, 0.38004],
+         ["axshr", -0.56966, 1.49440, 0.20004],
+         ["axshl", 0.56966, 1.49440, 0.20004],
  {"group":["pickup_axle_R","pickup_rearshockbottom"]}
-			["axshrrr", -0.64333, 1.40132, 0.10000],
-            ["axshlll", 0.64333, 1.40132, 0.10000],
+			["axshrrr", -0.64333, 1.40132, -0.05000],
+            ["axshlll", 0.64333, 1.40132, -0.05000],
 			
 			 {"group":["pickup_axle_R","pickup_lowerlinks_R"]}
-			["axshrrr2", -0.49932, 1.31370, 0.24015],
-            ["axshlll2", 0.49932, 1.31370, 0.24015],
+			["axshrrr2", -0.49932, 1.31370, 0.09015],
+            ["axshlll2", 0.49932, 1.31370, 0.09015],
  {"group":["pickup_axle_R","pickup_lowerlinks_RR"]}
-            ["axshrrr3", -0.49932, 1.30195, 0.37723],
-            ["axshlll3", 0.49932, 1.30195, 0.37723],
+            ["axshrrr3", -0.49932, 1.30195, 0.22723],
+            ["axshlll3", 0.49932, 1.30195, 0.22723],
 			
 			
 
          //--REAR RUNNING GEAR
 
-         //shock mount (frame tower — kept high relative to dropped axle)
+         // spring tower on frame — below bed (was 0.83 and poking through bed floor)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-         ["rs2r", -0.56450, 1.48756, 0.82951],
-         ["rs2l", 0.56450, 1.48756, 0.82951],
+         ["rs2r", -0.56450, 1.48756, 0.70000],
+         ["rs2l", 0.56450, 1.48756, 0.70000],
 
           
 
@@ -482,7 +483,7 @@
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$springheight_R3", "range", "+m", "Suspension", 0.03, -0.1, 0.12, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
+        ["$springheight_R3", "range", "", "Suspension", 0, -0.12, 0.15, "Spring Height", "Fine-tune rest length (fraction of spring span; geometry sets main ride height)", {"stepDis":0.005, "subCategory":"Rear"}],
         ["$spring_R3", "range", "N/m", "Suspension", 30000, 10000, 90000, "Spring Rate", "Spring stiffness", {"stepDis":500, "subCategory":"Rear"}]
         ["$damp_bump_R3", "range", "N/m/s", "Suspension", 4000, 500, 10000, "Bump Damping", "Damper rate in slow compression", {"stepDis":100, "subCategory":"Rear"}]
         ["$damp_bump_R3_fast", "range", "N/m/s", "Suspension", 9000, 500, 15000, "Fast Bump Damping", "Damper rate in fast compression", {"stepDis":100, "subCategory":"Rear"}]
@@ -495,33 +496,33 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         // spring tower (frame side — kept; axle bottoms dropped in parent part)
+         // spring tower (frame side — below bed)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-           ["rs2r", -0.63000, 1.56808, 0.71978],
-         ["rs2l", 0.63000, 1.56808, 0.71978],
+           ["rs2r", -0.63000, 1.56808, 0.66000],
+         ["rs2l", 0.63000, 1.56808, 0.66000],
 
-         //upper link mount (axle side, matches dropped axle -0.08 Z)
+         //upper link mount (axle side, matches dropped axle)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23, 1.6, 0.49, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23, 1.6, 0.33, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
          {"group":""},
     ],
     "beams": [
           ["id1:", "id2:"],
-          //bumpstops
+          //bumpstops — more compression room before the axle packs into the frame
           {"beamSpring":0,"beamDamp":0},
           {"beamLimitSpring":251000,"beamLimitDamp":10000},
-          ["axshr","rs2r", {"longBoundRange":0.70,"shortBoundRange":0.04,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-          ["axshl","rs2l", {"longBoundRange":0.70,"shortBoundRange":0.04,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["axshr","rs2r", {"longBoundRange":0.85,"shortBoundRange":0.20,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["axshl","rs2l", {"longBoundRange":0.85,"shortBoundRange":0.20,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
     ],
     "hydros": [
           ["id1:", "id2:"],
-          // rear springs as hydros (geometry sets axle vs frame; springheight remains fine-tune only)
-          {"beamPrecompression":"$=2.35+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Rest length ≈ design spring span; $springheight_R3 is a small fraction (not 2.x).
+          {"beamPrecompression":"$=1+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_R3","beamDamp":0},
 
@@ -572,7 +573,7 @@
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$springheight_R3", "range", "+m", "Suspension", 0.03, -0.1, 0.12, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
+        ["$springheight_R3", "range", "", "Suspension", 0, -0.12, 0.15, "Spring Height", "Fine-tune rest length (fraction of spring span; geometry sets main ride height)", {"stepDis":0.005, "subCategory":"Rear"}],
         ["$spring_R3", "range", "N/m", "Suspension", 30000, 10000, 90000, "Spring Rate", "Spring stiffness", {"stepDis":500, "subCategory":"Rear"}]
         ["$damp_bump_R3", "range", "N/m/s", "Suspension", 4000, 500, 10000, "Bump Damping", "Damper rate in slow compression", {"stepDis":100, "subCategory":"Rear"}]
         ["$damp_bump_R3_fast", "range", "N/m/s", "Suspension", 9000, 500, 15000, "Fast Bump Damping", "Damper rate in fast compression", {"stepDis":100, "subCategory":"Rear"}]
@@ -585,13 +586,13 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         //shocks mount
+         // shock tops on frame — below bed (was ~0.78 and poking through bed)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearspringtop"}
-           ["rss2r", -0.59055, 1.11680, 0.77974],
-         ["rss2l", 0.59055, 1.11680, 0.77974],
+           ["rss2r", -0.59055, 1.11680, 0.68000],
+         ["rss2l", 0.59055, 1.11680, 0.68000],
 
     ],
     "beams": [

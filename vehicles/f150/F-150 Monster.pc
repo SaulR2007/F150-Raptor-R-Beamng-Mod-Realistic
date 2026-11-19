@@ -170,7 +170,7 @@
     },
     "vars": {
         "$brakestrength": 1,
-        "$camber_FR": 0.9451,
+        "$camber_FR": 1.0,
         "$caster_FR": 1,
         "$damp_bump_F": 12000,
         "$damp_bump_F_fast": 19000,

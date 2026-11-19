@@ -43,8 +43,9 @@
          {"selfCollision":true},
          //--FRONT INDEPENDENT SUSPENSION--
          // Ride height via arm geometry: drop ALL arm links (inners + outers + hubs)
-         // and extend arm reach outboard. Shock tops stay high for travel/span.
-         // Knuckle X kept stock-relative (no camber-lean primary fix).
+         // and extend arm reach outboard (again past #6) so camber stays flat at full droop.
+         // Steering rack ends move outboard with the arms; matching tierod nodes live in
+         // pickup_steering_offroad (f150_steering.jbeam).
          {"group":"pickup_shocktop"},
          {"nodeWeight":7.52},
          ["fs1r", -0.51, -1.5, 0.92],
@@ -67,49 +68,49 @@
          ["fx2r", -0.21, -1.26, 0.16],
          ["fx2l", 0.21, -1.26, 0.16],
          {"selfCollision":false},
-         // lower arm shock mount / outers — dropped + arms extended outboard
+         // lower arm shock mount / outers — dropped + arms extended further outboard
          {"group":"pickup_shockbottom"},
          {"nodeWeight":4.23},
-         ["fh7r", -0.68, -1.50, 0.08],
-         ["fh7l", 0.68, -1.50, 0.08],
+         ["fh7r", -0.74, -1.50, 0.08],
+         ["fh7l", 0.74, -1.50, 0.08],
          //shock hinge anti-pop
          {"group":""},
          {"collision":false},
-         ["fh8r", -0.65, -1.50, -0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
-         ["fh8l", 0.65, -1.50, -0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8r", -0.71, -1.50, -0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8l", 0.71, -1.50, -0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
          {"nodeWeight":8.46},
          {"collision":true},
          {"selfCollision":true},
          {"group":["pickup_hub_F","pickup_lowerarm_F"]},
-         ["fh3r", -0.90, -1.48, 0.04],
-         ["fh3l", 0.90, -1.48, 0.04],
+         ["fh3r", -0.96, -1.48, 0.04],
+         ["fh3l", 0.96, -1.48, 0.04],
          {"nodeWeight":6.58},
-         // upper arm outer — dropped; X keeps stock Δ vs lower BJ (~−0.07), not widened
+         // upper arm outer — stock Δ vs lower BJ (~−0.07), not camber-widened
          {"group":["pickup_hub_F","pickup_upperarm_F"]},
          {"selfCollision":false},
-         ["fh2r", -0.83, -1.41, 0.455],
-         ["fh2l", 0.83, -1.41, 0.455],
+         ["fh2r", -0.89, -1.41, 0.455],
+         ["fh2l", 0.89, -1.41, 0.455],
          {"selfCollision":true},
-         //hub — dropped with arms
+         //hub — dropped with arms; X follows further arm extend
          {"nodeWeight":6.58},
          {"group":["pickup_hub_F","pickup_hub1_F"]},
-         ["fh5r", -0.80, -1.303, 0.16],
-         ["fh5l", 0.80, -1.303, 0.16],
+         ["fh5r", -0.86, -1.303, 0.16],
+         ["fh5l", 0.86, -1.303, 0.16],
          {"nodeWeight":5.17},
          {"group":["pickup_hub_F","pickup_hub4_F"]},
-         ["fh1r", -0.97, -1.64, 0.20],
-         ["fh1l", 0.97, -1.64, 0.20],
+         ["fh1r", -1.03, -1.64, 0.20],
+         ["fh1l", 1.03, -1.64, 0.20],
          {"group":["pickup_hub_F","pickup_hub5_F"]},
          {"nodeWeight":3.29},
-         ["fh4r", -0.94, -1.31, 0.19],
-         ["fh4l", 0.94, -1.31, 0.19],
-         //steering rack — dropped with arm package
+         ["fh4r", -1.00, -1.31, 0.19],
+         ["fh4l", 1.00, -1.31, 0.19],
+         //steering rack — extended outboard + lowered with the arm package
          {"nodeWeight":7.52},
          {"collision":true},
          {"selfCollision":false},
          {"group":"pickup_steeringrack"},
-         ["st2r", -0.08, -1.31, 0.28],
-         ["st2l", 0.08, -1.31, 0.28],
+         ["st2r", -0.10, -1.31, 0.26],
+         ["st2l", 0.10, -1.31, 0.26],
          {"group":""},
     ],
     "torsionbars": [

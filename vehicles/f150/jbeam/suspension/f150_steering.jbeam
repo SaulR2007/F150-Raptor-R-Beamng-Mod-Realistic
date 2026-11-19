@@ -1,0 +1,79 @@
+{
+"pickup_steering_offroad": {
+    "information":{
+        "authors":"The_Gamer6000",
+        "name":"Off-Road Steering",
+        "value":65,
+    },
+    "slotType" : "pickup_steering_offroad",
+    "slots": [
+        ["type", "default", "description"],
+        ["pickup_power_steering","", "Power Steering"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_trx2_steeringbox", ["pickup_frame", "pickup_lowermounts"]],
+         ["pickup_tierod_offroad", ["pickup_tierod_F","pickup_hub1_F","pickup_lowermounts","pickup_steeringrack"]],
+    ],
+    "rails": {
+        "steeringrack":{
+            "links:":["fh6r", "fh6l"], "broken:":[], "looped":false, "capped":true,
+        },
+    },
+    "slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+        ["st2r", "steeringrack", true, true, 0.0, 75000, "FLT_MAX", "FLT_MAX"],
+        ["st2l", "steeringrack", true, true, 0.0, 75000, "FLT_MAX", "FLT_MAX"],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$toe_FR", "range", "", "Wheel Alignment", 0.999, 0.98, 1.02, "Toe Adjust", "Adjusts the wheel toe-in angle", {"subCategory":" Front"}],
+        ["$steer_center_F", "range", "", "Wheel Alignment", 0, -0.005, 0.005, "Toe Left/Right Trim", "Fine tunes the centerpoint of the steering", {"subCategory":" Front"}]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         // Tierod / rack-slide nodes — extended + lowered with the longer IFS arms.
+         // Stock was ±0.175 @ Z 0.40; must track st2 (rack) and fh5 (hub) or steering binds.
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"pickup_tierod_F"},
+         {"nodeWeight":6.58},
+         ["fh6r", -0.22, -1.31, 0.26],
+         ["fh6l", 0.22, -1.31, 0.26],
+         {"group":""},
+    ],
+    "beams": [
+            ["id1:","id2:"],
+            {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+            {"beamSpring":11001000,"beamDamp":180,"beamDeform":136500,"beamStrength":234500},
+            ["fh6r","fh6l"],
+            //
+            {"beamSpring":22001000,"beamDamp":180,"beamDeform":168000,"beamStrength":269500},
+            ["fh5r","fh6r", {"beamPrecompression":"$=$toe_FR-$steer_center_F","beamPrecompressionTime":0.5}],
+            ["fh5l","fh6l", {"beamPrecompression":"$=$toe_FR+$steer_center_F","beamPrecompressionTime":0.5}],
+            //steering damper
+            {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
+            {"beamSpring":0,"beamDeform":79800,"beamStrength":104664},
+            {"beamLimitSpring":0,"beamLimitDamp":0},
+            {"beamDamp":200},
+            ["fh4r","fx1r", {"beamDampVelocitySplit":0.05,"beamDampFast":1000,"dampCutoffHz":1000}],
+            ["fh4l","fx1l", {"beamDampVelocitySplit":0.05,"beamDampFast":1000,"dampCutoffHz":1000}],
+            ["fh1r","fx2r", {"beamDampVelocitySplit":0.05,"beamDampFast":1000,"dampCutoffHz":1000}],
+            ["fh1l","fx2l", {"beamDampVelocitySplit":0.05,"beamDampFast":1000,"dampCutoffHz":1000}],
+            {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "hydros": [
+            ["id1:","id2:"],
+            {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+            {"beamSpring":15001000,"beamDamp":90,"beamDeform":"FLT_MAX","beamStrength":175000},
+            ["fh6r","st2l", {"factor":-0.34,"steeringWheelLock":450,"inRate":1.25,"outRate":1.25}],
+            ["fh6l","st2r", {"factor":0.34,"steeringWheelLock":450,"inRate":1.25,"outRate":1.25}],
+            {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "input": {
+        "FFBcoef":"$=$ffbstrength*9",
+    },
+},
+}

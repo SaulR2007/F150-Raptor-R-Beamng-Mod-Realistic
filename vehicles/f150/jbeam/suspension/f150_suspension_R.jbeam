@@ -83,9 +83,9 @@
          {"nodeWeight":6.58},
          ["axsr1", -0.23000, 1.60000, 0.27000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
 
-         //trackbar mount (axle side)
+         //trackbar mount (axle side) — Y aligned with frame mount to kill yaw/crab under travel
          {"nodeWeight":4.7},
-         ["axsr2", -0.53200, 1.59500, 0.17000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
+         ["axsr2", -0.53200, 1.63600, 0.18000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
 
          //shock/lower link mounting nodes
          {"nodeWeight":9.4},
@@ -118,19 +118,19 @@
           
 
 
-         //upper link mount (frame side — unchanged)
+         //upper link mount (frame side) — lowered toward dropped axle (less angled pull)
          {"nodeWeight":6.58},
-         ["rx2r", -0.23000, 1.13000, 0.50000, {"group":"pickup_upperlink_R"}],
+         ["rx2r", -0.23000, 1.13000, 0.34000, {"group":"pickup_upperlink_R"}],
 
-         //trackbar mount (frame side — unchanged)
+         //trackbar mount (frame side) — nearly horizontal at ride height so axle stays centered
          {"nodeWeight":4.7},
-         ["rx2l", 0.50600, 1.63600, 0.40000, {"group":"pickup_trackbar_R"}],
+         ["rx2l", 0.50600, 1.63600, 0.20000, {"group":"pickup_trackbar_R"}],
 
-         //lower link mounts (frame side — unchanged)
+         //lower link mounts (frame side) — dropped to match axle (symmetric L/R)
          {"nodeWeight":9.4},
          {"group":["pickup_lowerlinks_R", "pickup_trackbar_R"]}
-         ["rx1r", -0.48666, 0.51233, 0.39000],
-         ["rx1l", 0.48666, 0.51233, 0.39000],
+         ["rx1r", -0.48666, 0.51233, 0.22000],
+         ["rx1l", 0.48666, 0.51233, 0.22000],
 
           
 
@@ -392,14 +392,14 @@
          {"collision":true},
          {"selfCollision":false},
 
-         //lower link mounts
+         //lower link mounts — match parent axle drop (keep L/R symmetric)
          {"nodeWeight":9.4},
          {"group":["pickup_lowerlinks_R", "pickup_trackbar_R"]}
-         ["rx1r", -0.48666, 0.51233, 0.39000],
-         ["rx1l", 0.48666, 0.51233, 0.39000],
+         ["rx1r", -0.48666, 0.51233, 0.22000],
+         ["rx1l", 0.48666, 0.51233, 0.22000],
 		   {"group":["pickup_lowerlinks_RR"]}
-		 ["rx1rr", -0.48666, 0.62375, 0.43998],
-         ["rx1ll", 0.48666, 0.62375, 0.43998],
+		 ["rx1rr", -0.48666, 0.62375, 0.27000],
+         ["rx1ll", 0.48666, 0.62375, 0.27000],
          {"group":""},
     ],
     "beams": [

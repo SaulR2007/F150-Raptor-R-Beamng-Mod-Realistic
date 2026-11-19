@@ -42,73 +42,74 @@
          {"collision":true},
          {"selfCollision":true},
          //--FRONT INDEPENDENT SUSPENSION--
-         // Upright knuckles + real travel: widen upper BJ (fh2), keep hubs below
-         // frame for clearance, raise shock tops for coilover span. Camber default 1.0.
+         // Ride height via arm geometry: drop ALL arm links (inners + outers + hubs)
+         // and extend arm reach outboard. Shock tops stay high for travel/span.
+         // Knuckle X kept stock-relative (no camber-lean primary fix).
          {"group":"pickup_shocktop"},
          {"nodeWeight":7.52},
          ["fs1r", -0.51, -1.5, 0.92],
          ["fs1l", 0.51, -1.5, 0.92],
          {"group":""},
          {"selfCollision":false},
-         //redefine frame node positions for upper mounts
+         // upper arm frame mounts — dropped with the arms
          {"nodeWeight":15.51},
          {"group":["pickup_frame","pickup_uppermounts"]},
-         ["f12r", -0.415, -1.74, 0.64],
-         ["f12l", 0.415, -1.74, 0.64],
-         ["f13r", -0.415, -1.35, 0.64],
-         ["f13l", 0.415, -1.35, 0.64],
-         //LIFT KIT — frame-side lower arm mounts
+         ["f12r", -0.415, -1.74, 0.50],
+         ["f12l", 0.415, -1.74, 0.50],
+         ["f13r", -0.415, -1.35, 0.50],
+         ["f13l", 0.415, -1.35, 0.50],
+         // lower arm frame mounts — dropped
          {"nodeWeight":13.63},
          {"selfCollision":true},
          {"group":"pickup_lowermounts"},
-         ["fx1r", -0.21, -1.72, 0.3],
-         ["fx1l", 0.21, -1.72, 0.3],
-         ["fx2r", -0.21, -1.26, 0.3],
-         ["fx2l", 0.21, -1.26, 0.3],
+         ["fx1r", -0.21, -1.72, 0.16],
+         ["fx1l", 0.21, -1.72, 0.16],
+         ["fx2r", -0.21, -1.26, 0.16],
+         ["fx2l", 0.21, -1.26, 0.16],
          {"selfCollision":false},
-         //lower arm shock mount (unsprung — below frame, not over-dropped)
+         // lower arm shock mount / outers — dropped + arms extended outboard
          {"group":"pickup_shockbottom"},
          {"nodeWeight":4.23},
-         ["fh7r", -0.60, -1.50, 0.232],
-         ["fh7l", 0.60, -1.50, 0.232],
+         ["fh7r", -0.68, -1.50, 0.08],
+         ["fh7l", 0.68, -1.50, 0.08],
          //shock hinge anti-pop
          {"group":""},
          {"collision":false},
-         ["fh8r", -0.57, -1.50, 0.10, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
-         ["fh8l", 0.57, -1.50, 0.10, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8r", -0.65, -1.50, -0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
+         ["fh8l", 0.65, -1.50, -0.04, {"group":["pickup_lowerarm_F", "pickup_swaybar_F_link"]}],
          {"nodeWeight":8.46},
          {"collision":true},
          {"selfCollision":true},
          {"group":["pickup_hub_F","pickup_lowerarm_F"]},
-         ["fh3r", -0.77, -1.48, 0.18],
-         ["fh3l", 0.77, -1.48, 0.18],
+         ["fh3r", -0.90, -1.48, 0.04],
+         ["fh3l", 0.90, -1.48, 0.04],
          {"nodeWeight":6.58},
-         //upper arm outer — widened vs lower BJ so knuckle sits upright (was ~−10° lean)
+         // upper arm outer — dropped; X keeps stock Δ vs lower BJ (~−0.07), not widened
          {"group":["pickup_hub_F","pickup_upperarm_F"]},
          {"selfCollision":false},
-         ["fh2r", -0.79, -1.41, 0.595],
-         ["fh2l", 0.79, -1.41, 0.595],
+         ["fh2r", -0.83, -1.41, 0.455],
+         ["fh2l", 0.83, -1.41, 0.455],
          {"selfCollision":true},
-         //hub
+         //hub — dropped with arms
          {"nodeWeight":6.58},
          {"group":["pickup_hub_F","pickup_hub1_F"]},
-         ["fh5r", -0.70, -1.303, 0.30],
-         ["fh5l", 0.70, -1.303, 0.30],
+         ["fh5r", -0.80, -1.303, 0.16],
+         ["fh5l", 0.80, -1.303, 0.16],
          {"nodeWeight":5.17},
          {"group":["pickup_hub_F","pickup_hub4_F"]},
-         ["fh1r", -0.84, -1.64, 0.34],
-         ["fh1l", 0.84, -1.64, 0.34],
+         ["fh1r", -0.97, -1.64, 0.20],
+         ["fh1l", 0.97, -1.64, 0.20],
          {"group":["pickup_hub_F","pickup_hub5_F"]},
          {"nodeWeight":3.29},
-         ["fh4r", -0.81, -1.31, 0.33],
-         ["fh4l", 0.81, -1.31, 0.33],
-         //steering rack (frame-side — unchanged)
+         ["fh4r", -0.94, -1.31, 0.19],
+         ["fh4l", 0.94, -1.31, 0.19],
+         //steering rack — dropped with arm package
          {"nodeWeight":7.52},
          {"collision":true},
          {"selfCollision":false},
          {"group":"pickup_steeringrack"},
-         ["st2r", -0.08, -1.31, 0.4],
-         ["st2l", 0.08, -1.31, 0.4],
+         ["st2r", -0.08, -1.31, 0.28],
+         ["st2l", 0.08, -1.31, 0.28],
          {"group":""},
     ],
     "torsionbars": [
@@ -445,8 +446,8 @@
     // === Springs moved to hydros and controlled by activeFrontSpring ===
     "hydros": [
           ["id1:", "id2:"],
-          // Modest rest-length stretch (not 2.x); geometry + this holds ride without slam or overextend.
-          {"beamPrecompression":"$=1.12+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Modest rest-length stretch; arm drop sets main ride height.
+          {"beamPrecompression":"$=1.15+$springheight_F", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_F","beamDamp":0},
 

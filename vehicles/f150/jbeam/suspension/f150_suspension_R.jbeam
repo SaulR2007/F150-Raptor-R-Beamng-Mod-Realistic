@@ -58,9 +58,9 @@
          //DrowsySam was here
 
          //--REAR LIVE AXLE SUSPENSION--
-         // Axle dropped again for under-frame clearance; shock bottoms kept above
-         // tire contact (hub Z − tire R + margin) so nodes no longer scrape ground.
-         // Towers stay put → longer spring span; hydro rest-length lowered for stance.
+         // Raise unsprung package well above tire patch for ground clearance.
+         // Hub ~0.48 / tire R 0.42 → contact ~0.06; lowest nodes ~0.30 → ~24 cm clear.
+         // Towers lifted under bed (≤0.75) so spring/shock span (~0.34–0.36 m) keeps travel.
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
          {"nodeWeight":14.288},
@@ -68,71 +68,70 @@
          {"group":"pickup_axle_R"},
          {"selfCollision":false},
          //can be overwritten by Off-Road leaf spring
-         ["ax2r", -0.66000, 1.49000, 0.30000],
-         ["ax2l", 0.66000, 1.49000, 0.30000],
+         ["ax2r", -0.66000, 1.49000, 0.48000],
+         ["ax2l", 0.66000, 1.49000, 0.48000],
          {"selfCollision":true},
-         ["ax3r", -0.74000, 1.25000, -0.02000],
-         ["ax3l", 0.74000, 1.25000, -0.02000],
-         ["ax4r", -0.74000, 1.66000, -0.02000],
-         ["ax4l", 0.74000, 1.66000, -0.02000],
-         ["ax1", 0.00000, 1.60000, -0.05000, {"nodeWeight":14.1}],
-         ["ax3", 0.00000, 1.13000, 0.04000, {"nodeWeight":14.1,"selfCollision":false}],
-         ["ax2", 0.00000, 1.54000, 0.25000, {"nodeWeight":9.4,"selfCollision":false}],
+         ["ax3r", -0.74000, 1.25000, 0.36000],
+         ["ax3l", 0.74000, 1.25000, 0.36000],
+         ["ax4r", -0.74000, 1.66000, 0.36000],
+         ["ax4l", 0.74000, 1.66000, 0.36000],
+         ["ax1", 0.00000, 1.60000, 0.34000, {"nodeWeight":14.1}],
+         ["ax3", 0.00000, 1.13000, 0.40000, {"nodeWeight":14.1,"selfCollision":false}],
+         ["ax2", 0.00000, 1.54000, 0.44000, {"nodeWeight":9.4,"selfCollision":false}],
 
          //upper link mount (axle side)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23000, 1.60000, 0.21000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23000, 1.60000, 0.42000, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
 
          //trackbar mount (axle side) — Y aligned with frame mount to kill yaw/crab under travel
          {"nodeWeight":4.7},
-         ["axsr2", -0.53200, 1.63600, 0.12000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
+         ["axsr2", -0.53200, 1.63600, 0.38000, {"group":["pickup_axle_R","pickup_trackbar_R"]}],
 
          //shock/lower link mounting nodes
          {"nodeWeight":9.4},
          {"group":["pickup_axle_R","pickup_rearspringbottom", "pickup_lowerlinks_R"]}
-         ["axshr", -0.56966, 1.49440, 0.08004],
-         ["axshl", 0.56966, 1.49440, 0.08004],
+         ["axshr", -0.56966, 1.49440, 0.36004],
+         ["axshl", 0.56966, 1.49440, 0.36004],
  {"group":["pickup_axle_R","pickup_rearshockbottom"]}
-                        // Was Z=-0.11 (below tire patch); held at −0.02 so ~10 cm above ground at hub 0.30 / R 0.42
-			["axshrrr", -0.64333, 1.40132, -0.02000],
-            ["axshlll", 0.64333, 1.40132, -0.02000],
+			["axshrrr", -0.64333, 1.40132, 0.30000],
+            ["axshlll", 0.64333, 1.40132, 0.30000],
 			
 			 {"group":["pickup_axle_R","pickup_lowerlinks_R"]}
-			["axshrrr2", -0.49932, 1.31370, -0.02985],
-            ["axshlll2", 0.49932, 1.31370, -0.02985],
+			["axshrrr2", -0.49932, 1.31370, 0.32000],
+            ["axshlll2", 0.49932, 1.31370, 0.32000],
  {"group":["pickup_axle_R","pickup_lowerlinks_RR"]}
-            ["axshrrr3", -0.49932, 1.30195, 0.10723],
-            ["axshlll3", 0.49932, 1.30195, 0.10723],
+            ["axshrrr3", -0.49932, 1.30195, 0.42000],
+            ["axshlll3", 0.49932, 1.30195, 0.42000],
 			
 			
 
          //--REAR RUNNING GEAR
 
-         // spring tower on frame — well below bed floor (0.75); unchanged (span grows with axle drop)
+         // spring tower on frame — under bed floor (0.75); raised with axle for travel span
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-         ["rs2r", -0.56450, 1.48756, 0.58000],
-         ["rs2l", 0.56450, 1.48756, 0.58000],
+         ["rs2r", -0.56450, 1.48756, 0.70000],
+         ["rs2l", 0.56450, 1.48756, 0.70000],
 
           
 
 
-         //upper link mount (frame side) — follow axle drop (less angled pull)
+         //upper link mount (frame side) — follow raised axle (less angled pull)
          {"nodeWeight":6.58},
-         ["rx2r", -0.23000, 1.13000, 0.28000, {"group":"pickup_upperlink_R"}],
+         ["rx2r", -0.23000, 1.13000, 0.48000, {"group":"pickup_upperlink_R"}],
 
          //trackbar mount (frame side) — nearly horizontal at ride height so axle stays centered
          {"nodeWeight":4.7},
-         ["rx2l", 0.50600, 1.63600, 0.14000, {"group":"pickup_trackbar_R"}],
+         ["rx2l", 0.50600, 1.63600, 0.40000, {"group":"pickup_trackbar_R"}],
 
-         //lower link mounts (frame side) — dropped to match axle (symmetric L/R)
+         //lower link mounts (frame side) — raised to match axle (symmetric L/R)
          {"nodeWeight":9.4},
          {"group":["pickup_lowerlinks_R", "pickup_trackbar_R"]}
-         ["rx1r", -0.48666, 0.51233, 0.16000],
-         ["rx1l", 0.48666, 0.51233, 0.16000],
+         ["rx1r", -0.48666, 0.51233, 0.38000],
+         ["rx1l", 0.48666, 0.51233, 0.38000],
 
           
 
@@ -394,14 +393,14 @@
          {"collision":true},
          {"selfCollision":false},
 
-         //lower link mounts — match parent axle drop (keep L/R symmetric)
+         //lower link mounts — match raised axle (keep L/R symmetric)
          {"nodeWeight":9.4},
          {"group":["pickup_lowerlinks_R", "pickup_trackbar_R"]}
-         ["rx1r", -0.48666, 0.51233, 0.16000],
-         ["rx1l", 0.48666, 0.51233, 0.16000],
+         ["rx1r", -0.48666, 0.51233, 0.38000],
+         ["rx1l", 0.48666, 0.51233, 0.38000],
 		   {"group":["pickup_lowerlinks_RR"]}
-		 ["rx1rr", -0.48666, 0.62375, 0.21000],
-         ["rx1ll", 0.48666, 0.62375, 0.21000],
+		 ["rx1rr", -0.48666, 0.62375, 0.42000],
+         ["rx1ll", 0.48666, 0.62375, 0.42000],
          {"group":""},
     ],
     "beams": [
@@ -499,18 +498,18 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         // spring tower (frame side — well below bed)
+         // spring tower (frame side — under bed, raised for travel with high axle)
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearshocktop"}
-           ["rs2r", -0.63000, 1.56808, 0.55000],
-         ["rs2l", 0.63000, 1.56808, 0.55000],
+           ["rs2r", -0.63000, 1.56808, 0.66000],
+         ["rs2l", 0.63000, 1.56808, 0.66000],
 
-         //upper link mount (axle side, matches dropped axle)
+         //upper link mount (axle side, matches raised axle)
          {"selfCollision":false},
          {"nodeWeight":6.58},
-         ["axsr1", -0.23, 1.6, 0.21, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
+         ["axsr1", -0.23, 1.6, 0.42, {"group":["pickup_axle_R","pickup_upperlink_R"]}],
          {"group":""},
     ],
     "beams": [
@@ -524,8 +523,8 @@
     ],
     "hydros": [
           ["id1:", "id2:"],
-          // Shorter rest-length than #5/#6 so rear sits lower; axle drop sets under-frame span.
-          {"beamPrecompression":"$=0.95+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          // Rest length for raised axle/tower package; Spring Height fine-tunes stance.
+          {"beamPrecompression":"$=1.05+$springheight_R3", "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"beamDeform":20000,"beamStrength":150000},
           {"beamSpring":"$spring_R3","beamDamp":0},
 
@@ -590,13 +589,13 @@
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
 
-         // shock tops on frame — well below bed floor
+         // shock tops on frame — under bed; raised with axle so dampers keep travel
          {"collision":false},
          {"selfCollision":false},
          {"nodeWeight":7.52},
          {"group":"pickup_rearspringtop"}
-           ["rss2r", -0.59055, 1.11680, 0.55000],
-         ["rss2l", 0.59055, 1.11680, 0.55000],
+           ["rss2r", -0.59055, 1.11680, 0.66000],
+         ["rss2l", 0.59055, 1.11680, 0.66000],
 
     ],
     "beams": [

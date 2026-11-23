@@ -6,11 +6,11 @@ Unpack / clone this repo as folder **`F150RR`**.
 
 ## About
 
-Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-style **Trail Control** UI (`fordControl`), and **AdvanceTrac / DSE** drive modes. Stock Raptor configs use the F150 RR supercharger with the 10-speed SelectShift; Normal / Street-style configs stay naturally aspirated.
+Crew-cab Raptor with custom jbeam (frame, body, suspension, drivetrain), Ford-style **Trail Control** UI (`fordControl`), and **AdvanceTrac / DSE** drive modes. The Raptor config uses the F150 RR supercharger with the 10-speed SelectShift; Normal stays naturally aspirated; Monster uses the dedicated Monster Supercharger.
 
 ## Features
 
-- **10 configs** under `vehicles/f150/`: Normal, Blacked Out, Raptor, Blacked Out Raptor, Monster, Monster Blacked Out, Baja, Sport, Tow, Police
+- **3 configs** under `vehicles/f150/`: **F-150 Normal** (base f150), **F-150 Raptor**, **F-150 Monster**
 - Drive-mode packs via DSE (street / SC Raptor / Baja / Tow packs)
 - In-game **fordControl** app — 4x4 pad, lockers, trail camera, Trail Control
 - Custom suspension, differentials, wheels/tires, and cabin screen assets
